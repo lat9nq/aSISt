@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+    body {
+        background:transparent;
+    }
+    html { 
+      background: url(background.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  #page-wrap { 
+    width: 75%; 
+    margin: 70px auto; 
+    padding: 40px; 
+    background: white; 
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black; 
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.header {
+    margin-bottom:40px;
+}
+.hiddenRow {
+    padding: 0px !important;
+}
+.accordian-body{
+    padding:10px;
+}
+
+</style>
+
+<title>aSISt</title>
+
+
+</head>
+<body>
+
+<!-- header and nav bar -->
+    <div class="container" id="page-wrap">
+
+        <div class="header">
+            <div style="float:left">
+                <img id="logo" src="logo.png" width="100" height="100">
+            </div>
+            <div style="float:clear; display:inline-block; margin:1%;">
+                <h3><i> aSISt </i></h3>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">aSISt</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                	<li><a href="#">Home </a></li>
+                    <li><a href="#">Course Search </a></li>
+                    <li><a href="#">Class Schedule </a></li>
+                    <li><a href="#">Personal Information </a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Signed in as ~~name~~</a></li>
+                  <li><a href="#">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!-- end nav bar -->
+
+
+  <br/>
+  <center><h3>Search Results</h3></center><br/>
+
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width:20%">Course Mnemonic</th>
+            <th>Course Title</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <!-- first search result -->
+        <tr>
+            <td>CS 1010</td>
+            <td>Introduction to Information Technology</td>
+            <td style="width:15%">
+                <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">Learn More</button>
+            </td>
+        </tr>
+        <tr >
+            <td colspan="3" class="hiddenRow">
+                <div class="accordian-body collapse" id="demo1">
+                    <p><i>Description</i></p>
+                    <p><i>Provides exposure to a variety of issues in information technology, such as computing ethics and copyright. Introduces and provides experience with various computer applications, including e-mail, newsgroups, library search tools, word processing, Internet search engines, and HTML. Not intended for students expecting to do further work in CS. Cannot be taken for credit by students in SEAS or Commerce.</i></p>
+
+                    <table class="table table-bordered"> 
+                        <thead>
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Section</th>
+                                <th>Course Component</th>
+                                <th>Status</th>
+                                <th>Enrollment</th>
+                                <th>Instructor</th>
+                                <th>Meeting Times</th>
+                                <th>Location</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17339</td>
+                                <td>001</td>
+                                <td>Lecture (3 credits)</td>
+                                <td>Open</td>
+                                <td>92/94</td>
+                                <td>Craig Dill</td>
+                                <td>TuTh 2:00-3:15 PM</td>
+                                <td>Thornton Hall E316</td>
+                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </td>
+        </tr>
+
+        <!-- second search result, replace later with for loop-->
+
+        <tr>
+            <td>CS 1110</td>
+            <td>Introduction to Programming</td>
+            <td style="width:15%">
+                <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target="#demo2" class="accordion-toggle">Learn More</button>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3" class="hiddenRow">
+                <div id="demo2" class="accordian-body collapse">
+
+                    <p><i>Description</i></p>
+                    <p><i> A first course in programming, software development, and computer science. Introduces computing fundamentals and an appreciation for computational thinking. No previous programming experience required. Note: CS 1110, 1111, 1112, 1113, and 1120 provide different approaches to teaching the same core material; students may only receive credit for one of these courses.</i></p>
+
+                    <table class="table table-bordered"> 
+                        <thead>
+                            <tr>
+                                <th>Course Number</th>
+                                <th>Section</th>
+                                <th>Course Component</th>
+                                <th>Status</th>
+                                <th>Enrollment</th>
+                                <th>Instructor</th>
+                                <th>Meeting Times</th>
+                                <th>Location</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17556</td>
+                                <td>001</td>
+                                <td>Lecture (3 credits)</td>
+                                <td>Open</td>
+                                <td>235/270</td>
+                                <td>Mark Sheriff</td>
+                                <td>MoWeFr 3:00-3:50 PM</td>
+                                <td>Wilson Hall 402</td>
+                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
+                            </tr>
+                            <tr>
+                                <td>19415</td>
+                                <td>002</td>
+                                <td>Lecture (3 credits)</td>
+                                <td>Open</td>
+                                <td>145/150</td>
+                                <td>Ahmed Ibrahim</td>
+                                <td>MoWeFr 11:00-11:50 AM</td>
+                                <td>Rice Hall 130</td>
+                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
+                            </tr>
+                            <tr>
+                                <td>16792</td>
+                                <td>101</td>
+                                <td>Laboratory (0 credits)</td>
+                                <td>Open</td>
+                                <td>44/46</td>
+                                <td>Mark Sherriff</td>
+                                <td>Th 12:30-1:45 PM</td>
+                                <td>Olsson Hall 001</td>
+                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
+</body>
+</html>
