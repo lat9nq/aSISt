@@ -1,0 +1,112 @@
+body {
+    background-image: url("uva.png");
+    background-size: 100%;
+}
+
+h1 {
+    color: #002F6C;
+}
+
+.login-label {
+    display: inline-block;
+    float: left;
+    margin-left: 32%;
+    color: #002F6C;
+    text-align: right;
+}
+
+.login-input {
+    display: inline-block;
+    float: right;
+    margin-right: 32%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 20px;
+    background: #002F6C;
+    color: orange;
+}
+
+#main-form {
+    background: rgba(255, 255, 255, 0.6);
+    outline-style: solid;
+    outline-width: 1px;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.sis-button {
+    opacity: 1.0;
+    background: #002F6C;
+    color: orange;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 64px;
+}
+
+input[type=submit]:focus {
+    color: #002F6C;
+    background: orange;
+}
+
+.navbar {
+    background: #002F6C;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+    background: #002F6C;
+    margin-right: 5%;
+}
+
+.navbar li a:link {
+    color: orange;
+    text-decoration: none;
+}
+
+.navbar li a:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+.navbar li a:active {
+    color: red;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: orange;
+    background: rgb(128, 128, 255);
+    transition-duration: 0.3s;
+}
+
+#main-buttons {
+    text-align: center;
+}
+
+.big-button {
+    opacity: 1.0;
+    background: #002F6C;
+    color: orange;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 50px;
+    width: 40%;
+    height: 40%;
+    margin: 2%;
+    transition-duration: 0.3s;
+}
+
+.big-button:hover {
+    transition-duration: 0.3s;
+    color: #002F6C;
+    background: orange;
+}
+    
