@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="Stylesheet" href="style.css">
+    <script src="popup_jquery.js"></script>
 
     <title>aSISt</title>
 
@@ -134,7 +135,31 @@
                                 <td>Craig Dill</td>
                                 <td>TuTh 2:00-3:15 PM</td>
                                 <td>Thornton Hall E316</td>
-                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
+								<td><button type="button" class="btn btn-success btn-circle.btn-lg"
+									data-toggle="modal" data-target="#17339">Add</button></td>
+								
+								<span style="margin:auto"class="modal fade" id="17339" role="dialog">
+									<div class="modla-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Select discussion</h4>
+											</div>
+											<div class="modal-body">
+												<div class="form-group">
+														<label for="17339disc">Select a discussion:</label>
+														<select multiple class="form-control" id="17339disc">
+															<option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
+														</select>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
+											</div>
+										</div>
+									</div>
+								</span> <!-- modal -->
+								
                             </tr>
                         </tbody>
                     </table>
