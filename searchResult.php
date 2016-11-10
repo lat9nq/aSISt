@@ -57,20 +57,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/asist" class="navbar-brand">aSISt</a>
+                <a href="/asist/home.php" class="navbar-brand">aSISt</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                  <li><a href="/asist">Home </a></li>
-                  <li><a href="/asist/searchResult.html">Course Search </a></li>
-                  <li><a href="/asist/classSchedule.html">Class Schedule </a></li>
-                  <li><a href="/asist/personalInfo.html">Personal Information </a></li>
+                  <li><a href="/asist/home.php">Home </a></li>
+                  <li><a href="/asist/searchResult.php">Course Search </a></li>
+                  <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+                  <li><a href="/asist/personalInfo.php">Personal Information </a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/asist">Signed in as ~~name~~</a></li>
-                  <li><a href="/asist/login.html">Logout</a></li>
+                  <li><a href="/asist/home.php">Signed in as ~~name~~</a></li>
+                  <li><a href="/asist/login.php">Logout</a></li>
               </ul>
           </div>
       </div>
