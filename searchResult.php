@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['computing_id'])  
+{  
+    header("Location: login.php");//redirect to login page to secure the welcome page without login access.  
+  }  
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,8 +75,8 @@
                   <li><a href="/asist/personalInfo.php">Personal Information </a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/asist/home.php">Signed in as ~~name~~</a></li>
-                  <li><a href="/asist/login.php">Logout</a></li>
+                  <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
+                  <li><a href="/asist/logout.php">Logout</a></li>
               </ul>
           </div>
       </div>

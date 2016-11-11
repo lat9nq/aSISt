@@ -19,7 +19,7 @@ session_start();
 </head>
 
 <body>
- 
+
   <div class="container" style="text-align:center">
     <div class = "login-form">
       <form class = "form-signin" role = "form" 
@@ -41,7 +41,7 @@ session_start();
 <!-- Modal 1 -->
 <div class="modal fade" id="errorIDModal" role="dialog">
   <div class="modal-dialog">
-    
+
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
@@ -55,14 +55,14 @@ session_start();
         <button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button>
       </div>
     </div>
-    
+
   </div>
 </div>
 
 <!-- Modal 1 -->
 <div class="modal fade" id="errorPasswordModal" role="dialog">
   <div class="modal-dialog">
-    
+
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
@@ -76,7 +76,7 @@ session_start();
         <button type="button" class="btn btn-default" data-dismiss="modal">Try Again</button>
       </div>
     </div>
-    
+
   </div>
 </div>
 
@@ -105,11 +105,11 @@ if(isset($_POST['login']))
 
  $computing_id=$_POST['computing_id'];  
  $password=$_POST['password'];  
- 
- $check_user="select * from student WHERE computing_id='$computing_id'and password='$password'";
- 
+
+ $check_user="select * from student where computing_id='$computing_id'and password='$password'";
+
  $run=mysqli_query($db,$check_user);  
- 
+
  if(mysqli_num_rows($run))  
  {  
   echo "<script>window.open('home.php','_self')</script>";  
@@ -119,15 +119,15 @@ if(isset($_POST['login']))
 }  
 else  
 { 
-  $check_ID="select * from student WHERE computing_id='$computing_id'";
-  $check_password = "select * from student WHERE password='$password'";
+  $check_ID="select * from student where computing_id='$computing_id'";
+  $check_password = "select * from student where password='$password'";
   $result_ID = $db->query($check_ID);
   $result_password = $db->query($check_password);
   if ($result_ID->num_rows==0)
   {  
     ?>
     <script>$('#errorIDModal').modal('show');</script>
-    
+
     <?php
   } else if ($result_password->num_rows==0){
     ?>

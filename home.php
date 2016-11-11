@@ -76,7 +76,7 @@ if(!$_SESSION['computing_id'])
         <li><a href="/asist/personalInfo.php">Personal Information </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/asist/home.php"><?php echo $_SESSION['computing_id'];?></a></li>
+        <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
         <li><a href="/asist/logout.php">Logout</a></li>
       </ul>
     </div>
