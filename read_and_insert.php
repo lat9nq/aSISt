@@ -148,10 +148,19 @@
 			$db->query($query);
 		}
 		/*
-		instructor_id VARCHAR(6),
-    	dept_mnemonic VARCHAR(4),
-    	course_number INT,
-    	section_id INT,
+	section_id INT,
+    dept_mnemonic VARCHAR(4),
+    course_number INT,
+    building_id INT,
+    room VARCHAR(6),
+    section_title VARCHAR(50),
+    time_id INT,
+    semester VARCHAR(20),
+    capacity INT,
+    total_students INT,
+    days VARCHAR(10),
+    description VARCHAR(30),
+    status TINYINT,
     	*/
 		for ($i = 0; $i < count($list); $i++) {
 			$s = $list[$i];
@@ -163,7 +172,7 @@
 					$computing_id = $instructor_set[$s->instructor_first . " " . $s->instructor_last]["computing_id"];
 					$query = "INSERT INTO section VALUES(" . $s->number . ", '" . $s->dept_mnemonic . "', " . $s->course_number . ", " . $building_id
 					. ", '" . $s->room_number . "', '', " . $time_id . ", '" . $s->semester . " " . $s->year . "', " . $s->capacity . ", " . $s->enrollment
-					. ", '" . $s->days . "', '', " . $status . ");";
+					. ", '" . $s->days . "', '" . $s->description . "', " . $status . ");";
 					$db->query($query);
 					
 					$query = "INSERT INTO instructor_section VALUES('" . $computing_id . "', '" . $s->dept_mnemonic . "', " . $s->course_number . ", " . $s->number . ");";
