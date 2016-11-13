@@ -3,8 +3,8 @@ session_start();
 if(!$_SESSION['computing_id'])  
 {  
     header("Location: login.php");//redirect to login page to secure the welcome page without login access.  
-  }  
-  ?>
+}  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,227 +27,285 @@ if(!$_SESSION['computing_id'])
     <div class="container-fluid" style="margin-right:0%;margin-left:3%">
         <div class="row">
             <div class="col-md-2" id="search">
-             <center><h3>Search</h3></center><br/>
-             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Department">
+               <center><h3>Search</h3></center><br/>
+               <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Department">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Course Mnemonic">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Semester">
+              </div>
+              <button type="button" class="btn btn-success btn-block">Search</button>
           </div>
-          <div class="form-group">
-              <input type="text" class="form-control" placeholder="Course Mnemonic">
-          </div>
-          <div class="form-group">
-              <input type="text" class="form-control" placeholder="Semester">
-          </div>
-          <button type="button" class="btn btn-success btn-block">Search</button>
-      </div>
 
-      <!-- header and nav bar -->
-      <div class="col-md-2" id="page-wrap-search">
-       
-        <div class="header">
-            <div style="float:left">
-                <img id="logo" src="logo.png" width="100" height="100">
-            </div>
-            <div style="float:clear; display:inline-block; margin:1%;">
-                <h3><i> aSISt </i></h3>
-            </div>
-        </div>
+          <!-- header and nav bar -->
+          <div class="col-md-2" id="page-wrap-search">
 
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/asist/home.php" class="navbar-brand">aSISt</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li><a href="/asist/home.php">Home </a></li>
-                  <li><a href="/asist/searchResult.php">Course Search </a></li>
-                  <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
-                  <li><a href="/asist/personalInfo.php">Personal Information </a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
-                  <li><a href="/asist/logout.php">Logout</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-
-  <!-- end nav bar -->
-
-  <br/>
-  <center><h3>Search Results</h3></center><br/>
-
-
-
-  <table class="table table-striped">
-    <thead>
-        <tr>
-            <th style="width:20%">Course Mnemonic</th>
-            <th>Course Title</th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-
-        <!-- first search result -->
-        <tr>
-            <td>CS 1010</td>
-            <td>Introduction to Information Technology</td>
-            <td style="width:15%">
-                <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">Learn More</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-success btn-circle.btn-lg" >Add</button>
-            </td>
-        </tr>
-        <tr >
-            <td colspan="4" class="hiddenRow">
-                <div class="accordian-body collapse" id="demo1">
-                    <p><i>Description</i></p>
-                    <p><i>Provides exposure to a variety of issues in information technology, such as computing ethics and copyright. Introduces and provides experience with various computer applications, including e-mail, newsgroups, library search tools, word processing, Internet search engines, and HTML. Not intended for students expecting to do further work in CS. Cannot be taken for credit by students in SEAS or Commerce.</i></p>
-
-                    <table class="table table-bordered"> 
-                        <thead>
-                            <tr>
-                                <th>Course Number</th>
-                                <th>Section</th>
-                                <th>Course Component</th>
-                                <th>Status</th>
-                                <th>Enrollment</th>
-                                <th>Instructor</th>
-                                <th>Meeting Times</th>
-                                <th>Location</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>17339</td>
-                                <td>001</td>
-                                <td>Lecture (3 credits)</td>
-                                <td>Open</td>
-                                <td>92/94</td>
-                                <td>Craig Dill</td>
-                                <td>TuTh 2:00-3:15 PM</td>
-                                <td>Thornton Hall E316</td>
-								<td><button type="button" class="btn btn-success btn-circle.btn-lg"
-									data-toggle="modal" data-target="#17339">Add</button></td>
-								
-								<span style="margin:auto"class="modal fade" id="17339" role="dialog">
-									<div class="modla-dialog modal-lg">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-												<h4 class="modal-title">Select discussion</h4>
-											</div>
-											<div class="modal-body">
-												<div class="form-group">
-														<label for="17339disc">Select a discussion:</label>
-														<select multiple class="form-control" id="17339disc">
-															<option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
-														</select>
-												</div>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
-											</div>
-										</div>
-									</div>
-								</span> <!-- modal -->
-								
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> 
-            </td>
-        </tr>
-
-        <!-- second search result, replace later with for loop-->
-
-        <tr>
-            <td>CS 1110</td>
-            <td>Introduction to Programming</td>
-            <td style="width:15%">
-                <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target="#demo2" class="accordion-toggle">Learn More</button>
-                <td>
-                    <button type="button" class="btn btn-success btn-circle.btn-lg">Add</button>
-                </td>
-            </td>
-
-        </tr>
-        <tr>
-            <td colspan="4" class="hiddenRow">
-                <div id="demo2" class="accordian-body collapse">
-
-                    <p><i>Description</i></p>
-                    <p><i> A first course in programming, software development, and computer science. Introduces computing fundamentals and an appreciation for computational thinking. No previous programming experience required. Note: CS 1110, 1111, 1112, 1113, and 1120 provide different approaches to teaching the same core material; students may only receive credit for one of these courses.</i></p>
-
-                    <table class="table table-bordered"> 
-                        <thead>
-                            <tr>
-                                <th>Course Number</th>
-                                <th>Section</th>
-                                <th>Course Component</th>
-                                <th>Status</th>
-                                <th>Enrollment</th>
-                                <th>Instructor</th>
-                                <th>Meeting Times</th>
-                                <th>Location</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>17556</td>
-                                <td>001</td>
-                                <td>Lecture (3 credits)</td>
-                                <td>Open</td>
-                                <td>235/270</td>
-                                <td>Mark Sheriff</td>
-                                <td>MoWeFr 3:00-3:50 PM</td>
-                                <td>Wilson Hall 402</td>
-                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
-                            </tr>
-                            <tr>
-                                <td>19415</td>
-                                <td>002</td>
-                                <td>Lecture (3 credits)</td>
-                                <td>Open</td>
-                                <td>145/150</td>
-                                <td>Ahmed Ibrahim</td>
-                                <td>MoWeFr 11:00-11:50 AM</td>
-                                <td>Rice Hall 130</td>
-                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
-                            </tr>
-                            <tr>
-                                <td>16792</td>
-                                <td>101</td>
-                                <td>Laboratory (0 credits)</td>
-                                <td>Open</td>
-                                <td>44/46</td>
-                                <td>Mark Sherriff</td>
-                                <td>Th 12:30-1:45 PM</td>
-                                <td>Olsson Hall 001</td>
-                                <td><button type="button" class="btn btn-success btn-circle.btn-lg">Add</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="header">
+                <div style="float:left">
+                    <img id="logo" src="logo.png" width="100" height="100">
                 </div>
-            </td>
-        </tr>
+                <div style="float:clear; display:inline-block; margin:1%;">
+                    <h3><i> aSISt </i></h3>
+                </div>
+            </div>
 
-    </tbody>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/asist/home.php" class="navbar-brand">aSISt</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a href="/asist/home.php">Home </a></li>
+                      <li><a href="/asist/searchResult.php">Course Search </a></li>
+                      <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+                      <li><a href="/asist/personalInfo.php">Personal Information </a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
+                      <li><a href="/asist/logout.php">Logout</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- end nav bar -->
+
+      <br/>
+      <center><h3>Search Results</h3></center><br/>
+
+
+
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="width:20%">Course Mnemonic</th>
+                <th>Course Title</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+          <?php
+          $db = new mysqli('localhost', 'username', 'password', 'asist');
+          if ($db->connect_error):
+           die ("Could not connect to db: " . $db->connect_error);
+       endif;
+
+// assuming that $dept and $course_mnemonic gotten from search
+       $dept = "CS";
+       $course_mnemonic = "";
+       $courses = array();
+
+       if ($course_mnemonic==""){
+    //the search query was only for department, but nothing for course_mnemonic and semester were entered
+        $query = "select course_number from course where dept_mnemonic='$dept'";
+        $result = $db->query($query);
+        while ($course_row = $result->fetch_array()){
+            $course = $course_row["course_number"];
+            array_push($courses,$course);
+        }
+    } else {
+        array_push($courses,$course_mnemonic);
+    }
+
+    //for the Learn More toggle
+    $index=1;
+
+    foreach($courses as $course_mnemonic){
+
+       $sections = array();
+
+       $query = "select * from section where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $result = $db->query($query);
+
+       $credit_query = "select units from course where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $credit_result = $db -> query($credit_query);
+       $credits = $credit_result->fetch_array()["units"];
+
+       $course_title_query = "select course_title from course where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $course_title = $db->query($course_title_query)->fetch_array()["course_title"];
+
+       if ($result->num_rows>0){
+        while ($row = $result->fetch_array()){
+            $section = $row["section_id"];
+            $course_component = $row["description"]." (".$credits.")";
+            $status_num = $row["status"];
+        //0 is closed, 1 is open, 2 is waitlisted
+            if ($status_num==0){
+                $status="Closed";
+            } else if ($status_num==1){
+                $status = "Open";
+            } else if ($status_num==2){
+                $status = "Waitlisted";
+            }
+            $enrollment = $row["total_students"]."/".$row["capacity"];
+
+            $instructor_id_query = "select instructor_id from instructor_section where section_id = $section and dept_mnemonic='$dept' and course_number=$course_mnemonic";
+            $instructor_id = $db->query($instructor_id_query)->fetch_array()["instructor_id"];
+            $instructor_name_query = "select first_name,last_name from instructor where computing_id = '$instructor_id'";
+            $instructor_row = $db->query($instructor_name_query)->fetch_array();
+            $instructor = $instructor_row["first_name"]." ".$instructor_row["last_name"];
+
+            $time_id = $row["time_id"];
+            $time_query = "select start_time,end_time from timeslot where time_id=$time_id";
+            $time_row = $db->query($time_query)->fetch_array();
+            $time = $row["days"]." ".substr($time_row["start_time"],0,-3)."-".substr($time_row["end_time"],0,-3);
+
+            $building_id = $row["building_id"];
+            $building_query = "select building_name from building where building_id = $building_id";
+            $building = $db->query($building_query)->fetch_array()["building_name"]." ".$row["room"];
+
+            array_push($sections, array($section, $course_component, $status, $enrollment, $instructor, $time, $building) );
+        }
+    }
+
+
+    ?>
+
+
+    <!-- search results -->
+    <tr>
+        <td>
+            <?php 
+                //course_mnemonic
+            echo $dept." ".$course_mnemonic
+            ?>
+        </td>
+
+        <td>
+            <?php 
+                //course_mnemonic
+            echo $course_title
+            ?>
+        </td>
+        <td style="width:15%">
+            <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle">Learn More</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-success btn-circle.btn-lg" >Add</button>
+        </td>
+    </tr>
+    <tr >
+
+        <td colspan="4" class="hiddenRow">
+
+            <div class="accordian-body collapse" id=<?php echo "demo".$index ?>>
+
+
+                <table class="table table-bordered"> 
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Course Component</th>
+                            <th>Status</th>
+                            <th>Enrollment</th>
+                            <th>Instructor</th>
+                            <th>Meeting Times</th>
+                            <th>Location</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <?php foreach($sections as $section) { ?>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <?php
+                                    // section ID
+                                echo $section[0];
+                                ?>
+                            </td>
+                            <td>
+                                <?php 
+                                    // course component (Ex. Lecture(3))
+                                echo $section[1] 
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    //status
+                                echo $section[2]
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    //enrollment
+                                echo $section[3]
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    //instructor
+                                echo $section[4]
+                                ?>
+                            </td>
+                            <td>
+                                <?php
+                                    //time
+                                echo $section[5]
+                                ?>
+                            </td>
+                            <td>Thornton Hall E316</td>
+                            <td><button type="button" class="btn btn-success btn-circle.btn-lg"
+                               data-toggle="modal" data-target="#17339">Add</button></td>
+
+                               <span style="margin:auto"class="modal fade" id="17339" role="dialog">
+                                   <div class="modla-dialog modal-lg">
+                                      <div class="modal-content">
+                                         <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Select discussion</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                              <label for="17339disc">Select a discussion:</label>
+                                              <select multiple class="form-control" id="17339disc">
+                                                 <option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                     <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </span> <!-- modal -->
+
+                    </tr>
+                </tbody>
+                <?php
+                $index=$index+1;
+            } //end foreach section
+            ?>
+
+        </table>
+
+
+    </div> 
+</td>
+</tr>
+
+<?php
+}
+?>
+</tbody>
 </table>
 
 </div>
