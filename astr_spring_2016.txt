@@ -1,0 +1,80 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Schedule of Classes for Astronomy - Spring 2016    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+      
+Normal Format   - Collapse All    + Expand All
+Astronomy
+ ASTR 1210 Introduction to the Sky and Solar System
+11050 	001	Lecture (3)	Open	37 / 135	Trinh Thuan	TuTh 9:30AM - 10:45AM	Clark Hall 107
+11051 	002	Lecture (3)	Open	127 / 135	Remy Indebetouw	TuTh 12:30PM - 1:45PM	Clark Hall 107
+ ASTR 1220 Introduction to Stars, Galaxies, and the Universe
+19988 	001	Lecture (3)	Open	48 / 135	D. Whittle	MoWeFr 10:00AM - 10:50AM	Clark Hall 107
+11053 	002	Lecture (3)	Open	8 / 40	William Saslaw	TuTh 11:00AM - 12:15PM	Clark Hall G004
+11054 	003	Lecture (3)	Open	46 / 135	Shane Davis	MoWe 2:00PM - 3:15PM	Clark Hall 107
+ ASTR 1260 Threats from Outer Space
+20626 	001	Lecture (3)	Open	118 / 120	Roger Chevalier	MoWeFr 11:00AM - 11:50AM	Clark Hall 107
+ ASTR 1270 Unsolved Mysteries in the Universe
+13885 	002	Lecture (3)	Closed	91 / 90	Kelsey Johnson	MoWeFr 12:00PM - 12:50PM	Wilson Hall 325
+ ASTR 1280 The Origins of Almost Everything
+20627 	001	Lecture (3)	Open	206 / 250	Edward Murphy	TuTh 2:00PM - 3:15PM	Maury Hall 209
+ ASTR 1610 Intro to Astronomical Research for Potential Astronomy/Astrophysics Majors
+11057 	001	Lecture (1)	Open	28 / 30	Paul Seidelmann	Tu 7:00PM - 8:00PM	Chemistry Bldg 303
+ ASTR 2120 Introduction to Astrophysics II
+11058 	100	Lecture (3)	Open	18 / 25	Craig Sarazin	MoWeFr 11:00AM - 11:50AM	Astronomy Bldg 265
+11059 	101	Discussion (3)	Open	18 / 25	Dominic Pesce	Fr 3:00PM - 3:50PM	Astronomy Bldg 265
+ ASTR 3130 Observational Astronomy
+14940 	100	Lecture (4)	Open	11 / 20	Michael Skrutskie	TuTh 11:00AM - 12:15PM	Astronomy Bldg 265
+14941 	101	Laboratory (4)	Open	9 / 20	Michael Skrutskie	Tu 9:00PM - 11:00PM	Astronomy Bldg 265
+14943 	102	Laboratory (4)	Open	2 / 20	Michael Skrutskie	We 9:00PM - 11:00PM	Astronomy Bldg 265
+ ASTR 3420 Life Beyond the Earth
+19996 	001	Lecture (3)	Open	68 / 75	Robin Garrod	TuTh 9:30AM - 10:45AM	Chemistry Bldg 304
+ ASTR 3460 Development of Modern Astronomy
+14945 	001	Lecture (3)	Open	9 / 20	William Saslaw	TuTh 2:00PM - 3:15PM	Chemistry Bldg 262
+ ASTR 3480 Introduction to Cosmology
+11060 	001	Lecture (3)	Open	34 / 135	John Hawley	TuTh 11:00AM - 12:15PM	Clark Hall 107
+ ASTR 3880 Planetary Astronomy
+12345 	100	Lecture (3)	Open	17 / 40	Alan Howard	MoWeFr 1:00PM - 1:50PM	Clark Hall 107
+ ASTR 4140 Research Methods in Astrophysics
+16135 	001	Lecture (3)	Open 	5 / 25	Nitya Kallivayalil	TuTh 12:30PM - 1:45PM	Astronomy Bldg 265
+ ASTR 4993 Tutorial
+ 
+ ASTR 4998 Senior Thesis
+11061 	001	Independent Study (3)	Open	0 / 5	Philip Arras	TBA	TBA
+13648 	002	Independent Study (3)	Open	1 / 5	James Braatz	TBA	TBA
+14012 	003	Independent Study (3)	Open	0 / 5	Shane Davis	TBA	TBA
+14436 	004	Independent Study (3)	Open	2 / 5	Kelsey Johnson	TBA	TBA
+16406 	005	Independent Study (3)	Open	1 / 5	Nitya Kallivayalil	TBA	TBA
+14889 	007	Independent Study (3)	Open	0 / 5	Zhi-Yun Li	TBA	TBA
+15284 	009	Independent Study (3)	Open	0 / 5	Steven Majewski	TBA	TBA
+16137 	010	Independent Study (3)	Open	0 / 5	Scott Ransom	TBA	TBA
+16138 	011	Independent Study (3)	Open	0 / 5	Anthony Remijan	TBA	TBA
+16316 	012	Independent Study (3)	Open	2 / 5	Craig Sarazin	TBA	TBA
+16477 	013	Independent Study (3)	Open	0 / 5	Anne Skrutskie	TBA	TBA
+16478 	014	Independent Study (3)	Open	0 / 5	Michael Skrutskie	TBA	TBA
+16479 	015	Independent Study (3)	Open	1 / 5	D. Whittle	TBA	TBA
+21299 	016	Independent Study (3)	Open	2 / 5	Edward Murphy	TBA	TBA
+21479 	017	Independent Study (3)	Open	1 / 5	Paul Seidelmann	TBA	TBA
+21814 	018	Independent Study (3)	Open	1 / 4	Robert Johnson	TBA	TBA
+ ASTR 5430 Stellar Astrophysics
+19997 	001	Lecture (3)	Open	11 / 25	Zhi-Yun Li	MoWe 2:00PM - 3:15PM	Astronomy Bldg 265
+ ASTR 5610 Galactic Structure and Stellar Populations
+19998 	001	Lecture (3)	Open	11 / 25	Steven Majewski	TuTh 2:00PM - 3:15PM	Astronomy Bldg 265
+ ASTR 6210 Introduction to Sky and Solar System Concepts
+11062 	001	Lecture (3)	Open 	0 / 5	Trinh Thuan	TuTh 9:30AM - 10:45AM	Clark Hall 107
+ ASTR 6220 Introduction to Stars, Galaxies, and Universe Concepts
+14946 	001	Lecture (3)	Open 	0 / 2	Shane Davis	MoWe 2:00PM - 3:15PM	Clark Hall 107
+ ASTR 8500 Current Astronomical Topics
+ 	Astronomy Education/Outreach
+11063 	001	Lecture (1)	Open	10 / 25	Robert O'Connell	Mo 4:00PM - 4:50PM	Astronomy Bldg 265
+ ASTR 9995 Supervised Research
+ 
+ ASTR 9999 Non-Topical Research
+ 
+
+
+
+
+
+

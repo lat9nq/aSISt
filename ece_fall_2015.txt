@@ -1,0 +1,161 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Complete Schedule for the Electrical and Computer Engineering Department - Fall 2015    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+Normal Format   - Collapse All    + Expand All
+Computer Engineering
+ CPE 7993 Independent Study
+17637 	001	Independent Study (1)	Open 	14 / 30	Joanne Dugan	TBA	TBA
+21992 	002	Independent Study (2)	Open 	13 / 30	Joanne Dugan	TBA	TBA
+ CPE 7995 Supervised Project Research
+17638 	001	Independent Study (3 - 6)	Open 	1 / 30	Joanne Dugan	TBA	TBA
+ CPE 8897 Graduate Teaching Instruction
+17639 	001	Independent Study (1 - 12)	Open 	1 / 30	Joanne Dugan	TBA	TBA
+ CPE 8999 Non-Topical Research, Master's Thesis
+ 
+ CPE 9897 Graduate Teaching Instruction
+17641 	001	Independent Study (1 - 12)	Open 	0 / 30	Joanne Dugan	TBA	TBA
+ CPE 9999 Non-Topical Research, Doctoral Dissertation
+ 
+Electrical and Computer Engineering
+ ECE 2066 Science of Information
+16959 	100	Lecture (3)	Open	37 / 75	Todd Delong	MoWe 2:00PM - 3:15PM	Thornton Hall E303
+16961 	101	Laboratory (3)	Open	17 / 30	Todd Delong	Tu 1:00PM - 1:50PM	Mechanical Engr Bldg 215
+16960 	102	Laboratory (3)	Open	20 / 30	Todd Delong	Tu 2:00PM - 2:50PM	Mechanical Engr Bldg 215
+ ECE 2630 ECE Fundamentals I
+16962 	001	Studio (4)	Closed 	59 / 50	Ronald Williams	MoWeFr 12:00PM - 1:50PM	Thornton Hall A120
+ ECE 2660 ECE Fundamentals II
+19626 	001	Studio (4)	Open 	26 / 40	Lloyd Harriott+1	MoWeFr 9:00AM - 10:50AM	Thornton Hall A120
+ ECE 3103 Solid State Devices
+20247 	001	Lecture (3)	Open	21 / 50	Andreas Beling	MoWeFr 1:00PM - 1:50PM	Thornton Hall E316
+ ECE 3209 Electromagnetic Fields
+19627 	001	Studio (4)	Open 	41 / 50	Robert Weikle	MoWe 2:00PM - 4:45PM	Thornton Hall A120
+ ECE 3430 Introduction to Embedded Computer Systems
+19628 	001	Studio (4)	Open 	46 / 50	Todd Delong	TuTh 8:30AM - 10:45AM	Thornton Hall A120
+20445 	002	Laboratory (4)	Open 	31 / 33	Todd Delong	Mo 5:00PM - 6:00PM	Rice Hall 240
+20446 	003	Laboratory (4)	Open 	15 / 33	Todd Delong	We 5:00PM - 6:00PM	Rice Hall 240
+ ECE 3501 Special Topics in Electrical and Computer Engineering
+ 	Embedded Systems Practicum
+21568 	001	Lecture (3)	Open	2 / 30	Joanne Dugan	TBA	TBA
+ 	Fundamental Signals & Systems
+21898 	002	Independent Study (3)	Open	1 / 30	Harry Powell	TBA	TBA
+ ECE 3660 Microelectronic Circuits
+16963 	001	Lecture (4)	Open	10 / 48	Steven Bowers	TuTh 11:00AM - 12:15PM	Thornton Hall A120
+17990 	101	Laboratory (4)	Open	6 / 16	Steven Bowers	We 11:00AM - 1:30PM	Thornton Hall E225
+17991 	102	Laboratory (4)	Open	4 / 16	Steven Bowers	Th 3:30PM - 6:00PM	Thornton Hall E225
+ ECE 3750 ECE Fundamentals III
+16964 	001	Lecture (4)	Open 	43 / 50	Harry Powell+1	TuTh 12:30PM - 3:15PM	Thornton Hall A120
+ ECE 4209 RF Circuit Design and Wireless Systems
+17693 	100	Lecture (3)	Open	15 / 28	Nicolas Barker	MoWe 10:00AM - 10:50AM	Thornton Hall E304
+17694 	101	Laboratory (3)	Open	9 / 14	Nicolas Barker	Th 9:00AM - 11:00AM	Thornton Hall E225
+17695 	102	Laboratory (3)	Open	6 / 7	Nicolas Barker	Fr 9:00AM - 11:00AM	Thornton Hall E225
+ ECE 4332 Introduction to VLSI Design
+16970 	001	Lecture (4.5)	Open	5 / 10	Mircea Stan	MoWe 2:00PM - 3:15PM	Mechanical Engr Bldg 213
+ ECE 4440 Embedded System Design
+19638 	001	Lecture (3)	Open	48 / 60	Harry Powell	TuTh 3:30PM - 4:45PM	Thornton Hall E303
+ ECE 4457 Computer Networks
+16971 	001	Lecture (3)	Open	29 / 40	Malathi Veeraraghavan	TuTh 12:30PM - 1:45PM	Thornton Hall E303
+ ECE 4501 Special Topics in Electrical and Computer Engineering
+ 	Digital Image Processing
+17823 	001	Lecture (3)	Open	7 / 15	Scott Acton	TuTh 9:30AM - 10:45AM	Thornton Hall E304
+ 	MDE Lab: Body Sensor Networks
+18053 	002	Laboratory (1.5)	Open 	22 / 33	John Lach	TuTh 2:00PM - 3:15PM	Thornton Hall E303
+ 	Optical Communication Devices
+20360 	003	Lecture (3)	Open	4 / 30	Andreas Beling	MoWe 3:30PM - 4:45PM	Thornton Hall E303
+ 	MDE Lab: FPGA Design
+18052 	004	Laboratory (1.5)	Closed	7 / 20	Mircea Stan	Mo 3:30PM - 4:45PM	Rice Hall 240
+ 	ASIC/SOC Design
+19647 	005	Laboratory (1.5)	Closed	6 / 20	Mircea Stan	We 3:30PM - 4:45PM	Rice Hall 240
+20489 	006	Independent Study (1 - 4)	Open	1 / 30	Maite Brandt-Pearce	TBA	TBA
+ 	MDE Lab: Human-Robot Interactn
+ 	MDE lab: Human-Robot Interaction
+21518 	007	Laboratory (1.5)	Closed 	20 / 20	Joanne Dugan	TuTh 2:00PM - 3:15PM	Rice Hall 240
+ 	Energy Efficient Power Reg
+21808 	008	Laboratory (1.5)	Open 	13 / 18	Harry Powell	TBA	TBA
+ ECE 4641 Bioelectricity
+21203 	001	Lecture (3)	Open	2 / 15	Yong Kim	MoWe 2:00PM - 3:15PM	Biomed Engr & Med Sci 1041
+ ECE 4710 Communications
+16969 	001	Lecture (3)	Open	5 / 16	Stephen Wilson	MoWeFr 11:00AM - 11:50AM	Thornton Hall E304
+ ECE 4715 Communication Systems Laboratory
+17113 	001	Laboratory (1.5)	Open	0 / 12	Stephen Wilson	Mo 5:00PM - 8:00PM	Thornton Hall E225
+ ECE 4850 Linear Control Systems
+16965 	001	Lecture (3)	Open	14 / 50	Gang Tao	TuTh 11:00AM - 12:15PM	Rice Hall 032
+19668 	002	Lecture (3)	Open 	2 / 5	Gang Tao	TuTh 11:00AM - 12:15PM	Desktop-Synchronous
+ ECE 4855 Control Laboratory
+16967 	001	Laboratory (1.5)	Open	4 / 14	Gang Tao	Tu 6:00PM - 9:00PM	Thornton Hall C123
+16966 	002	Laboratory (1.5)	Open	4 / 10	Gang Tao	We 3:30PM - 6:30PM	Thornton Hall C123
+ ECE 4907 Electrical Engineering Projects
+21341 	001	Independent Study (1 - 3)	Open	2 / 10	Zongli Lin	TBA	TBA
+21931 	002	Independent Study (3)	Open	2 / 30	Gregory Lewin	TBA	TBA
+21991 	003	Independent Study (1 - 3)	Open	1 / 5	Nathan Swami	TBA	TBA
+22056 	004	Independent Study (1 - 3)	Open	1 / 5	Mircea Stan	TBA	TBA
+22069 	005	Independent Study (1 - 3)	Open	1 / 10	James Aylor	TBA	TBA
+22070 	006	Independent Study (1 - 3)	Open	4 / 10	Joanne Dugan	TBA	TBA
+22094 	007	Independent Study (1 - 3)	Open	1 / 10	John Lach	TBA	TBA
+ ECE 4991 MDE-Capstone Design
+17797 	001	Lecture (3)	Open 	21 / 30	Harry Powell	TuTh 3:30PM - 4:45PM	Thornton Hall E303
+ ECE 5241 Optics and Lasers
+16972 	001	Lecture (3)	Open	15 / 16	Joe Campbell	TuTh 9:30AM - 10:45AM	Thornton Hall D115
+ ECE 5501 Special Topics in Electrical and Computer Engineering
+ 	Photonics I
+17118 	001	Lecture (0.5 - 3)	Open	0 / 14	Mool Gupta	TuTh 12:30PM - 1:45PM	Rice Hall 032
+ ECE 6163 Solid State Devices
+16975 	001	Lecture (3)	Open 	13 / 20	Avik Ghosh	MoWe 12:30PM - 1:45PM	Rice Hall 032
+20474 	501	Lecture (3)	Open	6 / 30	Avik Ghosh	MoWe 12:30PM - 1:45PM	Desktop-Synchronous
+ ECE 6332 VLSI Design
+16974 	001	Lecture (3)	Open 	14 / 20	Mircea Stan	MoWe 2:00PM - 3:15PM	Mechanical Engr Bldg 213
+ ECE 6501 Special Topics in Electrical and Computer Engineering
+ 	Photonics I
+17533 	001	Lecture (3)	Open 	3 / 14	Mool Gupta	TuTh 12:30PM - 1:45PM	Rice Hall 032
+ 	Optical Communication Devices
+20359 	002	Lecture (3)	Open	0 / 30	Staff	TBA	TBA
+ 	Optical Communication Devices
+20362 	003	Lecture (3)	Open	10 / 20	Andreas Beling	MoWe 3:30PM - 4:45PM	Thornton Hall E303
+ 	FPGA ASIC/SOC Design
+21834 	004	Laboratory (3)	Closed 	8 / 10	Mircea Stan	MoWe 3:30PM - 4:45PM	Rice Hall 240
+19649 	005	Lecture (3)	Open 	0 / 20	Toby Berger+1	We 3:30PM - 6:15PM	Materials Science Bldg 125
+ 	Human Robot Interaction
+21620 	007	Lecture (3)	Closed 	14 / 13	Joanne Dugan	TuTh 2:00PM - 3:15PM	TBA
+ 	RF Circuit Dsgn & Wireless Sys
+17856 	100	Lecture (3)	Open	13 / 14	Nicolas Barker	MoWe 10:00AM - 10:50AM	Thornton Hall E304
+ 	Photonics I
+20473 	501	Lecture (3)	Open	6 / 30	Mool Gupta	TuTh 12:30PM - 1:45PM	Desktop-Synchronous
+ ECE 6505 Electrical and Computer Engineering Seminar
+17067 	001	Seminar (1)	Open 	49 / 94	Stephen Wilson	Fr 2:00PM - 3:30PM	Mechanical Engr Bldg 339
+ ECE 6711 Probability and Stochastic Processes
+17739 	001	Lecture (3)	Open 	22 / 30	Toby Berger	TuTh 2:00PM - 3:15PM	Thornton Hall D222
+ ECE 6713 Communication Systems Engineering
+19630 	001	Lecture (3)	Open 	18 / 20	Stephen Wilson	MoWeFr 11:00AM - 11:50AM	Thornton Hall E304
+ ECE 6782 Digital Image Processing
+17796 	001	Lecture (3)	Open 	27 / 33	Scott Acton	TuTh 9:30AM - 10:45AM	Thornton Hall E304
+ ECE 6851 Linear Automatic Control Systems
+17621 	001	Lecture (3)	Open 	2 / 10	Gang Tao	TuTh 11:00AM - 12:15PM	Rice Hall 032
+ ECE 6852 Linear State Space Control Systems
+16973 	001	Lecture (3)	Open 	5 / 6	Zongli Lin	TuTh 12:30PM - 1:45PM	Mechanical Engr Bldg 214
+ ECE 6993 Independent Study
+18077 	001	Independent Study (1 - 3)	Open 	0 / 30	Nathan Swami	TBA	TBA
+ ECE 6995 Supervised Project Research
+21854 	001	Independent Study (3 - 6)	Open 	1 / 30	Gang Tao	TBA	TBA
+22120 	002	Independent Study (3 - 6)	Open	1 / 5	Mircea Stan	TBA	TBA
+ ECE 6996 Supervised Graduate Teaching Experience
+18058 	001	Independent Study (3)	Open 	9 / 30	Stephen Wilson	TBA	TBA
+ ECE 7555 Advanced Topics in Distance Learning
+ 	Network Arch & Protocols
+21833 	001	Lecture (3)	Open 	9 / 30	Malathi Veeraraghavan	We 7:00PM - 9:45PM	Desktop-Synchronous
+ ECE 7776 Advanced Digital Signal Processing
+19644 	001	Lecture (3)	Open 	9 / 20	Daniel Weller	TuTh 3:30PM - 4:45PM	Thornton Hall D115
+ ECE 7993 Independent Study
+21566 	001	Independent Study (3)	Open 	1 / 30	Avik Ghosh	TBA	TBA
+21873 	002	Independent Study (3)	Open 	2 / 30	Benton Calhoun	TBA	TBA
+22001 	003	Independent Study (3)	Open 	1 / 30	Arthur Lichtenberger	TBA	TBA
+ ECE 8897 Graduate Teaching Instruction
+18076 	001	Independent Study (1 - 12)	Open	5 / 30	Stephen Wilson	TBA	TBA
+ ECE 8999 Thesis
+ 
+ ECE 9999 Dissertation
+ 
+
+
+
+

@@ -1,0 +1,63 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Schedule of Classes for Astronomy - Fall 2016    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+      
+Normal Format   - Collapse All    + Expand All
+Astronomy
+ ASTR 1210 Introduction to the Sky and Solar System
+10351 	001	Lecture (3)	Open	309 / 465	Edward Murphy	MoWe 2:00PM - 3:15PM	Chemistry Bldg 402
+18542 	002	Lecture (3)	Closed	130 / 130	Aaron Evans	TuTh 9:30AM - 10:45AM	Clark Hall 107
+10352 	003	Lecture (3)	Open	113 / 130	Trinh Thuan	TuTh 2:00PM - 3:15PM	Clark Hall 107
+14046 	004	Lecture (3)	Closed	141 / 130	Zhi-Yun Li	TuTh 12:30PM - 1:45PM	Clark Hall 107
+ ASTR 1220 Introduction to Stars, Galaxies, and the Universe
+14211 	001	Lecture (3)	Open	119 / 135	Nitya Kallivayalil	MoWeFr 12:00PM - 12:50PM	Clark Hall 107
+10353 	002	Lecture (3)	Open	59 / 130	William Saslaw	TuTh 11:00AM - 12:15PM	Clark Hall 107
+10354 	003	Lecture (3)	Open	29 / 50	William Saslaw	TuTh 2:00PM - 3:15PM	Chemistry Bldg 304
+ ASTR 1559 New Course in Astronomy
+ 	Black Holes
+18543 	001	Lecture (3)	Open	125 / 130	Shane Davis	MoWeFr 11:00AM - 11:50AM	Clark Hall 107
+ ASTR 2110 Introduction to Astrophysics I
+10360 	100	Lecture (3)	Open	32 / 40	Craig Sarazin	MoWeFr 11:00AM - 11:50AM	Clark Hall G004
+10361 	101	Discussion (0)	Open	32 / 40	Staff	Fr 3:00PM - 3:50PM	Clark Hall G004
+ ASTR 3410 Archaeo-Astronomy
+13922 	001	Lecture (3)	Open 	27 / 50	Roger Chevalier	MoWeFr 10:00AM - 10:50AM	Gilmer Hall 141
+ ASTR 4810 Astrophysics
+11467 	001	Lecture (3)	Open	7 / 18	Philip Arras	TuTh 9:30AM - 10:45AM	Astronomy Bldg 265
+ ASTR 4993 Tutorial
+ 
+ ASTR 4998 Senior Thesis
+13797 	001	Independent Study (3)	Open	2 / 5	Philip Arras	TBA	TBA
+14221 	002	Independent Study (3)	Open	0 / 5	James Braatz	TBA	TBA
+14753 	003	Independent Study (3)	Open	1 / 5	Kelsey Johnson	TBA	TBA
+14298 	004	Independent Study (3)	Open	0 / 5	Nitya Kallivayalil	TBA	TBA
+14640 	005	Independent Study (3)	Open	0 / 5	Zhi-Yun Li	TBA	TBA
+14641 	006	Independent Study (3)	Open	2 / 5	Steven Majewski	TBA	TBA
+14718 	007	Independent Study (3)	Open	1 / 5	Scott Ransom	TBA	TBA
+14757 	008	Independent Study (3)	Open	1 / 5	Craig Sarazin	TBA	TBA
+14766 	009	Independent Study (3)	Open	0 / 5	Paul Seidelmann	TBA	TBA
+14767 	010	Independent Study (3)	Open	0 / 5	Anne Skrutskie	TBA	TBA
+14829 	011	Independent Study (3)	Open	0 / 5	Michael Skrutskie	TBA	TBA
+15897 	012	Independent Study (3)	Open	0 / 5	Anthony Remijan	TBA	TBA
+15938 	013	Independent Study (3)	Open	0 / 5	D. Whittle	TBA	TBA
+ ASTR 5010 Astrophysical Processes
+11573 	001	Lecture (3)	Open	6 / 7	Philip Arras	TuTh 9:30AM - 10:45AM	Astronomy Bldg 265
+ ASTR 5260 Introduction to Astrochemistry
+15249 	001	Lecture (3)	Open	1 / 10	Robin Garrod	TuTh 9:30AM - 10:45AM	Chemistry Bldg 305
+ ASTR 5340 Introductory Radio Astronomy
+18544 	001	Lecture (3)	Open	18 / 20	James Condon+1	MoWe 2:00PM - 3:15PM	Astronomy Bldg 265
+ ASTR 5630 Extragalactic Astronomy
+18545 	001	Lecture (3)	Open	11 / 15	D. Whittle	TuTh 2:00PM - 3:15PM	Astronomy Bldg 265
+ ASTR 6210 Introduction to Sky and Solar System Concepts
+10362 	001	Lecture (3)	Open 	1 / 10	Edward Murphy	MoWe 2:00PM - 3:15PM	Chemistry Bldg 402
+ ASTR 8500 Current Astronomical Topics
+10363 	001	Lecture (1)	Open	10 / 25	Roger Chevalier	Tu 4:00PM - 4:50PM	Astronomy Bldg 265
+ ASTR 9995 Supervised Research
+ 
+ ASTR 9999 Non-Topical Research
+ 
+
+
+
+

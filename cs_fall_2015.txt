@@ -1,0 +1,302 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Complete Schedule for the Computer Science Program - Fall 2015    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+
+
+Class Schedules Index	Course Catalogs Index	Class Search Page
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+      
+Printer-Friendly Format   - Collapse All    + Expand All
+Computer Science
+ CS 1010	Introduction to Information Technology
+Syllabus  17492 	001	Lecture (3 Units)	Open 	74 / 75	Craig Dill	MoWe 2:00PM - 3:15PM	Thornton Hall E316
+ CS 1110	Introduction to Programming
+17730 	100	Lecture (3 Units)	Open	218 / 230	Mark Sherriff	MoWeFr 3:00PM - 3:50PM	Wilson Hall 402
+ 	Which CS 1 course should you take? Info at https://cs1110.cs.virginia.edu/whichcs1.html - Information on when CS courses open can be found at http://www.cs.virginia.edu/~cohoon/registration-policy/fall-2015/
+16925 	101	Laboratory (3 Units)	Open	41 / 46	Mark Sherriff	Th 12:30PM - 1:45PM	Olsson Hall 001
+16927 	102	Laboratory (3 Units)	Open	44 / 46	Mark Sherriff	Th 9:30AM - 10:45AM	Olsson Hall 001
+16928 	103	Laboratory (3 Units)	Open	44 / 46	Mark Sherriff	Th 11:00AM - 12:15PM	Olsson Hall 001
+16926 	104	Laboratory (3 Units)	Open	43 / 46	Mark Sherriff	Th 2:00PM - 3:15PM	Olsson Hall 001
+17627 	105	Laboratory (3 Units)	Closed	 46 / 46	Mark Sherriff	Th 3:30PM - 4:45PM	Olsson Hall 001
+ CS 1111	Introduction to Programming
+21451 	001	Lecture (3 Units)	Open	64 / 65	Mary Smith	MoWe 2:00PM - 3:15PM	Chemical Engineering Bldg 005
+ CS 1112	Introduction to Programming
+Website  16929 	001	Lecture (3 Units)	Open	144 / 145	James Cohoon+1	MoWeFr 2:00PM - 3:15PM	Rice Hall 130
+ 	The course is full. No one else will be added.
+ CS 1113	Introduction to Programming
+20394 	100	Lecture (3 Units)	Closed	46 / 45	Kevin Sullivan	MoWeFr 11:00AM - 11:50AM	Rice Hall 130
+Kevin Sullivan	Th 3:30PM - 4:45PM	Rice Hall 130
+20395 	200	Lecture (3 Units)	Open	40 / 45	Kevin Sullivan	MoWeFr 11:00AM - 11:50AM	Rice Hall 130
+Kevin Sullivan	Th 6:30PM - 7:45PM	Rice Hall 130
+20396 	300	Lecture (3 Units)	Open 	56 / 60	Thomas Horton	MoWeFr 1:00PM - 1:50PM	Olsson Hall 120
+Thomas Horton	Th 5:00PM - 6:15PM	Rice Hall 130
+ CS 1501	Special Topics in Computer Science
+ 	Cracking the Technical Intervw
+20932 	001	Lecture (1 Units)	Open	33 / 40	Mark Floryan	Tu 4:00PM - 4:50PM	Mechanical Engr Bldg 341
+ 	A Whirlwind Intro to Computing
+Website  20933 	002	Lecture (1 Units)	Open	37 / 40	Hunter Leath+1	Th 4:00PM - 4:50PM	Olsson Hall 011
+ 	A student taught course that will examine computers from the ground up WITHOUT PROGRAMMING.
+ CS 2102	Discrete Mathematics I
+17115 	001	Lecture (3 Units)	Closed	209 / 200	David Edwards	TuTh 2:00PM - 3:15PM	Chemistry Bldg 402
+20413 	002	Lecture (3 Units)	Open	98 / 100	David Edwards	TuTh 11:00AM - 12:15PM	Thornton Hall E303
+ CS 2110	Software Development Methods
+ 	CS Registration Policy: http://www.cs.virginia.edu/~cohoon/registration-policy/fall-2015/
+Syllabus  16930 	001	Lecture (3 Units)	Closed	88 / 50	David Edwards	MoWeFr 3:00PM - 3:50PM	Physics Bldg 203
+Syllabus  16931 	002	Lecture (3 Units)	Closed	149 / 135	Nada Basit	MoWeFr 12:00PM - 12:50PM	Olsson Hall 120
+Syllabus  17779 	003	Lecture (3 Units)	Closed	155 / 135	Nada Basit	MoWeFr 1:00PM - 1:50PM	Rice Hall 130
+Syllabus  16933 	100	Laboratory (0 Units)	Closed	102 / 86	Nada Basit	Mo 5:00PM - 6:45PM	Rice Hall 130
+Syllabus  16934 	101	Laboratory (0 Units)	Closed	93 / 88	Nada Basit	Mo 7:00PM - 8:45PM	Rice Hall 130
+Syllabus  16935 	102	Laboratory (0 Units)	Closed	105 / 88	Nada Basit	Tu 5:10PM - 6:55PM	Rice Hall 130
+Syllabus  16932 	103	Laboratory (0 Units)	Closed	92 / 88	Nada Basit	Tu 7:00PM - 8:45PM	Rice Hall 130
+ CS 2150	Program and Data Representation
+16936 	001	Lecture (3 Units)	Open	249 / 270	Aaron Bloomfield	MoWeFr 11:00AM - 11:50AM	Gilmer Hall 130
+17557 	102	Laboratory (0 Units)	Closed	45 / 45	Aaron Bloomfield	Tu 12:15PM - 1:50PM	Olsson Hall 001
+17780 	103	Laboratory (0 Units)	Open	44 / 45	Aaron Bloomfield	Tu 3:50PM - 5:25PM	Olsson Hall 001
+17740 	104	Laboratory (0 Units)	Open	43 / 45	Aaron Bloomfield	Tu 5:30PM - 7:05PM	Olsson Hall 001
+17687 	105	Laboratory (0 Units)	Open	43 / 45	Aaron Bloomfield	Tu 7:30PM - 9:05PM	Olsson Hall 001
+20895 	106	Laboratory (0 Units)	Open	37 / 45	Aaron Bloomfield	Tu 2:00PM - 3:35PM	Olsson Hall 001
+21801 	107	Laboratory (0 Units)	Open	37 / 45	Aaron Bloomfield	Tu 9:15AM - 10:50AM	Olsson Hall 001
+ CS 2330	Digital Logic Design
+Syllabus  16937 	100	Lecture (3 Units)	Closed 	166 / 140	Joanne Dugan	TuTh 12:30PM - 1:45PM	Rice Hall 130
+Syllabus  17098 	101	Studio (3 Units)	Open 	24 / 25	Joanne Dugan	Mo 3:30PM - 4:45PM	Olsson Hall 005
+Syllabus  17099 	102	Studio (3 Units)	Closed 	25 / 25	Joanne Dugan	Mo 5:00PM - 6:15PM	Olsson Hall 005
+Syllabus  17100 	103	Studio (3 Units)	Closed 	27 / 25	Joanne Dugan	Tu 3:30PM - 4:45PM	Olsson Hall 011
+Syllabus  17101 	104	Studio (3 Units)	Open 	24 / 25	Joanne Dugan	Tu 5:00PM - 6:15PM	Thornton Hall E303
+Syllabus  17672 	105	Studio (3 Units)	Open 	16 / 25	Joanne Dugan	Tu 6:30PM - 7:45PM	Thornton Hall E303
+Syllabus  17728 	106	Studio (3 Units)	Closed 	25 / 25	Joanne Dugan	We 3:30PM - 4:45PM	Olsson Hall 005
+Syllabus  17465 	107	Studio (3 Units)	Closed 	25 / 25	Joanne Dugan	We 5:00PM - 6:15PM	Olsson Hall 005
+Syllabus  17731 	200	Lecture (3 Units)	Open 	13 / 15	Joanne Dugan	TuTh 12:30PM - 1:45PM	Desktop-Synchronous
+Syllabus  17732 	201	Studio (3 Units)	Open 	13 / 15	Joanne Dugan	TBA	Desktop-Synchronous
+ CS 2501	Special Topics in Computer Science
+ 	Only open to TAs; 1 credit required for first-time TAs
+Website  21850 	001	Practicum (1 - 3 Units)	Closed	49 / 30	Luther Tychonievich	TBA	TBA
+ CS 3102	Theory of Computation
+17085 	001	Lecture (3 Units)	Open	71 / 75	Worthy Martin	TuTh 2:00PM - 3:15PM	Thornton Hall E316
+ CS 3205	HCI in Software Development
+17994 	001	Lecture (3 Units)	Closed	131 / 130	Mark Floryan	MoWe 3:30PM - 4:45PM	Rice Hall 130
+ CS 3240	Advanced Software Development Techniques
+17688 	001	Lecture (3 Units)	Open	116 / 120	Thomas Horton	TuTh 2:00PM - 3:15PM	Rice Hall 130
+21448 	002	Lecture (3 Units)	Closed	0 / 0	Mary Smith	TuTh 2:00PM - 3:15PM	Olsson Hall 120
+17781 	101	Laboratory (3 Units)	Closed	48 / 48	Thomas Horton	Mo 2:00PM - 3:20PM	Olsson Hall 001
+17782 	102	Laboratory (3 Units)	Open	68 / 72	Thomas Horton	Mo 5:00PM - 6:20PM	Olsson Hall 009
+ CS 3330	Computer Architecture
+Website  16938 	001	Lecture (3 Units)	Open	169 / 184	Luther Tychonievich	TuTh 3:30PM - 4:45PM	Wilson Hall 301
+17102 	101	Laboratory (3 Units)	Open	41 / 46	Luther Tychonievich	We 3:30PM - 4:45PM	Olsson Hall 001
+17103 	102	Laboratory (3 Units)	Open	43 / 46	Luther Tychonievich	We 5:00PM - 6:15PM	Olsson Hall 001
+17104 	103	Laboratory (3 Units)	Open	42 / 46	Luther Tychonievich	We 6:30PM - 7:45PM	Olsson Hall 001
+18022 	104	Laboratory (3 Units)	Open	43 / 46	Luther Tychonievich	We 2:00PM - 3:15PM	Olsson Hall 001
+ CS 4102	Algorithms
+17689 	001	Lecture (3 Units)	Open	108 / 125	Gabriel Robins	TuTh 9:30AM - 10:45AM	Rice Hall 130
+ CS 4414	Operating Systems
+16939 	001	Lecture (3 Units)	Open	112 / 120	Kong-Cheng Wong	TuTh 11:00AM - 12:15PM	Olsson Hall 120
+ CS 4457	Computer Networks
+16941 	001	Lecture (3 Units)	Open	24 / 40 	Malathi Veeraraghavan	TuTh 12:30PM - 1:45PM	Thornton Hall E303
+ CS 4501	Special Topics in Computer Science
+ 	Cryptocurrency Cabal
+ 	Cryptocurrency Cabal
+Website  17950 	001	Lecture (3 Units)	Open	30 / 75	David Evans	MoWe 2:00PM - 3:15PM	Olsson Hall 120
+ 	Internet of Things
+ 	Internet of Things
+17952 	002	Lecture (3 Units)	Open	13 / 30	Cameron Whitehouse	TuTh 11:00AM - 12:15PM	Rice Hall 340
+ 	Prog. Languages for Web Apps
+19483 	003	Lecture (3 Units)	Open	71 / 81	Mary Soffa	MoWe 3:30PM - 4:45PM	Olsson Hall 009
+ 	Information Retrieval
+ 	Information Retrieval
+Website  19484 	004	Lecture (3 Units)	Open	44 / 55	Hongning Wang	MoWe 5:00PM - 6:15PM	Olsson Hall 120
+ 	Internet Scale Applications
+20229 	005	Lecture (3 Units)	Closed 	16 / 15	Thomas Pinckney	Mo 2:00PM - 3:15PM	Rice Hall 536
+Thomas Pinckney	Fr 4:00PM - 5:15PM	Rice Hall 340
+ CS 4630	Defense Against the Dark Arts
+Syllabus  19485 	001	Lecture (3 Units)	Open	73 / 90	Wei Wang	MoWeFr 9:00AM - 9:50AM	Rice Hall 130
+ CS 4710	Artificial Intelligence
+20207 	001	Lecture (3 Units)	Open	54 / 80	Mark Floryan	TuTh 9:30AM - 10:45AM	Olsson Hall 009
+ CS 4720	Web and Mobile Systems
+17646 	001	Lecture (3 Units)	Open	75 / 80	Mark Sherriff	MoWeFr 10:00AM - 10:50AM	Rice Hall 130
+ CS 4750	Database Systems
+21539 	001	Lecture (3 Units)	Open 	33 / 80	Abdeltawab Hendawi	TuTh 5:00PM - 6:15PM	Thornton Hall E316
+ CS 4753	Electronic Commerce Technologies
+Syllabus  16940 	001	Lecture (3 Units)	Open	48 / 75	Alfred Weaver	TuTh 3:30PM - 4:45PM	Thornton Hall E316
+ CS 4970	Capstone Practicum I
+ 	Service Learning Practicum
+Website  17800 	001	Practicum (3 Units)	Open	66 / 120	Aaron Bloomfield	MoWeFr 12:00PM - 12:50PM	Rice Hall 130
+ 	For how to enroll see http://www.cs.virginia.edu/~asb/slp/students.php#enrollment
+ CS 4980	Capstone Research
+17802 	001	Independent Study (1 - 3 Units)	Open	0 / 30	Kevin Skadron	TBA	TBA
+17803 	002	Independent Study (1 - 3 Units)	Open	1 / 30	Jack Davidson	TBA	TBA
+17804 	003	Independent Study (1 - 3 Units)	Open	1 / 30	Andrew Grimshaw	TBA	TBA
+17805 	004	Independent Study (1 - 3 Units)	Open	0 / 30	John Knight	TBA	TBA
+17806 	005	Independent Study (1 - 3 Units)	Open	2 / 30	Gabriel Robins	TBA	TBA
+17807 	006	Independent Study (1 - 3 Units)	Open	2 / 30	Mary Soffa	TBA	TBA
+17808 	007	Independent Study (1 - 3 Units)	Open	0 / 30	John Stankovic	TBA	TBA
+17809 	008	Independent Study (1 - 3 Units)	Open	2 / 30	Alfred Weaver	TBA	TBA
+17810 	009	Independent Study (1 - 3 Units)	Open	0 / 30	Aaron Bloomfield	TBA	TBA
+17811 	010	Independent Study (1 - 3 Units)	Open	0 / 30	James Cohoon	TBA	TBA
+17812 	011	Independent Study (1 - 3 Units)	Open	2 / 30	David Evans	TBA	TBA
+17814 	013	Independent Study (1 - 3 Units)	Open	5 / 30	Thomas Horton	TBA	TBA
+17815 	014	Independent Study (1 - 3 Units)	Open	0 / 30	Marty Humphrey	TBA	TBA
+17817 	016	Independent Study (1 - 3 Units)	Open	0 / 30	Worthy Martin	TBA	TBA
+17818 	017	Independent Study (1 - 3 Units)	Open	2 / 30	Kevin Sullivan	TBA	TBA
+17819 	018	Independent Study (1 - 3 Units)	Open	3 / 30	Westley Weimer	TBA	TBA
+17820 	019	Independent Study (1 - 3 Units)	Open	2 / 30	Cameron Whitehouse	TBA	TBA
+17821 	020	Independent Study (1 - 3 Units)	Open	0 / 30	Abhi Shelat	TBA	TBA
+17822 	021	Independent Study (1 - 3 Units)	Open	1 / 30	Mark Sherriff	TBA	TBA
+17892 	022	Independent Study (1 - 3 Units)	Open	5 / 30	Mark Floryan	TBA	TBA
+17901 	023	Independent Study (1 - 3 Units)	Open	2 / 30	Yanjun Qi	TBA	TBA
+18000 	024	Independent Study (1 - 3 Units)	Open	1 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+18010 	025	Independent Study (1 - 3 Units)	Open	2 / 30	Connelly Barnes	TBA	TBA
+22019 	026	Independent Study (1 - 3 Units)	Open	0 / 30	Nada Basit	TBA	TBA
+22020 	027	Independent Study (1 - 3 Units)	Open	0 / 30	David Edwards	TBA	TBA
+22021 	028	Independent Study (1 - 3 Units)	Open	0 / 30	Kong-Cheng Wong	TBA	TBA
+22022 	029	Independent Study (1 - 3 Units)	Open	0 / 30	Mary Smith	TBA	TBA
+22023 	030	Independent Study (1 - 3 Units)	Open	5 / 30	Luther Tychonievich	TBA	TBA
+22024 	031	Independent Study (1 - 3 Units)	Open	2 / 30	Hongning Wang	TBA	TBA
+ CS 4993	Independent Study
+ 
+ CS 4998	Distinguished BA Majors Research
+17117 	001	Independent Study (3 Units)	Open	3 / 30	Westley Weimer	TBA	TBA
+ CS 5012	Foundations of Computer Science
+18050 	001	Lecture (3 Units)	Open 	45 / 50	Nada Basit	MoWe 2:00PM - 3:15PM	Olsson Hall 005
+ CS 6161	Design and Analysis of Algorithms
+20072 	001	Lecture (3 Units)	Open 	42 / 60	Mohammad Mahmoody-Ghidary	TuTh 5:00PM - 6:15PM	Olsson Hall 005
+ 	Pre-reqs for undergrads: CS 3102 (Theory of Computation) and CS 4102 (Algorithms). This will be enforced.
+ CS 6190	Computer Science Perspectives
+17065 	001	Lecture (1 Units)	Open 	37 / 48	Kevin Skadron	MoWe 9:00AM - 10:15AM	Thornton Hall D221
+ CS 6316	Machine Learning
+ 	Machine Learning
+Website  20412 	001	Lecture (3 Units)	Open 	48 / 52	Yanjun Qi	MoWe 3:30PM - 4:45PM	Mechanical Engr Bldg 341
+ CS 6456	Operating Systems
+17691 	001	Lecture (3 Units)	Open 	24 / 36	Kong-Cheng Wong	MoWe 11:00AM - 12:15PM	Rice Hall 340
+ CS 6501	Special Topics in Computer Science
+ 	Large-scale data-driven graphics and vision
+Website  20071 	001	Lecture (3 Units)	Open 	7 / 30	Connelly Barnes	TuTh 5:00PM - 6:15PM	Thornton Hall E304
+ 	Cloud and Big Data
+Website  17850 	002	Lecture (3 Units)	Open 	12 / 30	Marty Humphrey	TuTh 2:00PM - 3:15PM	Rice Hall 340
+ 	Smart Cities, Homes, Phones, and Beyond
+Syllabus  20230 	005	Lecture (3 Units)	Open 	34 / 38	John Stankovic	TuTh 12:30PM - 1:45PM	Thornton Hall D223
+ 	Information Retrieval
+20411 	006	Lecture (3 Units)	Open 	19 / 20 	Hongning Wang	MoWe 5:00PM - 6:15PM	Olsson Hall 120
+ 	Wide Area Distributed Systems
+21687 	007	Lecture (3 Units)	Open 	4 / 28	Andrew Grimshaw	MoWe 11:00AM - 12:15PM	TBA
+ 	Learning Theory
+Syllabus  21688 	008	Lecture (3 Units)	Open 	7 / 30	Dimitrios Diochnos	TuTh 11:00AM - 12:15PM	Contact Department
+ CS 6610	Programming Languages
+Website  21685 	001	Lecture (3 Units)	Open 	16 / 30	Westley Weimer	MoWe 2:00PM - 3:15PM	Rice Hall 340
+ CS 7993	Independent Study
+17903 	001	Independent Study (1 - 12 Units)	Open	0 / 30	James Cohoon	TBA	TBA
+17904 	002	Independent Study (1 - 12 Units)	Open	0 / 30	Mark Sherriff	TBA	TBA
+17442 	003	Independent Study (1 - 12 Units)	Open 	0 / 30	Kevin Skadron	TBA	TBA
+17902 	005	Independent Study (1 - 12 Units)	Open	1 / 30	Jack Davidson	TBA	TBA
+17905 	006	Independent Study (1 - 12 Units)	Open	0 / 30	David Evans	TBA	TBA
+17906 	007	Independent Study (1 - 12 Units)	Open	1 / 30	Marty Humphrey	TBA	TBA
+17907 	008	Independent Study (1 - 12 Units)	Open	1 / 30	Mary Soffa	TBA	TBA
+17908 	009	Independent Study (1 - 12 Units)	Open	0 / 30	John Stankovic	TBA	TBA
+17909 	010	Independent Study (1 - 12 Units)	Open	0 / 30	John Knight	TBA	TBA
+17910 	011	Independent Study (1 - 12 Units)	Open	0 / 30	Abhi Shelat	TBA	TBA
+17912 	013	Independent Study (1 - 12 Units)	Open	0 / 30	Aaron Bloomfield	TBA	TBA
+17913 	014	Independent Study (1 - 12 Units)	Open	0 / 30	Andrew Grimshaw	TBA	TBA
+17914 	015	Independent Study (1 - 12 Units)	Open	0 / 30	Thomas Horton	TBA	TBA
+17915 	016	Independent Study (1 - 12 Units)	Open	0 / 30	Worthy Martin	TBA	TBA
+17916 	017	Independent Study (1 - 12 Units)	Open	0 / 30	Gabriel Robins	TBA	TBA
+17917 	018	Independent Study (1 - 12 Units)	Open	0 / 30	Kevin Sullivan	TBA	TBA
+17918 	019	Independent Study (1 - 12 Units)	Open	0 / 30	Alfred Weaver	TBA	TBA
+17919 	020	Independent Study (1 - 12 Units)	Open	1 / 30	Westley Weimer	TBA	TBA
+17920 	021	Independent Study (1 - 12 Units)	Open	0 / 30	Cameron Whitehouse	TBA	TBA
+17921 	022	Independent Study (1 - 12 Units)	Open	0 / 30	Connelly Barnes	TBA	TBA
+17922 	023	Independent Study (1 - 12 Units)	Open	1 / 30	Yanjun Qi	TBA	TBA
+17923 	024	Independent Study (1 - 12 Units)	Open	0 / 30	Mark Floryan	TBA	TBA
+18002 	025	Independent Study (1 - 12 Units)	Open	2 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+20875 	026	Independent Study (1 - 12 Units)	Open	2 / 30	Hongning Wang	TBA	TBA
+ CS 7995	Supervised Project Research
+17393 	001	Independent Study (3 Units)	Open 	1 / 30	Jack Davidson	TBA	TBA
+17394 	002	Independent Study (3 Units)	Open 	1 / 30	David Evans	TBA	TBA
+18008 	003	Independent Study (3 Units)	Open	1 / 30	Connelly Barnes	TBA	TBA
+18009 	004	Independent Study (3 Units)	Open	1 / 30	Yanjun Qi	TBA	TBA
+17395 	005	Independent Study (3 Units)	Open 	0 / 30	Marty Humphrey	TBA	TBA
+17396 	006	Independent Study (3 Units)	Open 	0 / 30	Kevin Skadron	TBA	TBA
+17397 	007	Independent Study (3 Units)	Open 	0 / 30	Mary Soffa	TBA	TBA
+17398 	008	Independent Study (3 Units)	Open 	0 / 30	John Stankovic	TBA	TBA
+17443 	009	Independent Study (3 Units)	Open 	0 / 30	John Knight	TBA	TBA
+17536 	010	Independent Study (3 Units)	Open 	0 / 30	Abhi Shelat	TBA	TBA
+17604 	012	Independent Study (3 Units)	Open 	0 / 30	Aaron Bloomfield	TBA	TBA
+17605 	014	Independent Study (3 Units)	Open 	1 / 30	James Cohoon	TBA	TBA
+17606 	015	Independent Study (3 Units)	Open 	0 / 30	Andrew Grimshaw	TBA	TBA
+17607 	016	Independent Study (3 Units)	Open 	1 / 30	Hongning Wang	TBA	TBA
+17608 	017	Independent Study (3 Units)	Open 	0 / 30	Thomas Horton	TBA	TBA
+17609 	018	Independent Study (3 Units)	Open 	0 / 30	Worthy Martin	TBA	TBA
+17934 	019	Independent Study (3 Units)	Open 	0 / 30	Malathi Veeraraghavan	TBA	TBA
+17610 	020	Independent Study (3 Units)	Open 	0 / 30	Gabriel Robins	TBA	TBA
+17611 	021	Independent Study (3 Units)	Open 	0 / 30	Mark Sherriff	TBA	TBA
+18003 	022	Independent Study (3 Units)	Open	1 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+17612 	023	Independent Study (3 Units)	Open 	1 / 30	Kevin Sullivan	TBA	TBA
+17613 	024	Independent Study (3 Units)	Open 	0 / 30	Alfred Weaver	TBA	TBA
+17614 	025	Independent Study (3 Units)	Open 	0 / 30	Westley Weimer	TBA	TBA
+17615 	026	Independent Study (3 Units)	Open 	0 / 30	Cameron Whitehouse	TBA	TBA
+17935 	027	Independent Study (3 Units)	Open 	0 / 30	Malathi Veeraraghavan	TBA	TBA
+ CS 8501	Special Topics in Computer Science
+ 	Challenges in Binary Analysis
+21785 	001	Lecture (3 Units)	Open 	4 / 30	Jack Davidson	MoWe 12:30PM - 1:45PM	Rice Hall 340
+ CS 8524	Topics in Software Engineering
+17494 	001	Lecture (1 - 3 Units)	Open	8 / 30	Kevin Sullivan	TBA	TBA
+ CS 8897	Graduate Teaching Instruction
+17400 	001	Independent Study (1 - 12 Units)	Open	2 / 30	Jack Davidson	TBA	TBA
+17401 	002	Independent Study (1 - 12 Units)	Open	0 / 30	David Evans	TBA	TBA
+17402 	003	Independent Study (1 - 12 Units)	Open	1 / 30	James Cohoon	TBA	TBA
+18011 	004	Independent Study (1 - 12 Units)	Open	0 / 30	Connelly Barnes	TBA	TBA
+17403 	005	Independent Study (1 - 12 Units)	Open	0 / 30	Marty Humphrey	TBA	TBA
+17404 	006	Independent Study (1 - 12 Units)	Open	0 / 30	Kevin Skadron	TBA	TBA
+17405 	007	Independent Study (1 - 12 Units)	Open	1 / 30	Mary Soffa	TBA	TBA
+17406 	008	Independent Study (1 - 12 Units)	Open	1 / 30	John Stankovic	TBA	TBA
+17537 	010	Independent Study (1 - 12 Units)	Open	4 / 30	Aaron Bloomfield	TBA	TBA
+17538 	011	Independent Study (1 - 12 Units)	Open	0 / 30	Andrew Grimshaw	TBA	TBA
+17540 	013	Independent Study (1 - 12 Units)	Open	1 / 30	Thomas Horton	TBA	TBA
+17542 	015	Independent Study (1 - 12 Units)	Open	0 / 30	John Knight	TBA	TBA
+17543 	016	Independent Study (1 - 12 Units)	Open	2 / 30	Worthy Martin	TBA	TBA
+17886 	017	Independent Study (1 - 12 Units)	Open	5 / 30	Nada Basit	TBA	TBA
+17544 	018	Independent Study (1 - 12 Units)	Open	1 / 30	Gabriel Robins	TBA	TBA
+17545 	019	Independent Study (1 - 12 Units)	Open	0 / 30	Abhi Shelat	TBA	TBA
+18004 	020	Independent Study (1 - 12 Units)	Open	2 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+17546 	021	Independent Study (1 - 12 Units)	Open	1 / 30	Kevin Sullivan	TBA	TBA
+17547 	022	Independent Study (1 - 12 Units)	Open	1 / 30	Alfred Weaver	TBA	TBA
+17548 	023	Independent Study (1 - 12 Units)	Open	0 / 30	Westley Weimer	TBA	TBA
+17549 	024	Independent Study (1 - 12 Units)	Open	0 / 30	Cameron Whitehouse	TBA	TBA
+17552 	025	Independent Study (1 - 12 Units)	Open	1 / 30	Mark Sherriff	TBA	TBA
+21909 	026	Independent Study (1 - 12 Units)	Open	2 / 30	Craig Dill	TBA	TBA
+21918 	027	Independent Study (1 - 12 Units)	Open	2 / 30	Kong-Cheng Wong	TBA	TBA
+17772 	028	Independent Study (1 - 12 Units)	Open	3 / 30	David Edwards	TBA	TBA
+21910 	029	Independent Study (1 - 12 Units)	Open	3 / 30	Hongning Wang	TBA	TBA
+17889 	030	Independent Study (1 - 12 Units)	Open	1 / 30	Mark Floryan	TBA	TBA
+17890 	031	Independent Study (1 - 12 Units)	Open	3 / 30	Luther Tychonievich	TBA	TBA
+17891 	032	Independent Study (1 - 12 Units)	Open	2 / 30	Yanjun Qi	TBA	TBA
+ CS 8999	Thesis
+ 
+ CS 9897	Graduate Teaching Instruction
+17652 	001	Independent Study (1 - 12 Units)	Open	0 / 30	Aaron Bloomfield	TBA	TBA
+18014 	002	Independent Study (1 - 12 Units)	Open	0 / 30	Connelly Barnes	TBA	TBA
+17653 	003	Independent Study (1 - 12 Units)	Open	0 / 30	James Cohoon	TBA	TBA
+17654 	004	Independent Study (1 - 12 Units)	Open	0 / 30	Jack Davidson	TBA	TBA
+17655 	005	Independent Study (1 - 12 Units)	Open	0 / 30	David Evans	TBA	TBA
+17656 	006	Independent Study (1 - 12 Units)	Open	0 / 30	Andrew Grimshaw	TBA	TBA
+21908 	007	Independent Study (1 - 12 Units)	Open	2 / 30	David Edwards	TBA	TBA
+17658 	008	Independent Study (1 - 12 Units)	Open	0 / 30	Thomas Horton	TBA	TBA
+17659 	009	Independent Study (1 - 12 Units)	Open	0 / 30	Marty Humphrey	TBA	TBA
+17660 	010	Independent Study (1 - 12 Units)	Open	0 / 30	John Knight	TBA	TBA
+21906 	011	Independent Study (1 - 12 Units)	Open	1 / 30	Mark Floryan	TBA	TBA
+17662 	012	Independent Study (1 - 12 Units)	Open	0 / 30	Worthy Martin	TBA	TBA
+18015 	013	Independent Study (1 - 12 Units)	Open	0 / 30	Yanjun Qi	TBA	TBA
+17663 	014	Independent Study (1 - 12 Units)	Open	0 / 30	Abhi Shelat	TBA	TBA
+17664 	015	Independent Study (1 - 12 Units)	Open	0 / 30	Mark Sherriff	TBA	TBA
+17665 	016	Independent Study (1 - 12 Units)	Open	0 / 30	Kevin Skadron	TBA	TBA
+17666 	017	Independent Study (1 - 12 Units)	Open	0 / 30	Mary Soffa	TBA	TBA
+18006 	018	Independent Study (1 - 12 Units)	Open	0 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+17667 	019	Independent Study (1 - 12 Units)	Open	0 / 30	John Stankovic	TBA	TBA
+17668 	020	Independent Study (1 - 12 Units)	Open	0 / 30	Kevin Sullivan	TBA	TBA
+17669 	021	Independent Study (1 - 12 Units)	Open	0 / 30	Alfred Weaver	TBA	TBA
+17670 	022	Independent Study (1 - 12 Units)	Open	0 / 30	Westley Weimer	TBA	TBA
+17671 	023	Independent Study (1 - 12 Units)	Open	0 / 30	Cameron Whitehouse	TBA	TBA
+ CS 9999	Dissertation
+ 
+
+
+
+

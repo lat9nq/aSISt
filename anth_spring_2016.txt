@@ -1,0 +1,160 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Schedule of Classes for Anthropology - Spring 2016    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+      
+Anthropology
+ ANTH 1010 Introduction to Anthropology
+10992 	001	Lecture (3)	Closed 	30 / 30	Giancarlo Rolando-Betancourt	MoWeFr 9:00AM - 9:50AM	New Cabell Hall 383
+ ANTH 1050 Anthropology of Globalization
+15302 	100	Lecture (3)	Closed	119 / 120	Ira Bashkow	MoWe 3:30PM - 4:20PM	Wilson Hall 301
+15303 	101	Discussion (3)	Closed	21 / 20	Xinyan Peng	We 9:00AM - 9:50AM	Brooks Hall 103
+15304 	102	Discussion (3)	Closed	21 / 20	Dionisios Kavadias	We 11:00AM - 11:50AM	Brooks Hall 103
+15305 	103	Discussion (3)	Closed	20 / 20	Xinyan Peng	Th 4:00PM - 4:50PM	New Cabell Hall 395
+15306 	104	Discussion (3)	Closed	20 / 20	Xinyan Peng	Th 5:00PM - 5:50PM	New Cabell Hall 283
+15307 	105	Discussion (3)	Open	18 / 20	Dionisios Kavadias	Fr 9:00AM - 9:50AM	New Cabell Hall 183
+15308 	106	Discussion (3)	Open	19 / 20	Dionisios Kavadias	Fr 10:00AM - 10:50AM	Maury Hall 115
+ ANTH 2280 Medical Anthropology
+13881 	001	Lecture (3)	Open	58 / 60	Carrie Douglass	TuTh 3:30PM - 4:45PM	Dell 1 105
+ ANTH 2285 Anthropology of Development and Humanitarianism
+20622 	001	Lecture (3)	Closed	59 / 60	China Scherz	TuTh 2:00PM - 3:15PM	McLeod Hall 2007
+ ANTH 2320 Anthropology of Religion
+19263 	001	Lecture (3)	Open 	28 / 30	Dannah Dennis	MoWeFr 9:00AM - 9:50AM	Wilson Hall 214
+ ANTH 2360 Don Juan and Castaneda
+10993 	001	Lecture (3)	Closed	59 / 60	Roy Wagner	TuTh 9:30AM - 10:45AM	Gibson Hall 211
+ ANTH 2365 Art and Anthropology
+12645 	001	Lecture (3)	Open	30 / 35	Carrie Douglass	TuTh 11:00AM - 12:15PM	New Cabell Hall 032
+ ANTH 2410 Sociolinguistics
+19264 	100	Lecture (3)	Open	116 / 120	Ellen Contini-Morava	TuTh 12:30PM - 1:20PM	Wilson Hall 301
+19265 	101	Discussion (3)	Closed	21 / 20	Grace Reynolds	Mo 10:00AM - 10:50AM	Dell 2 102
+19266 	102	Discussion (3)	Closed	20 / 20	Grace Reynolds	We 9:00AM - 9:50AM	Chemistry Bldg 262
+19267 	103	Discussion (3)	Open	19 / 20	Grace Reynolds	We 10:00AM - 10:50AM	Chemistry Bldg 262
+19268 	104	Discussion (3)	Closed	20 / 20	Grace Reynolds	We 4:00PM - 4:50PM	Chemistry Bldg 262
+19269 	105	Discussion (3)	Open	17 / 20	Grace Reynolds	Mo 11:00AM - 11:50AM	Dell 2 102
+19270 	106	Discussion (3)	Open	19 / 20	Grace Reynolds	We 3:00PM - 3:50PM	Chemistry Bldg 262
+ ANTH 2420 Language and Gender
+15309 	001	Lecture (3)	Closed	30 / 30	Alison Broach	MoWeFr 12:00PM - 12:50PM	New Cabell Hall 338
+ ANTH 2430 Languages of the World
+19271 	100	Lecture (3)	Closed	60 / 60	Lise Dobrin	MoWe 10:00AM - 10:50AM	Maury Hall 104
+19272 	101	Discussion (3)	Closed	20 / 20	Nicholas Piccinini	Th 7:00PM - 7:50PM	New Cabell Hall 111
+19273 	102	Discussion (3)	Closed	21 / 20	Nicholas Piccinini	Th 8:00PM - 8:50PM	New Cabell Hall 056
+19274 	103	Discussion (3)	Open	19 / 20	Nicholas Piccinini	Fr 9:00AM - 9:50AM	Brooks Hall 103
+ ANTH 2500 Cultures, Regions, and Civilizations
+ 	Cultures of Discrimination
+ 	Race, Caste, & Cultures of Discrimination
+19275 	001	Lecture (3)	Open 	26 / 30	Jacqueline Cieslak	MoWeFr 11:00AM - 11:50AM	Ruffner Hall 139
+ ANTH 2559 New Course in Anthropology
+ 	Humans and the Environment
+19276 	001	Lecture (3)	Closed 	9 / 4	Herman Shugart+2	Th 2:00PM - 4:30PM	Clark Hall G054
+ ANTH 2589 Topics in Archaeology
+ 	Ancient African Cities /States
+19277 	001	Lecture (3)	Closed	36 / 35	Adria Laviolette	MoWe 2:00PM - 3:15PM	New Cabell Hall 168
+ ANTH 2590 Social and Cultural Anthropology
+ 	Citizen Science
+13882 	001	Lecture (3)	Open	22 / 30	Kathleen Weston	MoWe 2:00PM - 3:15PM	Clark Hall 101
+ 	Markets and Moralities
+20282 	003	Lecture (3)	Open	15 / 20	Roberto Armengol	TuTh 2:00PM - 3:15PM	Brooks Hall 103
+ ANTH 2820 The Emergence of States and Cities
+ 	Ancient Aztecs, Maya, Egypt
+19278 	100	Lecture (3)	Open 	53 / 60	Patricia Wattenmaker	TuTh 3:30PM - 4:20PM	McLeod Hall 2005
+21115 	101	Discussion (3)	Closed 	20 / 20	Kyle Edwards	Mo 5:00PM - 5:50PM	Brooks Hall 103
+21116 	102	Discussion (3)	Closed 	20 / 20	Kyle Edwards	Th 5:00PM - 5:50PM	Dell 1 102
+21117 	103	Discussion (3)	Open 	13 / 20	Kyle Edwards	Th 6:00PM - 6:50PM	Dell 1 102
+ ANTH 3020 Using Anthropology in the Contemporary World
+14926 	100	Seminar (4)	Open  	39 / 40	Jeffrey Hantman	TuTh 3:30PM - 4:45PM	New Cabell Hall 389
+ ANTH 3129 Marriage, Mortality, Fertility
+19279 	001	Lecture (3)	Open	42 / 60	John Shepherd	TuTh 12:30PM - 1:45PM	Claude Moore Nursing Educ G120
+ ANTH 3130 Disease, Epidemics and Society
+19280 	001	Lecture (3)	Open 	24 / 30	John Shepherd	TuTh 3:30PM - 4:45PM	New Cabell Hall 132
+ ANTH 3240 The Anthropology of Food
+15317 	001	Lecture (3)	Open 	47 / 60	Ravindra Khare	Tu 3:30PM - 6:00PM	Maury Hall 104
+21652 	002	Lecture (3)	Open 	22 / 30	Ravindra Khare	We 3:30PM - 6:00PM	New Cabell Hall 309
+ ANTH 3310 Controversies of Care in Contemporary Africa
+20623 	001	Lecture (3)	Closed 	33 / 30	China Scherz	TuTh 11:00AM - 12:15PM	Ruffner Hall 175
+ ANTH 3325 Capitalism: Cultural Perspectives
+19281 	001	Lecture (3)	Open	71 / 90	Kathleen Weston	MoWe 3:30PM - 4:45PM	Clark Hall 107
+ ANTH 3340 Ecology and Society: An Introduction to the New Ecological Anthropology
+14927 	100	Lecture (3)	Open 	25 / 30	Frederick Damon	MoWeFr 10:00AM - 10:50AM	Physics Bldg 218
+ ANTH 3370 Power and the Body
+14928 	100	Lecture (3)	Open	37 / 55	George Mentore	TuTh 2:00PM - 2:50PM	Nau Hall 211
+14929 	101	Discussion (3)	Open	14 / 20	Cory-Alice Andre-Johnson	Th 12:30PM - 1:20PM	Nau Hall 341
+14930 	102	Discussion (3)	Open	12 / 20	Cory-Alice Andre-Johnson	Fr 12:00PM - 12:50PM	Brooks Hall 103
+14931 	103	Discussion (3)	Open	11 / 20	Cory-Alice Andre-Johnson	Fr 1:00PM - 1:50PM	Brooks Hall 103
+ ANTH 3395 Mythodology
+13883 	001	Seminar (3)	Closed	28 / 25	Roy Wagner	TuTh 12:30PM - 1:45PM	New Cabell Hall 132
+ ANTH 3450 Native American Languages
+15034 	001	Lecture (3)	Closed 	25 / 25	Eve Danziger	MoWe 3:30PM - 4:45PM	New Cabell Hall 338
+ ANTH 3870 Archaeology of Virginia
+19282 	001	Lecture (3)	Open 	29 / 30	Jeffrey Hantman	MoWe 3:30PM - 4:45PM	New Cabell Hall 315
+ ANTH 3890 Archaeology of the American Southwest
+19283 	001	Lecture (3)	Open 	36 / 40	Stephen Plog	TuTh 9:30AM - 10:45AM	New Cabell Hall 058
+ ANTH 4591 Senior Seminar in Anthropology
+ 	Social Inequalities & Disaster
+12339 	001	Seminar (3)	Open 	8 / 18	Ravindra Khare	Th 3:30PM - 6:00PM	New Cabell Hall 064
+ 	Philosophical Anthropology
+14932 	003	Seminar (3)	Closed 	18 / 18	George Mentore	TuTh 11:00AM - 12:15PM	Dell 2 102
+ ANTH 4840 Quantitative Analysis in Anthropology I
+21123 	001	Lecture (3)	Open	7 / 15	Fraser Neiman	Tu 3:30PM - 6:00PM	New Cabell Hall 187
+ ANTH 4993 Independent Study in Anthropology
+ 
+ ANTH 4998 Distinguished Majors Thesis Research
+ 
+ ANTH 4999 Distinguished Majors Thesis Writing
+ 
+ ANTH 5220 Economic Anthropology
+14933 	001	Lecture (3)	Open	9 / 15	Frederick Damon	TuTh 9:30AM - 10:45AM	Brooks Hall 103
+ ANTH 5360 World Mental Health
+14070 	001	Lecture (3)	Closed	35 / 35	Richard Merkel	We 6:30PM - 9:00PM	Gibson Hall 211
+ ANTH 5401 Linguistic Field Methods
+14934 	001	Lecture (3)	Open	10 / 16	Ellen Contini-Morava	We 5:00PM - 7:30PM	Brooks Hall 103
+ ANTH 5440 Morphology
+19284 	001	Lecture (3)	Open	17 / 18	Lise Dobrin	Th 3:30PM - 6:00PM	New Cabell Hall 115
+ ANTH 5490 Speech Play and Verbal Art
+19285 	001	Seminar (3)	Open	3 / 15	Daniel Lefkowitz	MoWe 2:00PM - 3:15PM	Brooks Hall 312
+ ANTH 5590 Topics in Social and Cultural Anthropology
+ 	Meaningful Stuff
+20283 	001	Seminar (3)	Open	6 / 15	Roberto Armengol	Th 6:00PM - 8:30PM	New Cabell Hall 594
+ 	Seminar:Ethnography of Africa
+15323 	002	Seminar (3)	Open	6 / 15	James Igoe	Tu 4:30PM - 7:00PM	Nau Hall 341
+ 	Anthropology of Spirituality
+14297 	003	Seminar (3)	Closed	12 / 12	Edith Turner	Th 5:00PM - 7:30PM	Brooks Hall 103
+ ANTH 5808 Method and Theory in Archaeology
+19286 	001	Lecture (3)	Open	5 / 12	Patricia Wattenmaker	We 6:30PM - 9:00PM	Wilson Hall 244
+ ANTH 5885 Archaeology of Colonial Expansions
+19287 	001	Seminar (3)	Open	6 / 12	Adria Laviolette	Th 5:00PM - 7:30PM	Wilson Hall 244
+ ANTH 7020 History of Anthropological Theory II
+10998 	001	Seminar (3)	Open	5 / 15	James Igoe	Mo 5:00PM - 7:30PM	New Cabell Hall 066
+ ANTH 7040 Ethnographic Research Design and Methods
+19300 	001	Seminar (3)	Open	9 / 12	Ira Bashkow	TuTh 2:00PM - 3:15PM	Contact Department
+ ANTH 7129 Marriage, Mortality, Fertility
+19302 	001	Lecture (3)	Open	0 / 5	John Shepherd	TuTh 12:30PM - 1:45PM	Claude Moore Nursing Educ G120
+ ANTH 7130 Disease, Epidemics and Society
+19303 	001	Lecture (3)	Open	0 / 5	John Shepherd	TuTh 3:30PM - 4:45PM	New Cabell Hall 132
+ ANTH 7370 Power and the Body
+14935 	001	Lecture (3)	Open	3 / 5	George Mentore	TuTh 2:00PM - 2:50PM	Nau Hall 211
+ ANTH 7450 Native American Languages
+15036 	001	Lecture (3)	Open	1 / 10	Eve Danziger	MoWe 3:30PM - 4:45PM	New Cabell Hall 338
+ ANTH 7840 Quantitative Analysis in Anthropology I
+21124 	001	Lecture (3)	Closed	3 / 3	Fraser Neiman	Tu 3:30PM - 6:00PM	New Cabell Hall 187
+ ANTH 8998 Non-Topical Research, Preparation for Research
+ 
+ ANTH 8999 Non-Topical Research
+ 
+ ANTH 9010 Directed Readings
+ 
+ ANTH 9020 Directed Readings
+ 
+ ANTH 9050 Research Practicum
+11003 	001	Independent Study (1 - 12)	Open	0 / 20	Staff	TBA	TBA
+16232 	002	Independent Study (1 - 12)	Open	24 / 50	Daniel Lefkowitz	Fr 1:00PM - 3:00PM	TBA
+ ANTH 9998 Non-Topical Research, Preparation for Doctoral Research
+ 
+ ANTH 9999 Non-Topical Research
+ 
+Swahili
+ SWAH 1020 Introductory Swahili II
+20456 	001	Lecture (3)	Open	7 / 10	Anne Rotich	MoWeFr 10:00AM - 10:50AM	New Cabell Hall 332
+20457 	002	Lecture (3)	Open	8 / 10	Anne Rotich	MoWeFr 11:00AM - 11:50AM	New Cabell Hall 332
+
+

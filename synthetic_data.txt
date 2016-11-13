@@ -1,0 +1,205 @@
+student
+
+student1
+	computing_id: ah1zz
+	password: abdeltawab
+	first_name: Abdeltawab
+	last_name: Jones
+	date_of_birth: Jan 1 2000
+	primary_phone: 111-1111
+	Number One Abdeltawab Boulevard
+	Number One Abdeltawab Boulevard
+	2
+	Undergrad
+	school_id: 2 (engineering)
+	
+student2
+	computing_id: ah1zy
+	password: abdeltawabette
+	first_name: Abdeltawabette
+	last_name: Smith
+	date_of_birth: Jan 1 2000
+	primary_phone: 111-1112
+	Number Two Abdeltawab Boulevard
+	Number Two Abdeltawab Boulevard
+	4
+	Graduate
+	school_id: 2 (engineering)
+
+student3
+	computing_id: ah1zx
+	password: abdeltawizzle
+	first_name: Abdeltawizzle
+	last_name: Wizzle
+	date_of_birth: Jan 1 2000
+	primary_phone: 111-1113
+	Number Three Abdeltawab Boulevard
+	Number Three Abdeltawab Boulevard
+	1
+	Undergrad
+	school_id: 1 (arts and sciences)
+
+student4
+	computing_id: ah1zw
+	password: abdeltabob
+	first_name: Abdeltabob
+	last_name: Roberts
+	date_of_birth: Jan 1 2000
+	primary_phone: 111-1114
+	Number Four Abdeltawab Boulevard
+	Number Four Abdeltawab Boulevard
+	3
+	Undergrad
+	school_id: 1 (arts and sciences)
+
+degree_requirements
+	*
+
+advisor
+	student_id: ah1zz
+	instructor_id: ab1dr
+
+	student_id: ah1zy
+	instructor_id: ab1fl
+
+	student_id: ah1zx
+	instructor_id: ab1ao
+
+	student_id: ah1zw
+	instructor_id: ab1ao
+
+student_department:
+	dept_mnemonic: CS
+	computing_id: ah1zz
+	major: 1
+
+	dept_mnemonic: ECE
+	computing_id: ah1zy
+	major: 1
+
+	dept_mnemonic: ANTH
+	computing_id: ah1zx
+	major: 1
+
+	dept_mnemonic: ANTH
+	computing_id: ah1zw
+	major: 1
+
+	dept_mnemonic: ASTR
+	computing_id: ah1zw
+	major: 0
+
+prerequisites:
+	dept_mnemonic: CS
+	course_number: 3330
+	prereq_dept_mnemonic: CS
+	prereq_course_number: 2150
+
+	dept_mnemonic: CS
+	course_number: 4102
+	prereq_dept_mnemonic: CS
+	prereq_course_number: 2102
+
+	dept_mnemonic: ECE
+	course_number: 2660
+	prereq_dept_mnemonic: ECE
+	prereq_course_number: 2630
+
+	dept_mnemonic: ECE
+	course_number: 3750
+	prereq_dept_mnemonic: ECE
+	prereq_course_number: 2630
+
+requirement_credits:
+	dept_mnemonic: CS
+	requirement_type: CS1110
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS2110
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS2102
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS2150
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS2330
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS2190
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS3102
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS3330
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS3240
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS4414
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS4102
+	requirement_credit_number: 3
+
+	dept_mnemonic: CS
+	requirement_type: CS Elective
+	requirement_credit_number: 15
+
+	dept_mnemonic: ECE
+	requirement_type: ECE2630
+	requirement_credit_number: 4
+
+	dept_mnemonic: ECE
+	requirement_type: ECE2660
+	requirement_credit_number: 4
+
+	dept_mnemonic: ECE
+	requirement_type: ECE3750
+	requirement_credit_number: 4
+
+	dept_mnemonic: ECE
+	requirement_type: ECE Elective
+	requirement_credit_number: 30
+
+	dept_mnemonic: ASTR
+	requirement_type: ASTR1210
+	requirement_credit_number: 3
+
+	dept_mnemonic: ASTR
+	requirement_type: ASTR3130
+	requirement_credit_number: 3
+
+	dept_mnemonic: ASTR
+	requirement_type: ASTR Elective
+	requirement_credit_number: 12
+
+	dept_mnemonic: ANTH
+	requirement_type: ANTH1010
+	requirement_credit_number: 3
+
+	dept_mnemonic: ANTH
+	requirement_type: ANTH3010
+	requirement_credit_number: 3
+
+	dept_mnemonic: ANTH
+	requirement_type: ANTH4591
+	requirement_credit_number: 3
+
+	dept_mnemonic: ANTH
+	requirement_type: ANTH Elective
+	requirement_credit_number: 15
+

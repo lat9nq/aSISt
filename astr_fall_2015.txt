@@ -1,0 +1,62 @@
+ ASTR 1210	Introduction to the Sky and Solar System
+Syllabus  10396 	001	Lecture (3 Units)	Open	415 / 465 (415 / 475)	Edward Murphy	MoWe 2:00PM - 3:15PM	Chemistry Bldg 402
+Syllabus  10397 	003	Lecture (3 Units)	Open	122 / 130	Trinh Thuan	TuTh 2:00PM - 3:15PM	Clark Hall 107
+Syllabus  14694 	004	Lecture (3 Units)	Closed	143 / 130	Zhi-Yun Li	TuTh 12:30PM - 1:45PM	Clark Hall 107
+ ASTR 1220	Introduction to Stars, Galaxies, and the Universe
+Syllabus  14957 	001	Lecture (3 Units)	Open	85 / 135	Nitya Kallivayalil	TuTh 9:30AM - 10:45AM	Clark Hall 107
+10399 	002	Lecture (3 Units)	Open	49 / 130	William Saslaw	TuTh 11:00AM - 12:15PM	Clark Hall 107
+10400 	003	Lecture (3 Units)	Open	18 / 50	William Saslaw	TuTh 2:00PM - 3:15PM	Chemistry Bldg 304
+Syllabus  19252 	004	Lecture (3 Units)	Open	104 / 130	D. Whittle	MoWeFr 11:00AM - 11:50AM	Clark Hall 107
+ ASTR 1230	Introduction to Astronomical Observation
+Syllabus  10401 	100	Lecture (3 Units)	Open	16 / 40	Richard Patterson	Mo 7:00PM - 9:00PM	Clark Hall 107
+10404 	101	Laboratory (3 Units)	Open	6 / 10	Richard Patterson	Mo 9:00PM - 11:00PM	Astronomy Bldg G25
+10402 	102	Laboratory (3 Units)	Open	5 / 10	Richard Patterson	Tu 8:00PM - 11:00PM	Astronomy Bldg G25
+10403 	103	Laboratory (3 Units)	Open	3 / 10	Richard Patterson	We 8:00PM - 11:00PM	Astronomy Bldg G25
+10405 	104	Laboratory (3 Units)	Open	2 / 10	Richard Patterson	Th 8:00PM - 11:00PM	Astronomy Bldg G25
+ ASTR 1559	New Course in Astronomy
+ 	Origins of Almost Everything
+ 	Origins of Almost Everything
+Website  20232 	001	Lecture (3 Units)	Closed	45 / 45	Sabrina Stierwalt	MoWeFr 10:00AM - 10:50AM	Clark Hall 101
+ ASTR 2110	Introduction to Astrophysics I
+Syllabus  10406 	100	Lecture (3 Units)	Open	28 / 35	Shane Davis	MoWeFr 11:00AM - 11:50AM	Chemistry Bldg 305
+10407 	101	Discussion (3 Units)	Open	28 / 35	Dominic Pesce	Fr 3:00PM - 3:50PM	Chemistry Bldg 305
+ ASTR 3410	Archaeo-Astronomy
+Syllabus  14524 	001	Lecture (3 Units)	Open 	23 / 50	Roger Chevalier	MoWeFr 10:00AM - 10:50AM	Ruffner Hall G006
+ ASTR 3470	Science and Controversy in Astronomy
+15144 	001	Lecture (3 Units)	Closed	93 / 90	Kelsey Johnson	TuTh 12:30PM - 1:45PM	Wilson Hall 325
+ ASTR 4810	Astrophysics
+11631 	001	Lecture (3 Units)	Open	7 / 18	Philip Arras	TuTh 9:30AM - 10:45AM	Astronomy Bldg 265
+ ASTR 4993	Tutorial
+ 
+ ASTR 4998	Senior Thesis
+14347 	001	Independent Study (3 Units)	Open	0 / 5	Philip Arras	TBA	TBA
+14979 	002	Independent Study (3 Units)	Open	2 / 5	James Braatz	TBA	TBA
+15986 	003	Independent Study (3 Units)	Open	0 / 5	Kelsey Johnson	TBA	TBA
+15075 	004	Independent Study (3 Units)	Open	1 / 5	Nitya Kallivayalil	TBA	TBA
+15799 	005	Independent Study (3 Units)	Open	0 / 5	Zhi-Yun Li	TBA	TBA
+15800 	006	Independent Study (3 Units)	Open	0 / 5	Steven Majewski	TBA	TBA
+15917 	007	Independent Study (3 Units)	Open	0 / 5	Scott Ransom	TBA	TBA
+15990 	008	Independent Study (3 Units)	Open	0 / 5	Craig Sarazin	TBA	TBA
+16012 	009	Independent Study (3 Units)	Open	0 / 5	Paul Seidelmann	TBA	TBA
+16013 	010	Independent Study (3 Units)	Open	0 / 5	Anne Skrutskie	TBA	TBA
+16085 	011	Independent Study (3 Units)	Open	0 / 5	Michael Skrutskie	TBA	TBA
+21875 	012	Independent Study (3 Units)	Open	2 / 5	Anthony Remijan	TBA	TBA
+22002 	013	Independent Study (3 Units)	Open	1 / 5	D. Whittle	TBA	TBA
+ ASTR 5010	Astrophysical Processes
+11745 	001	Lecture (3 Units)	Open	4 / 7	Philip Arras	TuTh 9:30AM - 10:45AM	Astronomy Bldg 265
+ ASTR 5110	Astronomical Techniques
+18763 	001	Lecture (3 Units)	Open	10 / 15	Steven Majewski	TuTh 2:00PM - 3:15PM	Astronomy Bldg 265
+ ASTR 5260	Introduction to Astrochemistry
+19253 	001	Lecture (3 Units)	Open	6 / 10 	Robin Garrod	MoWe 8:30AM - 9:45AM	Chemistry Bldg 260
+ ASTR 6210	Introduction to Sky and Solar System Concepts
+Syllabus  10408 	001	Lecture (3 Units)	Open 	0 / 10	Edward Murphy	MoWe 2:00PM - 3:15PM	Chemistry Bldg 402
+ ASTR 8500	Current Astronomical Topics
+10409 	001	Lecture (1 Units)	Open	10 / 25	Zhi-Yun Li	Tu 4:00PM - 4:50PM	Clark Hall G004
+ ASTR 9995	Supervised Research
+ 
+ ASTR 9999	Non-Topical Research
+ 
+
+
+
+

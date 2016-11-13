@@ -1,0 +1,310 @@
+UVa Class Schedules (Unofficial, Lou's List v2.10)   New Features
+Complete Schedule for the Computer Science Program - Spring 2016    Summary Information    Data
+These data were not obtained from SIS in real time and may be slightly out of date. MouseOver the enrollment to see Last Update Time
+These pages present data mined from the University of Virginia's student information system (SIS). — Lou Bloomfield, Department of Physics 
+ 
+      
+Normal Format   - Collapse All    + Expand All
+Computer Science
+ CS 1010 Introduction to Information Technology
+17466 	001	Lecture (3)	Closed 	125 / 125	Craig Dill	MoWe 3:30PM - 4:45PM	Mechanical Engr Bldg 205
+ CS 1110 Introduction to Programming
+17452 	001	Lecture (3)	Open	319 / 325	Mark Sherriff	MoWeFr 2:00PM - 2:50PM	Chemistry Bldg 402
+ 	For the dates when restricted CS courses will be opened, see: https://goo.gl/BBX9if For more information on which CS 1 course you should sign up for, see: https://cs1110.cs.virginia.edu/whichcs1.html
+17462 	002	Lecture (3)	Open	222 / 275	Mary Smith	MoWeFr 12:00PM - 12:50PM	Wilson Hall 402
+ 	Laptop Required
+17453 	100	Laboratory (0)	Closed	46 / 46	Mark Sherriff	Th 3:30PM - 4:45PM	Rice Hall 120
+17454 	101	Laboratory (0)	Open	45 / 46	Mark Sherriff	Th 9:30AM - 10:45AM	Olsson Hall 001
+17455 	102	Laboratory (0)	Closed	46 / 46	Mark Sherriff	Th 11:00AM - 12:15PM	Olsson Hall 001
+17456 	103	Laboratory (0)	Open	43 / 46	Mark Sherriff	Th 12:30PM - 1:45PM	Olsson Hall 001
+17457 	104	Laboratory (0)	Closed	46 / 46	Mark Sherriff	Th 2:00PM - 3:15PM	Olsson Hall 001
+17458 	105	Laboratory (0)	Closed	46 / 46	Mark Sherriff	Th 3:30PM - 4:45PM	Olsson Hall 001
+17459 	106	Laboratory (0)	Closed	45 / 46	Mark Sherriff	Th 5:00PM - 6:15PM	Olsson Hall 001
+17460 	107	Laboratory (0)	Open	43 / 46	Mark Sherriff	Th 6:30PM - 7:45PM	Olsson Hall 001
+17461 	108	Laboratory (0)	Open	44 / 46	Mark Sherriff	Th 8:00PM - 9:15PM	Olsson Hall 001
+ 	Laptop Required
+17463 	109	Laboratory (0)	Open	45 / 46	Mark Sherriff	Th 11:00AM - 12:15PM	Rice Hall 120
+ 	Laptop Required
+17610 	110	Laboratory (0)	Open	45 / 46	Mark Sherriff	Th 2:00PM - 3:15PM	Rice Hall 120
+ 	Laptop Required
+18653 	112	Laboratory (0)	Closed	47 / 46	Mark Sherriff	Th 9:30AM - 10:45AM	Rice Hall 120
+ CS 1111 Introduction to Programming
+17464 	001	Lecture (3)	Closed	75 / 75	Craig Dill	MoWe 2:00PM - 3:15PM	Olsson Hall 009
+ CS 1112 Introduction to Programming
+ 	Introduction to digital problem solving in Python
+17465 	001	Lecture (3)	Closed	135 / 110	James Cohoon+1	MoWeFr 2:00PM - 3:15PM	Rice Hall 130
+ 	Students whose school or already declared major require an introductory programming course will be processed before students wanting the course as an elective. Students not yet declaring a major require an introductory programming course, must do so first to get priority.
+ CS 1113 Introduction to Programming
+ 	Focus: Engineering Problem Solving
+20089 	001	Lecture (3)	Open 	43 / 45	Thomas Horton	MoWeFr 11:00AM - 11:50AM	Olsson Hall 120
+Thomas Horton	Th 5:00PM - 6:15PM	Rice Hall 130
+ 	Focus: Engineering Problem Solving
+20093 	002	Lecture (3)	Open 	13 / 45	Thomas Horton	MoWeFr 11:00AM - 11:50AM	Olsson Hall 120
+Thomas Horton	Th 6:30PM - 7:45PM	Rice Hall 130
+ CS 1120 Introduction to Computing: Explorations in Language, Logic, and Machines
+20860 	001	Lecture (3)	Closed	33 / 30	David Evans	MoWeFr 1:00PM - 1:50PM	Mechanical Engr Bldg 205
+ CS 2102 Discrete Mathematics I
+ 	For the dates when restricted CS courses will be opened, see: https://goo.gl/BBX9if
+17470 	001	Lecture (3)	Closed	147 / 132	David Edwards	TuTh 12:30PM - 1:45PM	Mechanical Engr Bldg 205
+18224 	002	Lecture (3)	Closed	148 / 132	David Edwards	TuTh 2:00PM - 3:15PM	Mechanical Engr Bldg 205
+ CS 2110 Software Development Methods
+ 	For the dates when restricted CS courses will be opened, see: https://goo.gl/BBX9if
+17467 	001	Lecture (3)	Closed	139 / 130	David Edwards	MoWeFr 10:00AM - 10:50AM	Rice Hall 130
+18045 	002	Lecture (3)	Closed	156 / 130	Nada Basit	MoWeFr 12:00PM - 12:50PM	Rice Hall 130
+17468 	101	Laboratory (0)	Closed	44 / 44	Nada Basit	Mo 7:00PM - 8:45PM	Olsson Hall 001
+17469 	102	Laboratory (0)	Closed	66 / 44	Nada Basit	Tu 7:00PM - 8:45PM	Rice Hall 130
+18046 	103	Laboratory (0)	Closed	98 / 86	Nada Basit	Mo 5:00PM - 6:45PM	Rice Hall 130
+18227 	104	Laboratory (0)	Closed	87 / 86	Nada Basit	Tu 5:15PM - 7:00PM	Rice Hall 130
+ CS 2150 Program and Data Representation
+17471 	001	Lecture (3)	Open	158 / 160	Aaron Bloomfield	MoWeFr 12:00PM - 12:50PM	Gilmer Hall 130
+20176 	002	Lecture (3)	Open	106 / 140	Mark Floryan	MoWeFr 1:00PM - 1:50PM	Rice Hall 130
+17472 	101	Laboratory (0)	Open	44 / 45	Aaron Bloomfield	Tu 3:30PM - 5:15PM	Olsson Hall 001
+17473 	102	Laboratory (0)	Closed	45 / 44	Aaron Bloomfield	Tu 5:30PM - 7:15PM	Olsson Hall 001
+17474 	103	Laboratory (0)	Closed	45 / 44	Aaron Bloomfield	Tu 7:30PM - 9:15PM	Olsson Hall 001
+18047 	104	Laboratory (0)	Open	43 / 45	Aaron Bloomfield	Tu 11:30AM - 1:15PM	Olsson Hall 001
+18267 	105	Laboratory (0)	Open	42 / 45	Aaron Bloomfield	Tu 1:30PM - 3:15PM	Olsson Hall 001
+20175 	106	Laboratory (0)	Closed	45 / 44	Aaron Bloomfield	Tu 9:00AM - 10:45AM	Olsson Hall 001
+ CS 2190 Computer Science Seminar I
+17475 	001	Lecture (1)	Open 	128 / 144	Mark Floryan	Th 3:30PM - 4:20PM	Olsson Hall 120
+ CS 2330 Digital Logic Design
+18226 	001	Lecture (3)	Closed	0 / 0	Joanne Dugan	TBA	TBA
+ 	This course is taught as ECE 2330 in the spring. Look under the ECE listing if you want to enroll in DLD for the spring.
+ CS 2501 Special Topics in Computer Science
+ 	TA Practicum
+21343 	001	Practicum (1 - 3)	Closed	61 / 30	Luther Tychonievich	TBA	TBA
+ 	2501-001 is only open to those who are TAing CS courses
+ CS 3102 Theory of Computation
+17476 	001	Lecture (3)	Closed	193 / 125	Gabriel Robins	TuTh 12:30PM - 1:45PM	Physics Bldg 203
+ CS 3240 Advanced Software Development Techniques
+18285 	001	Lecture (3)	Open	106 / 108	Mary Smith	TuTh 2:00PM - 3:15PM	Rice Hall 130
+17477 	101	Laboratory (3)	Closed	44 / 44	Mary Smith	Mo 2:00PM - 3:20PM	Rice Hall 120
+17478 	102	Laboratory (3)	Closed	62 / 60	Mary Smith	Mo 5:00PM - 6:15PM	Olsson Hall 011
+ CS 3330 Computer Architecture
+18371 	001	Lecture (3)	Open	90 / 92	Luther Tychonievich	MoWe 3:30PM - 4:45PM	Thornton Hall E316
+18372 	002	Laboratory (3)	Closed	46 / 46	Luther Tychonievich	We 5:00PM - 6:15PM	Olsson Hall 001
+18373 	003	Laboratory (3)	Open	44 / 46	Luther Tychonievich	We 6:30PM - 7:45PM	Olsson Hall 001
+ CS 4102 Algorithms
+17611 	001	Lecture (3)	Open	135 / 150	Abhi Shelat	TuTh 3:30PM - 4:45PM	Rice Hall 130
+ CS 4414 Operating Systems
+17479 	001	Lecture (3)	Open	86 / 130	Kong-Cheng Wong	TuTh 12:30PM - 1:45PM	Rice Hall 130
+ CS 4444 Introduction to Parallel Computing
+20232 	001	Lecture (3)	Open	18 / 30	Andrew Grimshaw	TuTh 9:30AM - 10:45AM	Thornton Hall E316
+ CS 4457 Computer Networks
+18509 	001	Lecture (3)	Open	26 / 35	Kong-Cheng Wong	TuTh 3:30PM - 4:45PM	Olsson Hall 009
+ CS 4501 Special Topics in Computer Science
+ 	Smart Homes, Phones & Beyond
+18677 	001	Lecture (3)	Open	29 / 30	John Stankovic	MoWe 2:00PM - 3:15PM	Rice Hall 340
+ 	Language Design & Implementatn
+ 	Language Design and Implementation
+18460 	002	Lecture (3)	Open	63 / 80	Westley Weimer	TuTh 3:30PM - 4:45PM	Thornton Hall E303
+ 	Prog. Languages for Web Apps
+18559 	003	Lecture (3)	Closed	79 / 80	Mary Soffa	TuTh 11:00AM - 12:15PM	Olsson Hall 005
+ 	Internet Scale Applications
+18565 	004	Lecture (3)	Open	25 / 34	Thomas Pinckney	MoWe 3:30PM - 4:45PM	Rice Hall 340
+ 	Compilers Practicum
+ 	Compilers Practicum
+21822 	005	Lecture (2)	Open	16 / 36	Westley Weimer	Fr 2:00PM - 3:00PM	Olsson Hall 009
+ CS 4630 Defense Against the Dark Arts
+20234 	001	Lecture (3)	Open	40 / 45	Wei Wang	TuTh 5:00PM - 6:15PM	Olsson Hall 009
+ CS 4710 Artificial Intelligence
+18228 	001	Lecture (3)	Open	38 / 70	Dimitrios Diochnos	TuTh 3:30PM - 4:45PM	Mechanical Engr Bldg 339
+ CS 4720 Web and Mobile Systems
+20235 	001	Lecture (3)	Closed	84 / 80	Mark Sherriff	MoWeFr 11:00AM - 11:50AM	Thornton Hall E316
+ CS 4730 Computer Game Design
+18287 	001	Lecture (3)	Open	53 / 56	Mark Floryan	MoWe 11:00AM - 11:50AM	Mechanical Engr Bldg 341
+18304 	100	Laboratory (3)	Open	26 / 28	Mark Floryan	Fr 11:30AM - 12:50PM	Rice Hall 340
+18305 	101	Laboratory (3)	Open	27 / 28	Mark Floryan	Fr 10:00AM - 11:20AM	Rice Hall 340
+ CS 4740 Cloud Computing
+18515 	001	Lecture (3)	Open	69 / 70	Marty Humphrey	TuTh 2:00PM - 3:15PM	Olsson Hall 120
+ CS 4750 Database Systems
+18511 	001	Lecture (3)	Closed	113 / 90	Nada Basit	MoWe 3:30PM - 4:45PM	Olsson Hall 120
+ CS 4753 Electronic Commerce Technologies
+20914 	001	Lecture (3)	Closed	59 / 60	Alfred Weaver	MoWe 2:00PM - 3:15PM	Olsson Hall 120
+ CS 4810 Introduction to Computer Graphics
+ 	Introduction to Computer Graphics
+18289 	001	Lecture (3)	Open	51 / 70	Connelly Barnes	TuTh 9:30AM - 10:45AM	Mechanical Engr Bldg 339
+ CS 4971 Capstone Practicum II
+18286 	001	Practicum (3)	Open	59 / 100	Aaron Bloomfield	MoWeFr 10:00AM - 10:50AM	Thornton Hall E303
+ CS 4980 Capstone Research
+18331 	001	Independent Study (1 - 3)	Open	2 / 30	Aaron Bloomfield	TBA	TBA
+18332 	002	Independent Study (1 - 3)	Open	0 / 30	James Cohoon	TBA	TBA
+18333 	003	Independent Study (1 - 3)	Open	1 / 30	Jack Davidson	TBA	TBA
+18334 	004	Independent Study (1 - 3)	Open	1 / 30	David Evans	TBA	TBA
+18335 	005	Independent Study (1 - 3)	Open	6 / 30	Mark Floryan	TBA	TBA
+18336 	006	Independent Study (1 - 3)	Open	2 / 30	Andrew Grimshaw	TBA	TBA
+18337 	007	Independent Study (1 - 3)	Open	1 / 30	Hongning Wang	TBA	TBA
+18338 	008	Independent Study (1 - 3)	Open	5 / 30	Thomas Horton	TBA	TBA
+18339 	009	Independent Study (1 - 3)	Open	0 / 30	Marty Humphrey	TBA	TBA
+18340 	010	Independent Study (1 - 3)	Open	0 / 30	John Knight	TBA	TBA
+21356 	011	Independent Study (1 - 3)	Open	5 / 30	Luther Tychonievich	TBA	TBA
+18342 	012	Independent Study (1 - 3)	Open	1 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+18343 	013	Independent Study (1 - 3)	Open	0 / 30	Worthy Martin	TBA	TBA
+18344 	014	Independent Study (1 - 3)	Open	2 / 30	Yanjun Qi	TBA	TBA
+18345 	015	Independent Study (1 - 3)	Open	1 / 30	Gabriel Robins	TBA	TBA
+18346 	016	Independent Study (1 - 3)	Open	0 / 30	Abhi Shelat	TBA	TBA
+18347 	017	Independent Study (1 - 3)	Open	1 / 30	Mark Sherriff	TBA	TBA
+18348 	018	Independent Study (1 - 3)	Open	0 / 30	Kevin Skadron	TBA	TBA
+18349 	019	Independent Study (1 - 3)	Open	2 / 30	Mary Soffa	TBA	TBA
+18350 	020	Independent Study (1 - 3)	Open	0 / 30	John Stankovic	TBA	TBA
+18351 	021	Independent Study (1 - 3)	Open	4 / 30	Kevin Sullivan	TBA	TBA
+18352 	022	Independent Study (1 - 3)	Open	1 / 30	Alfred Weaver	TBA	TBA
+18353 	023	Independent Study (1 - 3)	Open	1 / 30	Westley Weimer	TBA	TBA
+18354 	024	Independent Study (1 - 3)	Open	1 / 30	Cameron Whitehouse	TBA	TBA
+18375 	025	Independent Study (1 - 3)	Open	0 / 30	Connelly Barnes	TBA	TBA
+21351 	026	Independent Study (1 - 3)	Open	0 / 30	Nada Basit	TBA	TBA
+21352 	027	Independent Study (1 - 3)	Open	0 / 30	David Edwards	TBA	TBA
+21353 	028	Independent Study (1 - 3)	Open	0 / 30	Kong-Cheng Wong	TBA	TBA
+21354 	029	Independent Study (1 - 3)	Open	0 / 30	Mary Smith	TBA	TBA
+21580 	030	Independent Study (1 - 3)	Open	1 / 30	Baishakhi Ray	TBA	TBA
+21581 	031	Independent Study (1 - 3)	Open	0 / 30	Samira Khan	TBA	TBA
+ CS 4993 Independent Study
+ 
+ CS 4998 Distinguished BA Majors Research
+17481 	001	Independent Study (3)	Open	1 / 50	Westley Weimer	TBA	TBA
+18432 	002	Independent Study (3)	Open	0 / 30	Connelly Barnes	TBA	TBA
+18433 	003	Independent Study (3)	Open	0 / 30	Nada Basit	TBA	TBA
+18434 	004	Independent Study (3)	Open	0 / 30	Aaron Bloomfield	TBA	TBA
+18435 	006	Independent Study (3)	Open	0 / 30	James Cohoon	TBA	TBA
+18436 	007	Independent Study (3)	Open	0 / 30	Jack Davidson	TBA	TBA
+18437 	008	Independent Study (3)	Open	1 / 30	David Evans	TBA	TBA
+18438 	009	Independent Study (3)	Open	0 / 30	Mark Floryan	TBA	TBA
+18439 	010	Independent Study (3)	Open	0 / 30	Andrew Grimshaw	TBA	TBA
+18440 	011	Independent Study (3)	Open	0 / 30	Hongning Wang	TBA	TBA
+18441 	012	Independent Study (3)	Open	0 / 30	Thomas Horton	TBA	TBA
+18442 	013	Independent Study (3)	Open	0 / 30	Marty Humphrey	TBA	TBA
+18443 	014	Independent Study (3)	Open	0 / 30	John Knight	TBA	TBA
+18445 	016	Independent Study (3)	Open	0 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+18446 	017	Independent Study (3)	Open	0 / 30	Worthy Martin	TBA	TBA
+18447 	018	Independent Study (3)	Open	0 / 30	Gabriel Robins	TBA	TBA
+18448 	019	Independent Study (3)	Open	0 / 30	Abhi Shelat	TBA	TBA
+18449 	020	Independent Study (3)	Open	0 / 30	Mark Sherriff	TBA	TBA
+18450 	021	Independent Study (3)	Open	0 / 30	Kevin Skadron	TBA	TBA
+18451 	023	Independent Study (3)	Open	0 / 30	Mary Soffa	TBA	TBA
+18452 	024	Independent Study (3)	Open	0 / 30	John Stankovic	TBA	TBA
+18453 	025	Independent Study (3)	Open	0 / 30	Kevin Sullivan	TBA	TBA
+18454 	026	Independent Study (3)	Open	0 / 30	Luther Tychonievich	TBA	TBA
+18455 	027	Independent Study (3)	Open	1 / 30	Alfred Weaver	TBA	TBA
+18456 	028	Independent Study (3)	Open	0 / 30	Cameron Whitehouse	TBA	TBA
+ CS 5014 Computation as a Research Tool
+18145 	001	Lecture (3)	Open 	45 / 47	Katherine Holcomb	MoWeFr 1:00PM - 1:50PM	Mechanical Engr Bldg 213
+18319 	003	Lecture (3)	Open 	34 / 70	Thomas Hall	TuTh 3:30PM - 4:45PM	Chemical Engineering Bldg 005
+ CS 6190 Computer Science Perspectives
+18194 	001	Lecture (1)	Open 	0 / 100	Kevin Skadron	MoWeFr 3:30PM - 4:45PM	Rice Hall 130
+ CS 6354 Computer Architecture
+18193 	001	Lecture (3)	Open 	29 / 42	Samira Khan	TuTh 2:00PM - 3:15PM	Olsson Hall 011
+ CS 6444 Introduction to Parallel Computing
+20233 	001	Lecture (3)	Open 	9 / 30	Andrew Grimshaw	TuTh 9:30AM - 10:45AM	Thornton Hall E316
+ CS 6501 Special Topics in Computer Science
+ 	Electronic Commerce
+20942 	001	Lecture (3)	Open  	29 / 30	Alfred Weaver	MoWe 2:00PM - 3:15PM	Olsson Hall 120
+ 	Defense Against the Dark Arts
+20943 	002	Lecture (3)	Closed  	36 / 35	Wei Wang	TuTh 5:00PM - 6:15PM	Olsson Hall 009
+ 	Text Mining
+18513 	003	Lecture (3)	Open  	43 / 60	Hongning Wang	MoWe 5:00PM - 6:15PM	Olsson Hall 009
+ 	Data Science Software Engrng
+18223 	004	Lecture (3)	Open  	25 / 42	Baishakhi Ray	TuTh 12:30PM - 1:45PM	Mechanical Engr Bldg 213
+ 	Engineering Logic
+18512 	005	Lecture (3)	Open  	18 / 30	Kevin Sullivan	TuTh 3:30PM - 4:45PM	Rice Hall 340
+ CS 6750 Database Systems
+20838 	001	Lecture (3)	Open 	36 / 60	Abdeltawab Hendawi	TuTh 11:00AM - 12:15PM	Olsson Hall 009
+ CS 6993 Independent Study
+17483 	001	Independent Study (1 - 12)	Open 	0 / 10	Thomas Horton	TBA	TBA
+17484 	002	Independent Study (1 - 12)	Open 	0 / 10	Kevin Skadron	TBA	TBA
+18707 	003	Independent Study (1 - 12)	Open 	6 / 10	Nada Basit	TBA	TBA
+21440 	004	Independent Study (1 - 12)	Open 	0 / 10	Mohammad Mahmoody-Ghidary	TBA	TBA
+ CS 7993 Independent Study
+17644 	001	Independent Study (1 - 12)	Open	0 / 30	Kevin Skadron	TBA	TBA
+18002 	002	Independent Study (1 - 12)	Open	0 / 30	John Stankovic	TBA	TBA
+18361 	003	Independent Study (1 - 12)	Open	1 / 5	Yanjun Qi	TBA	TBA
+18651 	004	Independent Study (1 - 12)	Open	0 / 30	Mary Soffa	TBA	TBA
+21441 	005	Independent Study (1 - 12)	Open	1 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+21584 	006	Independent Study (1 - 12)	Open	1 / 30	Baishakhi Ray	TBA	TBA
+21585 	007	Independent Study (1 - 12)	Open	0 / 30	Samira Khan	TBA	TBA
+ CS 7995 Supervised Project Research
+17485 	001	Independent Study (3)	Open 	0 / 10	Jack Davidson	TBA	TBA
+17645 	002	Independent Study (3)	Open 	0 / 30	David Evans	TBA	TBA
+18425 	004	Independent Study (3)	Open 	3 / 30	Connelly Barnes	TBA	TBA
+17646 	005	Independent Study (3)	Open 	0 / 30	Marty Humphrey	TBA	TBA
+17647 	006	Independent Study (3)	Open 	0 / 30	Kevin Skadron	TBA	TBA
+17648 	007	Independent Study (3)	Open 	0 / 30	Mary Soffa	TBA	TBA
+17649 	008	Independent Study (3)	Open 	2 / 30	John Stankovic	TBA	TBA
+17650 	009	Independent Study (3)	Open 	0 / 30	John Knight	TBA	TBA
+18003 	010	Independent Study (3)	Open 	1 / 30	Westley Weimer	TBA	TBA
+18103 	013	Independent Study (3)	Open 	0 / 30	Alfred Weaver	TBA	TBA
+18104 	014	Independent Study (3)	Open 	1 / 30	Kevin Sullivan	TBA	TBA
+18188 	015	Independent Study (3)	Open 	0 / 30	Abhi Shelat	TBA	TBA
+18268 	016	Independent Study (3)	Open 	1 / 30	Andrew Grimshaw	TBA	TBA
+18710 	017	Independent Study (3)	Open 	0 / 30	Yanjun Qi	TBA	TBA
+21370 	018	Independent Study (3)	Open 	3 / 30	Hongning Wang	TBA	TBA
+21586 	019	Independent Study (3)	Open 	1 / 30	Baishakhi Ray	TBA	TBA
+21587 	020	Independent Study (3)	Open 	0 / 30	Samira Khan	TBA	TBA
+21614 	021	Independent Study (3)	Open 	0 / 30	Cameron Whitehouse	TBA	TBA
+ CS 8524 Topics in Software Engineering
+17998 	001	Lecture (1 - 3)	Open 	0 / 30	Kevin Sullivan	TBA	TBA
+ CS 8897 Graduate Teaching Instruction
+17486 	001	Independent Study (1 - 12)	Open 	0 / 20	Jack Davidson	TBA	TBA
+17651 	002	Independent Study (1 - 12)	Open 	1 / 30	David Evans	TBA	TBA
+18408 	003	Independent Study (1 - 12)	Open 	0 / 10	Mohammad Mahmoody-Ghidary	TBA	TBA
+18409 	004	Independent Study (1 - 12)	Open 	2 / 10	Connelly Barnes	TBA	TBA
+17652 	005	Independent Study (1 - 12)	Open 	0 / 30	Marty Humphrey	TBA	TBA
+17653 	006	Independent Study (1 - 12)	Open 	0 / 30	Kevin Skadron	TBA	TBA
+17654 	007	Independent Study (1 - 12)	Open 	1 / 30	Mary Soffa	TBA	TBA
+17655 	008	Independent Study (1 - 12)	Open 	0 / 30	John Stankovic	TBA	TBA
+18004 	009	Independent Study (1 - 12)	Open 	0 / 30	Westley Weimer	TBA	TBA
+18157 	010	Independent Study (1 - 12)	Open 	0 / 30	Thomas Horton	TBA	TBA
+18158 	011	Independent Study (1 - 12)	Open 	0 / 30	James Cohoon	TBA	TBA
+18159 	012	Independent Study (1 - 12)	Open 	0 / 30	Mark Sherriff	TBA	TBA
+18160 	013	Independent Study (1 - 12)	Open 	1 / 30	Aaron Bloomfield	TBA	TBA
+18161 	014	Independent Study (1 - 12)	Open 	0 / 30	Gabriel Robins	TBA	TBA
+18410 	015	Independent Study (1 - 12)	Open 	0 / 10	Yanjun Qi	TBA	TBA
+18162 	016	Independent Study (1 - 12)	Open 	0 / 30	Worthy Martin	TBA	TBA
+18163 	017	Independent Study (1 - 12)	Open 	0 / 30	John Knight	TBA	TBA
+18689 	018	Independent Study (1 - 12)	Open 	2 / 30	David Edwards	TBA	TBA
+18180 	019	Independent Study (1 - 12)	Open 	0 / 10	Cameron Whitehouse	TBA	TBA
+18424 	020	Independent Study (1 - 12)	Open 	4 / 5	Nada Basit	TBA	TBA
+21975 	021	Independent Study (1 - 12)	Open 	1 / 10	Mary Smith	TBA	TBA
+18457 	022	Independent Study (1 - 12)	Open 	0 / 5	Mark Floryan	TBA	TBA
+18458 	023	Independent Study (1 - 12)	Open 	2 / 5	Luther Tychonievich	TBA	TBA
+21371 	024	Independent Study (1 - 12)	Open 	1 / 20	Hongning Wang	TBA	TBA
+21588 	025	Independent Study (1 - 12)	Open 	1 / 30	Baishakhi Ray	TBA	TBA
+21589 	026	Independent Study (1 - 12)	Open 	0 / 30	Samira Khan	TBA	TBA
+ CS 8999 Thesis
+ 
+ CS 9897 Graduate Teaching Instruction
+18006 	001	Independent Study (1 - 12)	Open 	0 / 30	James Cohoon	TBA	TBA
+18005 	002	Independent Study (1 - 12)	Open 	2 / 30	Aaron Bloomfield	TBA	TBA
+21978 	003	Independent Study (1 - 12)	Open	0 / 30	Mary Smith	TBA	TBA
+21979 	004	Independent Study (1 - 12)	Open	0 / 30	Luther Tychonievich	TBA	TBA
+18007 	005	Independent Study (1 - 12)	Open 	0 / 30	Jack Davidson	TBA	TBA
+18008 	006	Independent Study (1 - 12)	Open 	0 / 30	David Evans	TBA	TBA
+18009 	007	Independent Study (1 - 12)	Open 	0 / 30	James French	TBA	TBA
+18010 	008	Independent Study (1 - 12)	Open 	1 / 30	Andrew Grimshaw	TBA	TBA
+18011 	009	Independent Study (1 - 12)	Open 	0 / 30	Worthy Martin	TBA	TBA
+21977 	010	Independent Study (1 - 12)	Open	0 / 30	David Edwards	TBA	TBA
+18459 	011	Independent Study (1 - 12)	Open 	0 / 30	Mark Floryan	TBA	TBA
+18012 	012	Independent Study (1 - 12)	Open 	0 / 30	Thomas Horton	TBA	TBA
+18013 	013	Independent Study (1 - 12)	Open 	1 / 30	Marty Humphrey	TBA	TBA
+18413 	014	Independent Study (1 - 12)	Open 	0 / 30	Mohammad Mahmoody-Ghidary	TBA	TBA
+18014 	015	Independent Study (1 - 12)	Open 	0 / 30	John Knight	TBA	TBA
+21976 	016	Independent Study (1 - 12)	Open	0 / 30	Nada Basit	TBA	TBA
+18414 	017	Independent Study (1 - 12)	Open 	0 / 30	Connelly Barnes	TBA	TBA
+18016 	018	Independent Study (1 - 12)	Open 	2 / 30	Abhi Shelat	TBA	TBA
+18017 	019	Independent Study (1 - 12)	Open 	1 / 30	Mark Sherriff	TBA	TBA
+18018 	020	Independent Study (1 - 12)	Open 	0 / 30	Kevin Skadron	TBA	TBA
+18019 	021	Independent Study (1 - 12)	Open 	0 / 30	Mary Soffa	TBA	TBA
+18415 	022	Independent Study (1 - 12)	Open 	0 / 30	Yanjun Qi	TBA	TBA
+18020 	023	Independent Study (1 - 12)	Open 	1 / 30	John Stankovic	TBA	TBA
+18021 	024	Independent Study (1 - 12)	Open 	0 / 30	Kevin Sullivan	TBA	TBA
+18022 	025	Independent Study (1 - 12)	Open 	1 / 30	Alfred Weaver	TBA	TBA
+18023 	026	Independent Study (1 - 12)	Open 	0 / 30	Westley Weimer	TBA	TBA
+18095 	027	Independent Study (1 - 12)	Open 	0 / 30	Gabriel Robins	TBA	TBA
+18096 	028	Independent Study (1 - 12)	Open 	0 / 30	Cameron Whitehouse	TBA	TBA
+21592 	029	Independent Study (1 - 12)	Open	0 / 30	Baishakhi Ray	TBA	TBA
+21593 	030	Independent Study (1 - 12)	Open	1 / 30	Samira Khan	TBA	TBA
+21980 	031	Independent Study (1 - 12)	Open	1 / 30	Kong-Cheng Wong	TBA	TBA
+ CS 9999 Dissertation
+ 
+
+
+
+

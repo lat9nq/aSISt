@@ -1,0 +1,29 @@
+ ANTH 1010 Introduction to Anthropology
+10335 	100	Lecture (3)	Closed 	182 / 180	James Igoe	TuTh 9:30AM - 10:20AM	Wilson Hall 301
+14415 	101	Discussion (3)	Closed 	22 / 20	Susan Palazzo	Th 4:00PM - 4:50PM	New Cabell Hall 395
+14416 	102	Discussion (3)	Closed 	20 / 20	Susan Palazzo	Th 5:00PM - 5:50PM	New Cabell Hall 111
+14417 	103	Discussion (3)	Open 	19 / 20	Susan Palazzo	Th 2:00PM - 2:50PM	Physics Bldg 218
+14418 	104	Discussion (3)	Closed 	20 / 20	Susan Palazzo	Th 8:30AM - 9:20AM	Brooks Hall 103
+14419 	105	Discussion (3)	Closed 	21 / 20	Susan Palazzo	We 5:00PM - 5:50PM	New Cabell Hall 485
+14420 	106	Discussion (3)	Closed 	20 / 20	Susan Palazzo	Fr 9:00AM - 9:50AM	New Cabell Hall 332
+21724 	107	Discussion (3)	Closed 	20 / 20	Cory-Alice Andre-Johnson	Fr 9:00AM - 9:50AM	New Cabell Hall 168
+21725 	108	Discussion (3)	Closed 	21 / 20	Cory-Alice Andre-Johnson	Fr 10:00AM - 10:50AM	Physics Bldg 218
+21726 	109	Discussion (3)	Open 	19 / 20	Cory-Alice Andre-Johnson	Fr 8:00AM - 8:50AM	Brooks Hall 103
+ ANTH 2153 North American Indians
+18967 	001	Lecture (3)	Open 	85 / 90	Jeffrey Hantman	MoWe 3:30PM - 4:45PM	Clark Hall 107
+ ANTH 2190 Desire and World Economics
+11747 	100	Lecture (3)	Closed	31 / 30	George Mentore	MoWeFr 11:00AM - 11:50AM	Dell 1 105
+ ANTH 2230 Fantasy and Social Values
+10336 	001	Lecture (3)	Closed	58 / 60	Roy Wagner	TuTh 9:30AM - 10:45AM	Nau Hall 211
+ ANTH 2280 Medical Anthropology
+15812 	100	Lecture (3)	Closed	120 / 120	China Scherz	TuTh 11:00AM - 11:50AM	Wilson Hall 301
+19301 	101	Discussion (3)	Closed	22 / 20	Ida Hoequist	Th 2:00PM - 2:50PM	Gibson Hall 142
+19302 	102	Discussion (3)	Open	19 / 20	Xinyan Peng	Fr 9:00AM - 9:50AM	New Cabell Hall 485
+19303 	103	Discussion (3)	Closed	20 / 20	Ida Hoequist	Fr 10:00AM - 10:50AM	Maury Hall 115
+19304 	104	Discussion (3)	Closed	20 / 20	Ida Hoequist	Th 3:00PM - 3:50PM	Gibson Hall 142
+19305 	105	Discussion (3)	Open	19 / 20	Xinyan Peng	Mo 9:00AM - 9:50AM	New Cabell Hall 395
+19306 	106	Discussion (3)	Closed	20 / 20	Xinyan Peng	Mo 10:00AM - 10:50AM	New Cabell Hall 368
+ ANTH 2310 Symbol and Ritual
+13265 	001	Lecture (3)	Closed 	30 / 30	Carrie Douglass	TuTh 3:30PM - 4:45PM	New Cabell Hall 332
+ ANTH 2340 Anthropology of Birth and Death
+21709 	001	Lecture (3)	Open 	17 / 20	Ravindra Khare	Th 3:30PM - 6:00PM	Brooks Hall 103
