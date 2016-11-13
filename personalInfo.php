@@ -82,21 +82,85 @@ crossorigin="anonymous">
       </div>
   </nav>
 
+<?php
+$db = new mysqli('localhost', 'username', 'password', 'asist');
+if ($db->connect_error):
+ die ("Could not connect to db: " . $db->connect_error);
+endif;
+
+  $session_id = $_SESSION['computing_id'];
+  $query = "select * from student where computing_id='$session_id'";
+  $result = $db->query($query);
+  if ($result->num_rows>0){
+    $row = $result->fetch_array();
+    $computing_id = $row["computing_id"];
+    $name = $row["first_name"] ." ". $row["last_name"];
+    $dob = $row["date_of_birth"];
+    $phone = $row["primary_phone"];
+    $permanent_address = $row["permanent_home_address"];
+    $mailing_address = $row["current_mailing_address"];
+    $year = $row["year"];
+    $career= $row["career"];
+    $school_id = $row["school_id"];
+    $school_result = $db->query("select school_name from school where school_id = $school_id");
+    $school_name = $school_result->fetch_array()["school_name"];
+  }
+?>
+
 	<br/>
 	<center><h3>Personal Information</h3></center><br/>
 
-  <h4><center>Name</center></h4>
+  <h4><center><?php echo $name ?></center></h4>
 
-    <table class="table" style='border-collapse: collapse;'> 
-    <tr>
-      <th scope="col"><center>Contact</center></th>
-      <th scope="col"><center>Academic</center></th>
+    <table class="table table-bordered"> 
+    <thead>
+      <th><center>Contact</center></th>
+      <th></th>
+      <th><center>Academic</center></th>
+      <th></th>
+    </thead>
+    </tr>
+     <tr>
+      <td><b>Primary Phone Number</b></td>
+      <td><?php echo $phone?></td>   
+      <td><b>Year</b></td>
+      <td><?php echo $year ?></td>
+      <td></td>
+        <td></td>
     </tr>
     <tr>
-      <td>Address</td>
-      <td>Year</td>
+      <td><b>Date of Birth</b></td>
+      <td><?php echo $dob?></td>   
+      <td><b>Career</b></td>
+      <td><?php echo $career ?></td>
+      <td></td>
+        <td></td>
     </tr>
     <tr>
+      <td><b>Email Address</b></td>
+      <td><?php echo $computing_id?>@virginia.edu</td>   
+      <td><b>School</b></td>
+      <td><?php echo $school_name ?></td>
+      <td></td>
+        <td></td>
+    </tr>
+    <tr>
+      <td><b>Permanent Address</b></td>
+      <td><?php echo $permanent_address?></td>   
+      <td></td>
+      <td></td>
+      <td></td>
+        <td></td>
+    </tr>
+     <tr>
+      <td><b>Current Mailing Address</b></td>
+      <td><?php echo $mailing_address?></td>   
+      <td></td>
+      <td></td>
+      <td></td>
+        <td></td>
+    
+    <!-- <tr>
       <td>Primary Phone</td>
       <td>School</td>
     </tr>
@@ -111,5 +175,5 @@ crossorigin="anonymous">
     <tr>
       <td></td>
       <td>Advisor(s)</td>      
-    </tr>
-  </table
+    </tr> -->
+  </table>

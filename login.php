@@ -129,12 +129,11 @@ else
     <script>$('#errorIDModal').modal('show');</script>
 
     <?php
-  } else if ($result_password->num_rows==0){
+  } else{
     ?>
     <script>$('#errorPasswordModal').modal('show');</script>
     <?php
   }
-      // echo "<script>alert('Email or password is incorrect!')</script>"; 
 }  
 }  
 ?>
