@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import re, json
 
 course_title  = re.compile(r"^\s*[A-Z]{2,4}\s+[0-9]{4,4}")
