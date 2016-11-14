@@ -20,25 +20,26 @@ if(!$_SESSION['computing_id'])
 
     <title>aSISt</title>
 
-
 </head>
 <body>
 
-    <div class="container-fluid" style="margin-right:0%;margin-left:3%">
-        <div class="row">
-            <div class="col-md-2" id="search">
-               <center><h3>Search</h3></center><br/>
-               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Department">
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Course Mnemonic">
-              </div>
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Semester">
-              </div>
-              <button type="button" class="btn btn-success btn-block">Search</button>
-          </div>
+<div class="container-fluid" style="margin-right:0%;margin-left:3%">
+	<div class="row">
+		<div class="col-md-2" id="search">
+			<center><h3>Search</h3></center><br>
+			<form action="searchResult.php" method="post">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Department" name="dept_input" />
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Course Mnemonic" name="course_input" />
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Semester" name="semester_input" />
+				</div>
+				<button type="submit" class="btn btn-success btn-block">Search</button>
+			</form>
+		</div>
 
           <!-- header and nav bar -->
           <div class="col-md-2" id="page-wrap-search">
@@ -108,8 +109,8 @@ if(!$_SESSION['computing_id'])
        endif;
 
 // assuming that $dept and $course_mnemonic gotten from search
-       $dept = "CS";
-       $course_mnemonic = "";
+       $dept = $_POST["dept_input"];
+       $course_mnemonic = $_POST["course_input"];
        $courses = array();
 
        if ($course_mnemonic==""){
