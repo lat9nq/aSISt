@@ -28,7 +28,7 @@ if(!$_SESSION['computing_id'])
 	<div class="row">
 		<div class="col-md-2" id="search">
 			<center><h3>Search</h3></center><br>
-			<form action="searchResult.php" method="post">
+			<form name="course_search_form" action="searchResult.php" method="post">
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="Department" name="dept_input" />
 				</div>
@@ -39,11 +39,11 @@ if(!$_SESSION['computing_id'])
 					<!--
 						<input type="text" class="form-control" placeholder="Semester" name="semester_input" />
 					-->
-					<select name="season_input">
+					<select name="season_select_input">
 						<option value="fall">Fall</option>
 						<option value="spring">Spring</option>
 					</select>
-					<select name="year_input">
+					<select name="year_select_input">
 						<option value="2016">2016</option>
 						<option value="2015">2015</option>
 					</select>
@@ -122,11 +122,13 @@ if(!$_SESSION['computing_id'])
 // assuming that $dept and $course_mnemonic gotten from search
        $dept = $_POST["dept_input"];
        $course_mnemonic = $_POST["course_input"];
+       $semester = $_POST["season_select_input"] . ' ' . $_POST["year_select_input"];
        $courses = array();
 
        if ($course_mnemonic==""){
     //the search query was only for department, but nothing for course_mnemonic and semester were entered
-        $query = "select course_number from course where dept_mnemonic='$dept'";
+        //~ $query = "select course_number from course where dept_mnemonic='$dept'";
+        $query = "select distinct d.course_number from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept') as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
         $result = $db->query($query);
         while ($course_row = $result->fetch_array()){
             $course = $course_row["course_number"];
@@ -143,14 +145,14 @@ if(!$_SESSION['computing_id'])
 
        $sections = array();
 
-       $query = "select * from section where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $query = "select * from section where semester='$semester' and dept_mnemonic='$dept' and course_number=$course_mnemonic";
        $result = $db->query($query);
 
-       $credit_query = "select units from course where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $credit_query = "select units from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_mnemonic) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
        $credit_result = $db -> query($credit_query);
        $credits = $credit_result->fetch_array()["units"];
 
-       $course_title_query = "select course_title from course where dept_mnemonic='$dept' and course_number=$course_mnemonic";
+       $course_title_query = "select course_title from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_mnemonic) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
        $course_title = $db->query($course_title_query)->fetch_array()["course_title"];
 
        if ($result->num_rows>0){
