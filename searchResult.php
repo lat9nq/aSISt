@@ -20,6 +20,7 @@ if(!$_SESSION['computing_id'])
 
     <title>aSISt</title>
 
+
 </head>
 <body>
 
@@ -35,7 +36,17 @@ if(!$_SESSION['computing_id'])
 					<input type="text" class="form-control" placeholder="Course Mnemonic" name="course_input" />
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Semester" name="semester_input" />
+					<!--
+						<input type="text" class="form-control" placeholder="Semester" name="semester_input" />
+					-->
+					<select name="season_input">
+						<option value="fall">Fall</option>
+						<option value="spring">Spring</option>
+					</select>
+					<select name="year_input">
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+					</select>
 				</div>
 				<button type="submit" class="btn btn-success btn-block">Search</button>
 			</form>
