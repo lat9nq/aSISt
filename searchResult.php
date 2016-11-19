@@ -5,6 +5,17 @@ if(!$_SESSION['computing_id'])
     header("Location: login.php");//redirect to login page to secure the welcome page without login access.  
   }  
   ?>
+  
+  <?php
+  		function no_sections($array) {
+  			foreach ($array as $course) {
+  				if (count($course["sections"]) > 0) {
+  					return false;
+  				}
+  			}
+  			return true;
+  		}
+  	?>
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -97,267 +108,230 @@ if(!$_SESSION['computing_id'])
 
     
 
-
+<center><h3>Search Results</h3></center>
 
     
 
 
-    <?php
-        $db = new mysqli('localhost', 'username', 'password', 'asist');
-        if ($db->connect_error):
-         die ("Could not connect to db: " . $db->connect_error);
-       endif;
+	<?php
+    	$db = new mysqli('localhost', 'username', 'password', 'asist');
+    	if ($db->connect_error):
+    		die ("Could not connect to db: " . $db->connect_error);
+    	endif;
 
 // assuming that $dept and $course_number gotten from search
-       if(!empty($_POST["dept_input"])) {
-        $dept = $_POST["dept_input"];
-      } else {
-        $dept= "";
-      }
-      if (!empty($_POST["course_input"])){
-       $course_number = $_POST["course_input"];
-     } else {
-      $course_number="";
-    }
-    if (!empty($_POST["season_select_input"])){
-     $semester = $_POST["season_select_input"] . ' ' . $_POST["year_select_input"];
-   } else {
-    $semester="Fall 2016";
-  }
+		if(!empty($_POST["dept_input"])) {
+    		$dept = $_POST["dept_input"];
+      	} else {
+    		$dept= "";
+      	}
+      	if (!empty($_POST["course_input"])){
+      	 	$course_number = $_POST["course_input"];
+     	} else {
+      		$course_number="";
+    	}
+    	if (!empty($_POST["season_select_input"])){
+     		$semester = $_POST["season_select_input"] . ' ' . $_POST["year_select_input"];
+   		} else {
+    		$semester="Fall 2016";
+  		}
 
-  $courses = array();
+  		$courses = array();
 
-  if ($course_number==""){
-    //the search query was only for department, but nothing for course_number and semester were entered
-        //~ $query = "select course_number from course where dept_mnemonic='$dept'";
-    $query = "select distinct d.course_number from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept') as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
-    $result = $db->query($query);
-    // get all the courses which correspond to this query
-    while ($course_row = $result->fetch_array()){
-      $course = $course_row["course_number"];
-      array_push($courses,$course);
-    }
-  } else {
-    array_push($courses,$course_number);
-  }
+  		if ($course_number==""){
+    		//the search query was only for department, but nothing for course_number and semester were entered
+        	//~ $query = "select course_number from course where dept_mnemonic='$dept'";
+    		$query = "select distinct d.course_number from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept') as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
+    		$result = $db->query($query);
+    		// get all the courses which correspond to this query
+    		while ($course_row = $result->fetch_array()){
+      			$course = $course_row["course_number"];
+      			array_push($courses,$course);
+    		}
+  		} else {
+    		array_push($courses,$course_number);
+  		}
 
-    //for the Learn More toggle
-  $index=1;
+    	//for the Learn More toggle
+  		$index=1;
+		$ultimate_array = array();
+		// loop over all courses and get the data for their sections
+  		foreach($courses as $course_number){
+   			$sections = array();
 
-	// loop over all courses and get the data for their sections
-  foreach($courses as $course_number){
+			// get data for each section in the current course
+   			$query = "select * from section where semester='$semester' and dept_mnemonic='$dept' and course_number=$course_number";
+   			$result = $db->query($query);
 
-   $sections = array();
+   			$credit_query = "select units from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_number) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
+   			$credit_result = $db->query($credit_query);
+   			$credits = $credit_result->fetch_array()["units"];
 
-	// get data for each section in the current course
-   $query = "select * from section where semester='$semester' and dept_mnemonic='$dept' and course_number=$course_number";
-   $result = $db->query($query);
+   			$course_title_query = "select course_title from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_number) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
+   			$course_title = $db->query($course_title_query)->fetch_array()["course_title"];
 
-   $credit_query = "select units from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_number) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
-   $credit_result = $db -> query($credit_query);
-   $credits = $credit_result->fetch_array()["units"];
+			$current_course_array = array("credits" => $credits, "course_number" => $course_number, "course_title" => $course_title,
+				"dept_mnemonic" => strtoupper($dept), "sections" => array());
+			
+   			if ($result->num_rows > 0){
+   				// here we loop over all the sections to get the various data
+   				// including that referenced in other tables
+    			while ($row = $result->fetch_array()){
+      				$section = $row["section_id"];
+      				$course_component = $row["description"]." (".$credits.")";
+      				$status_num = $row["status"];
+        			//0 is closed, 1 is open, 2 is waitlisted
+        			//this is a very good database strategy
+      				if ($status_num==0){
+        				$status="Closed";
+      				} else if ($status_num==1){
+        				$status = "Open";
+      				} else if ($status_num==2){
+        				$status = "Waitlisted";
+      				}
+      				$enrollment = $row["total_students"]."/".$row["capacity"];
 
-   $course_title_query = "select course_title from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept' and course_number=$course_number) as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
-   $course_title = $db->query($course_title_query)->fetch_array()["course_title"];
-
-   if ($result->num_rows>0){
-   
-   // here we loop over all the sections to get the various data
-   // including that referenced in other tables
-    while ($row = $result->fetch_array()){
-      $section = $row["section_id"];
-      $course_component = $row["description"]." (".$credits.")";
-      $status_num = $row["status"];
-        //0 is closed, 1 is open, 2 is waitlisted
-      if ($status_num==0){
-        $status="Closed";
-      } else if ($status_num==1){
-        $status = "Open";
-      } else if ($status_num==2){
-        $status = "Waitlisted";
-      }
-      $enrollment = $row["total_students"]."/".$row["capacity"];
-
-	// get the instructor id, so you can then use that to find the instructor's name
-      $instructor_id_query = "select instructor_id from instructor_section where section_id = $section and dept_mnemonic='$dept' and course_number=$course_number";
-      $instructor_id = $db->query($instructor_id_query)->fetch_array()["instructor_id"];
+					// get the instructor id, so you can then use that to find the instructor's name
+      				$instructor_id_query = "select instructor_id from instructor_section where section_id = $section and dept_mnemonic='$dept' and course_number=$course_number";
+      				$instructor_id = $db->query($instructor_id_query)->fetch_array()["instructor_id"];
       
-      // here we find the instructor's first and last names
-      // and concatenate then in variable $instructor (unique to this particular section)
-      $instructor_name_query = "select first_name,last_name from instructor where computing_id = '$instructor_id'";
-      $instructor_row = $db->query($instructor_name_query)->fetch_array();
-      $instructor = $instructor_row["first_name"]." ".$instructor_row["last_name"];
+      				// here we find the instructor's first and last names
+      				// and concatenate then in variable $instructor (unique to this particular section)
+      				$instructor_name_query = "select first_name,last_name from instructor where computing_id = '$instructor_id'";
+      				$instructor_row = $db->query($instructor_name_query)->fetch_array();
+      				$instructor = $instructor_row["first_name"]." ".$instructor_row["last_name"];
 
-		// select the timeslot for this section
-      $time_id = $row["time_id"];
-      $time_query = "select start_time,end_time from timeslot where time_id=$time_id";
-      $time_row = $db->query($time_query)->fetch_array();
-      $time = $row["days"]." ".substr($time_row["start_time"],0,-3)."-".substr($time_row["end_time"],0,-3);
+					// select the timeslot for this section
+      				$time_id = $row["time_id"];
+      				$time_query = "select start_time,end_time from timeslot where time_id=$time_id";
+      				$time_row = $db->query($time_query)->fetch_array();
+      				$time = $row["days"]." ".substr($time_row["start_time"],0,-3)."-".substr($time_row["end_time"],0,-3);
+		
+					// select the building for this section
+      				$building_id = $row["building_id"];
+      				$building_query = "select building_name from building where building_id = $building_id";
+      				$building = $db->query($building_query)->fetch_array()["building_name"]." ".$row["room"];
+ 					$section_array = array("section" => $section, "course_component" => $course_component, "status" => $status, "enrollment" => $enrollment, "instructor" => $instructor, "time" => $time, "building" => $building);
+      				array_push($current_course_array["sections"], $section_array);
+      				//this is what used to be here, the above code is more maintainable
+      				//array_push($sections, array($section, $course_component, $status, $enrollment, $instructor, $time, $building) );
+    			}
+  			}
+  			array_push($ultimate_array, $current_course_array);
+  		}
+	?>
+	<!-- 	This whole thing used to be one giant for loop; to accommodate error handling
+			I split it into two parts; the part above is for gathering the data, and the
+			one below is for displaying it. This allows the page to look at all the data
+			that was gathered and tell whether or not we actually got results. If not,
+			it prints an annoying message. The CSS didn't work after I made this change, 
+			so I fixed it but there may be other problems. I also improved the readability
+			of the code by indexing the arrays by strings rather than integers, for
+			example $section["semester"] holds the semester value, rather than $section[2]
+			which no one can remember. ==Rowyn
+	-->
+	
+	<?php if (count($ultimate_array) == 0 || no_sections($ultimate_array)) { ?>
+  			<p style = "text-align: center; font-size: 50px; font-family: 'Comic Sans MS'; color: fuchsia;">
+  				<em>Your search returned 0 results!</em>
+  			</p>
+  		<br/>
+  	<?php } else { ?>
+    
+			<?php foreach ($ultimate_array as $current_course) { ?>
+  			<table class="table table-striped">
+  				<!--
+      			<thead>
+        			<tr>
+          				<th style="width:20%">Course Number</th>
+          				<th>Course Title</th>
+          				<th></th>
+          				<th></th>
+        			</tr>
+      			</thead>
+      			-->
+      			
+      			<tbody>
+  					<tr>
+    					<td><?php echo $current_course["dept_mnemonic"]." ".$current_course["course_number"];?></td>
+    					<td style = "width: 60%;"><?php echo $current_course["course_title"]; ?></td>
+    					<td style="width:15%">
+    						<!-- 
+    							important buttons
+    						-->
+      						<button type="button" class="btn btn-info btn-circle.btn-lg"
+      							data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
+    					</td>
+    					<td>
+      						<button type="button" class="btn btn-success btn-circle.btn-lg">Add</button>
+    					</td>
+  					</tr>
+ 					<tr>
+    					<td colspan="4" class="hiddenRow">
+      						<div class="accordian-body collapse" id=<?php echo "demo".$index ?>>
+        						<table class="table table-bordered"> 
+          							<thead>
+            							<tr>
+              								<th>Section</th>
+              								<th>Course Component</th>
+              								<th>Status</th>
+              								<th>Enrollment</th>
+             								<th>Instructor</th>
+              								<th>Meeting Times</th>
+              								<th>Location</th>
+              								<th></th>
+            							</tr>
+          							</thead>
 
-		// select the building for this section
-      $building_id = $row["building_id"];
-      $building_query = "select building_name from building where building_id = $building_id";
-      $building = $db->query($building_query)->fetch_array()["building_name"]." ".$row["room"];
+          							<?php foreach ($current_course["sections"] as $section) { ?>
+          							<tbody>
+           								<tr>
+											<td><?php echo $section["section"];?></td> <!-- lecture component -->
+              								<td><?php echo $section["course_component"]; ?></td> <!-- course_component -->
+              								<td><?php echo $section["status"]; ?></td> <!-- status -->
+              								<td><?php echo $section["enrollment"]; ?></td><!-- enrollment -->
+              								<td><?php echo $section["instructor"]; ?></td><!-- instructor -->
+              								<td><?php echo $section["time"]; ?></td><!-- time -->
+              								<td><?php echo $section["building"]; ?></td><!-- building -->
+              								<td><button type="button" class="btn btn-success btn-circle.btn-lg"
+               									data-toggle="modal" data-target="#17339">Add</button></td>
 
-		// 
-      array_push($sections, array($section, $course_component, $status, $enrollment, $instructor, $time, $building) );
-    }
-  }
+               								<span style="margin:auto"class="modal fade" id="17339" role="dialog">
+                 							<div class="modla-dialog modal-lg">
+                  								<div class="modal-content">
+                   									<div class="modal-header">
+                    									<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    									<h4 class="modal-title">Select discussion</h4>
+                  									</div>
+                  									<div class="modal-body">
+                    									<div class="form-group">
+                      										<label for="17339disc">Select a discussion:</label>
+                      										<select multiple class="form-control" id="17339disc">
+                       											<option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
+                     										</select>
+                   										</div>
+                 									</div>
+                 									<div class="modal-footer">
+                  										<button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
+                									</div>
+              									</div>
+            								</div>
+          									</span>
 
-
-  ?>
-
-  <!-- search results -->
-  <?php
-  	if (count($sections) == 0) {
-  	?>
-  		<p style = "text-align: center; font-size: 50px; font-family: 'Comic Sans MS'; color: fuchsia;">
-  			<em>Your search returned 0 results!</em>
-  		</p>
-  	<?php } else { ?> <!-- else here -->
-  	<br/>
-    <center><h3>Search Results</h3></center><br/>
-  	<table class="table table-striped">
-      <thead>
-        <tr>
-          <th style="width:20%">Course Numero</th>
-          <th>Course Title</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-  <tr>
-    <td>
-      <?php 
-                //course_number
-      echo $dept." ".$course_number
-      ?>
-    </td>
-
-    <td>
-      <?php 
-                //course_title
-      echo $course_title
-      ?>
-    </td>
-
-    <td style="width:15%">
-      <button type="button" class="btn btn-info btn-circle.btn-lg" data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
-    </td>
-    <td>
-      <button type="button" class="btn btn-success btn-circle.btn-lg" >Add</button>
-    </td>
-  </tr>
-  <tr>
-
-    <td colspan="4" class="hiddenRow">
-
-      <div class="accordian-body collapse" id=<?php echo "demo".$index ?>>
-
-
-        <table class="table table-bordered"> 
-          <thead>
-            <tr>
-              <th>Section</th>
-              <th>Course Component</th>
-              <th>Status</th>
-              <th>Enrollment</th>
-              <th>Instructor</th>
-              <th>Meeting Times</th>
-              <th>Location</th>
-              <th></th>
-            </tr>
-          </thead>
-
-          <?php foreach($sections as $section) { ?>
-
-          <tbody>
-            <tr>
-              <td>
-                <?php
-                                    // section ID
-                echo $section[0];
-                ?>
-              </td>
-              <td>
-                <?php 
-                                    // course component (Ex. Lecture(3))
-                echo $section[1] 
-                ?>
-              </td>
-              <td>
-                <?php
-                                    //status
-                echo $section[2]
-                ?>
-              </td>
-              <td>
-                <?php
-                                    //enrollment
-                echo $section[3]
-                ?>
-              </td>
-              <td>
-                <?php
-                                    //instructor
-                echo $section[4]
-                ?>
-              </td>
-              <td>
-                <?php
-                                    //time
-                echo $section[5]
-                ?>
-              </td>
-              <td>Thornton Hall E316</td>
-              <td><button type="button" class="btn btn-success btn-circle.btn-lg"
-               data-toggle="modal" data-target="#17339">Add</button></td>
-
-               <span style="margin:auto"class="modal fade" id="17339" role="dialog">
-                 <div class="modla-dialog modal-lg">
-                  <div class="modal-content">
-                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Select discussion</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <label for="17339disc">Select a discussion:</label>
-                      <select multiple class="form-control" id="17339disc">
-                       <option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
-                     </select>
-                   </div>
-                 </div>
-                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
-                </div>
-              </div>
-            </div>
-          </span> <!-- modal -->
-
-        </tr>
-      </tbody>
-      <?php
-      $index=$index+1;
-            } //end foreach section
-            ?>
+        								</tr>
+        								
+      								</tbody>
+      <?php $index++; } ?> <!-- end foreach section -->
 
           </table>
-
-
         </div> 
       </td>
     </tr>
-
-    <?php
-  } }
-  ?>
 </tbody>
 </table>
-
+<?php } } ?>
 </div>
 </div>
-
+-->
 </body>
 </html>
