@@ -201,5 +201,5 @@
 	$instructor_set = logInstructors($list);
 	$course_set = parseCourses($list);
 	$buildings = parseBuildings($list);
-	writeDatabase($instructor_set, $course_set, $timeslot_set, $list, $buildings);
+	//writeDatabase($instructor_set, $course_set, $timeslot_set, $list, $buildings);
 ?>

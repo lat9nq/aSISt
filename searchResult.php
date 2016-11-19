@@ -95,24 +95,14 @@ if(!$_SESSION['computing_id'])
 
     <!-- end nav bar -->
 
-    <br/>
-    <center><h3>Search Results</h3></center><br/>
+    
 
 
 
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th style="width:20%">Course Number</th>
-          <th>Course Title</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
+    
 
 
-        <?php
+    <?php
         $db = new mysqli('localhost', 'username', 'password', 'asist');
         if ($db->connect_error):
          die ("Could not connect to db: " . $db->connect_error);
@@ -142,6 +132,7 @@ if(!$_SESSION['computing_id'])
         //~ $query = "select course_number from course where dept_mnemonic='$dept'";
     $query = "select distinct d.course_number from course as d join (select course_number, dept_mnemonic from section where semester='$semester' and dept_mnemonic = '$dept') as r on d.course_number=r.course_number and d.dept_mnemonic=r.dept_mnemonic";
     $result = $db->query($query);
+    // get all the courses which correspond to this query
     while ($course_row = $result->fetch_array()){
       $course = $course_row["course_number"];
       array_push($courses,$course);
@@ -153,10 +144,12 @@ if(!$_SESSION['computing_id'])
     //for the Learn More toggle
   $index=1;
 
+	// loop over all courses and get the data for their sections
   foreach($courses as $course_number){
 
    $sections = array();
 
+	// get data for each section in the current course
    $query = "select * from section where semester='$semester' and dept_mnemonic='$dept' and course_number=$course_number";
    $result = $db->query($query);
 
@@ -168,6 +161,9 @@ if(!$_SESSION['computing_id'])
    $course_title = $db->query($course_title_query)->fetch_array()["course_title"];
 
    if ($result->num_rows>0){
+   
+   // here we loop over all the sections to get the various data
+   // including that referenced in other tables
     while ($row = $result->fetch_array()){
       $section = $row["section_id"];
       $course_component = $row["description"]." (".$credits.")";
@@ -182,21 +178,28 @@ if(!$_SESSION['computing_id'])
       }
       $enrollment = $row["total_students"]."/".$row["capacity"];
 
+	// get the instructor id, so you can then use that to find the instructor's name
       $instructor_id_query = "select instructor_id from instructor_section where section_id = $section and dept_mnemonic='$dept' and course_number=$course_number";
       $instructor_id = $db->query($instructor_id_query)->fetch_array()["instructor_id"];
+      
+      // here we find the instructor's first and last names
+      // and concatenate then in variable $instructor (unique to this particular section)
       $instructor_name_query = "select first_name,last_name from instructor where computing_id = '$instructor_id'";
       $instructor_row = $db->query($instructor_name_query)->fetch_array();
       $instructor = $instructor_row["first_name"]." ".$instructor_row["last_name"];
 
+		// select the timeslot for this section
       $time_id = $row["time_id"];
       $time_query = "select start_time,end_time from timeslot where time_id=$time_id";
       $time_row = $db->query($time_query)->fetch_array();
       $time = $row["days"]." ".substr($time_row["start_time"],0,-3)."-".substr($time_row["end_time"],0,-3);
 
+		// select the building for this section
       $building_id = $row["building_id"];
       $building_query = "select building_name from building where building_id = $building_id";
       $building = $db->query($building_query)->fetch_array()["building_name"]." ".$row["room"];
 
+		// 
       array_push($sections, array($section, $course_component, $status, $enrollment, $instructor, $time, $building) );
     }
   }
@@ -205,6 +208,25 @@ if(!$_SESSION['computing_id'])
   ?>
 
   <!-- search results -->
+  <?php
+  	if (count($sections) == 0) {
+  	?>
+  		<p style = "text-align: center; font-size: 50px; font-family: 'Comic Sans MS'; color: fuchsia;">
+  			<em>Your search returned 0 results!</em>
+  		</p>
+  	<?php } else { ?> <!-- else here -->
+  	<br/>
+    <center><h3>Search Results</h3></center><br/>
+  	<table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="width:20%">Course Numero</th>
+          <th>Course Title</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
   <tr>
     <td>
       <?php 
@@ -227,7 +249,7 @@ if(!$_SESSION['computing_id'])
       <button type="button" class="btn btn-success btn-circle.btn-lg" >Add</button>
     </td>
   </tr>
-  <tr >
+  <tr>
 
     <td colspan="4" class="hiddenRow">
 
@@ -329,7 +351,7 @@ if(!$_SESSION['computing_id'])
     </tr>
 
     <?php
-  }
+  } }
   ?>
 </tbody>
 </table>
