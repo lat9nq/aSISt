@@ -142,9 +142,9 @@ if(!$_SESSION['computing_id'])
 	<?php
 		$exception = $_SESSION["EXCEPTION"];
 		if (strpos($exception, "Error") != false or strpos($exception, "Waitlisted" != false)) { ?>
-  			<div style = "border: 1px solid black; font-size: 20px; border-radius: 5px; padding: 10px; background-color: white; color: red;">
+  			<div style = "font-size: 20px; border-radius: 5px; padding: 10px; background-color: #FF5151; color: white;">
   		<?php } else { ?>
-  			<div style = "border: 1px solid black; font-size: 20px; border-radius: 5px; padding: 10px; background-color: white;">
+  			<div style = "border: 1px solid #E7E7E7; font-size: 20px; border-radius: 5px; padding: 10px; background-color: #F8F8F8; color: #777777;">
   		<?php } ?>
   		<?php echo $_SESSION["EXCEPTION"]; unset($_SESSION["EXCEPTION"]); ?>
   	</div>
