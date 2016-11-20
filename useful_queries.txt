@@ -1,3 +1,13 @@
 SELECT * FROM section where dept_mnemonic = 'CS' and course_number = 1010;
 
 update section set total_students = 94 where section_id = 1 and dept_mnemonic = 'CS' and course_number = 1010 and semester = 'fall 2016';
+
+SELECT student_id
+FROM student_section
+WHERE course_number = 1010
+AND dept_mnemonic = 'CS' AND section_id = 1
+AND waitlist_timestamp =
+(SELECT MIN(waitlist_timestamp)
+FROM (SELECT waitlist_timestamp FROM student_section WHERE status = 2));
+
+SELECT student_id FROM student_section WHERE course_number = 1010 AND dept_mnemonic = 'CS' AND section_id = 1 AND waitlist_timestamp = (SELECT MIN(waitlist_timestamp) FROM (SELECT waitlist_timestamp FROM student_section WHERE status = 2) as aliasname);

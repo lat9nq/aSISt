@@ -1,10 +1,46 @@
 <?php
 session_start();
+function brk() {
+	echo "<br>";
+}
 if(!$_SESSION['computing_id'])  
 {  
     header("Location: login.php");//redirect to login page to secure the welcome page without login access.  
   }  
   ?>
+<?php
+	$computing_id = $_SESSION["computing_id"];
+	$db = new mysqli('localhost', 'username', 'password', 'asist');
+	$query = "SELECT distinct section.course_number, section.dept_mnemonic, course.course_title," .
+	"section.room, building.building_name, timeslot.start_time, timeslot.end_time, " .
+	"instructor.first_name, instructor.last_name, section.days, section.section_id " .
+	"FROM student_section, section, instructor_section, building, instructor, course, timeslot WHERE " .
+	"student_section.section_id = section.section_id " .
+	"AND student_section.course_number = section.course_number " .
+	"AND student_section.dept_mnemonic = section.dept_mnemonic " .
+	"AND section.semester = 'fall 2016' " .
+	"AND student_section.student_id = '$computing_id' " .
+	"AND instructor_section.dept_mnemonic = section.dept_mnemonic " .
+	"AND instructor_section.course_number = section.course_number " .
+	"AND instructor_section.section_id = section.section_id " .
+	"AND instructor_section.instructor_id = instructor.computing_id " .
+	"AND building.building_id = section.building_id " .
+	"AND course.course_number = section.course_number " .
+	"AND course.dept_mnemonic = section.dept_mnemonic " .
+	"AND timeslot.time_id = section.time_id;";
+	//echo $query;
+	$result = $db->query($query);
+	brk();
+	$ultimate_array = array();
+	while ($res = $result->fetch_row()) {
+		$temp_array = array("course" => $res[1] . " " . $res[0], "course_title" => $res[2],
+			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . $res[5] . " - " . $res[6],
+			"instructor_name" => $res[7] . " " . $res[8], "course_number" => $res[0],
+			"dept_mnemonic" => $res[1], "section_id" => $res[10]);
+		//print_r($temp_array);
+		array_push($ultimate_array, $temp_array);
+	}
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -133,28 +169,22 @@ if(!$_SESSION['computing_id'])
 		<tbody>
 
 			<!-- first search result -->
+			<?php foreach ($ultimate_array as $section) { ?>
 			<tr>
-				<td>CS 1010</td>
-				<td>Introduction to Information Technology</td>
-				<td>Craig Dill</td>
-				<td>TuTh 2:00-3:15 PM</td>
-				<td>Thornton Hall E316</td>
+				<td><?php echo $section["course"]; ?></td>
+				<td><?php echo $section["course_title"]; ?></td>
+				<td><?php echo $section["instructor_name"]; ?></td>
+				<td><?php echo $section["time"] ?></td>
+				<td><?php echo $section["room"] ?></td>
 				<td>
-					<button type="button" class="btn btn-danger btn-circle.btn-lg" id="tryDrop"
-					data-toggle="modal" data-target="#17339">Drop</button>
+					<form method = "post" action = "drop.php">
+						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>
+						<input type = "hidden" name = "dept_mnemonic" value = <?php echo $section["dept_mnemonic"] ?>/>
+						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" data-toggle="modal" data-target="#17339" value = "Drop"/>
+					</form>
 				</td>
 			</tr>
-			<tr>
-				<td>CLAS 1010</td>
-				<td>Some Random College Course</td>
-				<td>Pickle Dill</td>
-				<td>TuTh 11:00-12:15 PM</td>
-				<td>New Cabell Hall 316</td>
-				<td>
-					<button type="button" class="btn btn-danger btn-circle.btn-lg" id="tryDrop"
-					data-toggle="modal" data-target="#17339">Drop</button>
-				</td>
-			</tr>
+			<?php } ?>
 			
 		</tbody>
 	</table>
