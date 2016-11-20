@@ -1,0 +1,39 @@
+<td><button type="button" class="btn btn-success btn-circle.btn-lg"
+               									data-toggle="modal" data-target="#17339">Add</button></td>
+											
+               								<span style="margin:auto"class="modal fade" id="17339" role="dialog">
+                 								<div class="modla-dialog modal-lg">
+                  									<div class="modal-content">
+                   										<div class="modal-header">
+                    										<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    										<h4 class="modal-title">Enroll in <?php echo $current_course["dept_mnemonic"] . " " .
+                    											$current_course["course_number"]; ?></h4>
+                  										</div>
+                  										<div class="modal-body">
+                    										<div class="form-group">
+                    											<?php
+                    												$section_disassembly = disassemble($current_course["sections"]);
+                    											?>
+                    											<?php foreach ($section_disassembly as $key => $value) { ?>
+                      													<label for="17339disc">Select a <?php echo $key ?>:</label>
+                      													<select multiple class="form-control" id="17339disc">
+                      														<?php foreach($value as $sect) { ?>
+                      															<!-- an option to choose one of each section of a given type -->
+                       															<option>
+                       																<?php echo $sect["section"]; ?> |
+                       																<?php echo $sect["course_component"]; ?> |
+                       																<?php echo $sect["time"]; ?> |
+                       																<?php echo $sect["building"]; ?>
+                       															</option>
+                       														<?php } ?>
+                     													</select>
+                     											<?php } ?>
+                   											</div>
+                 										</div>
+                 										<div class="modal-footer">
+                  											<button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
+                										</div>
+              										</div>
+            									</div>
+          									</span>
+          									

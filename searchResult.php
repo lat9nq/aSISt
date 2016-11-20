@@ -15,6 +15,17 @@ if(!$_SESSION['computing_id'])
   			}
   			return true;
   		}
+  		
+  		function disassemble($array) {
+  			$sectoids = array();
+  			foreach ($array as $section) {
+  				if (!isset($sectoids[$section["course_component"]])) {
+  					$sectoids[$section["course_component"]] = array();
+  				}
+  				array_push($sectoids[$section["course_component"]], $section);
+  			}
+  			return $sectoids;
+  		}
   	?>
   <!DOCTYPE html>
   <html lang="en">
@@ -107,7 +118,11 @@ if(!$_SESSION['computing_id'])
     <!-- end nav bar -->
 
     
-
+<?php if (isset($_SESSION["EXCEPTION"])) { ?>
+  	<p style = "color: red; font-size: 20px;">
+  		<?php echo $_SESSION["EXCEPTION"]; unset($_SESSION["EXCEPTION"]); ?>
+  	</p>
+<?php } ?>
 <center><h3>Search Results</h3></center>
 
     
@@ -263,7 +278,49 @@ if(!$_SESSION['computing_id'])
       							data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
     					</td>
     					<td>
-      						<button type="button" class="btn btn-success btn-circle.btn-lg">Add</button>
+      						<button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = "#17339">Add</button>
+      						<span style="margin:auto"class="modal fade" id="17339" role="dialog">
+                 				<div class="modla-dialog modal-lg">
+                  					<div class="modal-content">
+                  						<form method = "post" action = "enroll.php" id = "enrollment-form">
+                  						
+                   						<div class="modal-header">
+                    						<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    						<h4 class="modal-title">Enroll in <?php echo $current_course["dept_mnemonic"] . " " .
+                    							$current_course["course_number"]; ?></h4>
+                  						</div>
+                  							<div class="modal-body">
+                    						<div class="form-group">
+                    							<?php $section_disassembly = disassemble($current_course["sections"]); ?>
+                    							<input type = "hidden" name = "course" value =
+                  									<?php echo $current_course["dept_mnemonic"]."?".$current_course["course_number"]."?".count($section_disassembly); ?>/>
+                    							<?php foreach ($section_disassembly as $key => $value) { ?>
+                      								<label for="17339disc">Select a <?php echo $key ?>:</label>
+                      								<select multiple class="form-control" id="17339disc" form = "enrollment-form" name = <?php echo $key ?>>
+                      									<?php foreach($value as $sect) { ?>
+                      										<!-- 	an option to choose one of each section of a given type
+                      												i.e. you need a lab and a lecture, but only one of each
+                      										-->
+                       										<option>
+                       											<?php echo $sect["section"]; ?> |
+                       											<?php echo $sect["course_component"]; ?> |
+                       											<?php echo $sect["instructor"]; ?> |
+                       											<?php echo $sect["time"]; ?> |
+                       											<?php echo $sect["building"]; ?>
+                       										</option>
+                       									<?php } ?>
+                     								</select>
+                     							<?php } ?>
+                   							</div>
+                 						</div>
+                 							<div class="modal-footer">
+                  							<!-- <input type="submit" class="btn btn-default" data-dismiss="modal">Enroll ></button> -->
+                  							<input type = "submit" class="btn btn-default" value = "Enroll"/>
+                						</div>
+                						</form>
+              						</div>
+            					</div>
+          					</span>
     					</td>
   					</tr>
  					<tr>
@@ -286,37 +343,15 @@ if(!$_SESSION['computing_id'])
           							<?php foreach ($current_course["sections"] as $section) { ?>
           							<tbody>
            								<tr>
-											<td><?php echo $section["section"];?></td> <!-- lecture component -->
-              								<td><?php echo $section["course_component"]; ?></td> <!-- course_component -->
-              								<td><?php echo $section["status"]; ?></td> <!-- status -->
-              								<td><?php echo $section["enrollment"]; ?></td><!-- enrollment -->
-              								<td><?php echo $section["instructor"]; ?></td><!-- instructor -->
-              								<td><?php echo $section["time"]; ?></td><!-- time -->
-              								<td><?php echo $section["building"]; ?></td><!-- building -->
-              								<td><button type="button" class="btn btn-success btn-circle.btn-lg"
-               									data-toggle="modal" data-target="#17339">Add</button></td>
-
-               								<span style="margin:auto"class="modal fade" id="17339" role="dialog">
-                 							<div class="modla-dialog modal-lg">
-                  								<div class="modal-content">
-                   									<div class="modal-header">
-                    									<button type="button" class="close" data-dismiss="modal">&times;</button>
-                    									<h4 class="modal-title">Select discussion</h4>
-                  									</div>
-                  									<div class="modal-body">
-                    									<div class="form-group">
-                      										<label for="17339disc">Select a discussion:</label>
-                      										<select multiple class="form-control" id="17339disc">
-                       											<option>17514 | Laboratory | Th 9:30AM - 10:45AM | Olsson Hall 001</option>
-                     										</select>
-                   										</div>
-                 									</div>
-                 									<div class="modal-footer">
-                  										<button type="button" class="btn btn-default" data-dismiss="modal">Next ></button>
-                									</div>
-              									</div>
-            								</div>
-          									</span>
+											<td><?php echo $section["section"]; ?></td>
+              								<td><?php echo $section["course_component"]; ?></td>
+              								<td><?php echo $section["status"]; ?></td>
+              								<td><?php echo $section["enrollment"]; ?></td>
+              								<td><?php echo $section["instructor"]; ?></td>
+              								<td><?php echo $section["time"]; ?></td>
+              								<td><?php echo $section["building"]; ?></td>
+              								
+              								
 
         								</tr>
         								

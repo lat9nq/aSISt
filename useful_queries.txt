@@ -1,0 +1,3 @@
+SELECT * FROM section where dept_mnemonic = 'CS' and course_number = 1010;
+
+update section set total_students = 94 where section_id = 1 and dept_mnemonic = 'CS' and course_number = 1010 and semester = 'fall 2016';
