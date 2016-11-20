@@ -2,12 +2,14 @@
 	session_start();
 	$db = new mysqli('localhost', 'username', 'password', 'asist');
 	$section_numbers = array();
+	print_r($_POST);
 	foreach ($_POST as $key => $value) {
 		if (strpos($value, "|")) {
 			$exploded = explode("|", $value);
 			array_push($section_numbers, $exploded[0]);
 		}
 	}
+	echo "SECTION NUMBERS:<br>";
 	print_r($section_numbers);
 	echo "<br>";
 	print_r($_SESSION);
@@ -18,10 +20,10 @@
 	$course_number = $exp[1];
 	$expected = explode("/", $exp[2])[0];
 	$computing_id = $_SESSION["computing_id"];
-	echo $expected;
+	echo "<br>%%%%%% $expected %%%%%%%<br>";
 	
 	// this string contains any errors caused by trying to enroll
-	$exception = "";
+	$exception = "Congratulations. You have enrolled in $dept_mnemonic $course_number.";
 	if ($expected != count($section_numbers)) {
 		$exception = " Error. You did not choose enough sections. Please pick one from each category.<br>";
 		echo "<br>NOT ENOUGH SECTIONS<br>";
@@ -34,7 +36,7 @@
 		
 		// if there is a row containing the matching information given in the request already, reject it
 		if ($result->fetch_row()) {
-			$exception = " Error. You are already enrolled for this course.<br>";
+			$exception = " Error. You are already signed up for this course.<br>";
 		}
 		
 		$query = "select status, total_students, capacity from section where section_id = $section_id and course_number = $course_number and dept_mnemonic = '$dept_mnemonic' and semester = 'fall 2016'";

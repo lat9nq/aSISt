@@ -51,22 +51,42 @@ if(!$_SESSION['computing_id'])
        <center><h3>Search</h3></center><br>
        <form name="course_search_form" action="searchResult.php" method="post">
         <div class="form-group">
-         <input type="text" class="form-control" placeholder="Department" name="dept_input" />
+        <?php
+        	$dept_input = "";
+        	if (isset($_POST["dept_input"])) {
+        		$dept_input = $_POST["dept_input"];
+        	}
+        	$course_input = "";
+        	if (isset($_POST["course_input"])) {
+        		$course_input = $_POST["course_input"];
+        	}
+        	$year = "2016";
+        	$season = "Fall";
+        	//print_r($_POST);
+        	if (isset($_POST["year_select_input"])) {
+        		$year = $_POST["year_select_input"];
+        	}
+        	if (isset($_POST["season_select_input"])) {
+        		$season = $_POST["season_select_input"];
+        	}
+        ?>
+        	
+         <input type="text" class="form-control" placeholder="Department" name="dept_input" value = "<?php echo $dept_input; ?>"/>
        </div>
        <div class="form-group">
-         <input type="text" class="form-control" placeholder="Course Number" name="course_input" />
+         <input type="text" class="form-control" placeholder="Course Number" name="course_input" value = "<?php echo $course_input; ?>"/>
        </div>
        <div class="form-group">
 					<!--
 						<input type="text" class="form-control" placeholder="Semester" name="semester_input" />
 					-->
 					<select name="season_select_input">
-						<option value="fall">Fall</option>
-						<option value="spring">Spring</option>
+						<option value="fall" <?php echo ($season == 'fall') ? 'selected' : ''; ?>>Fall</option>
+						<option value="spring" <?php echo ($season == 'spring') ? 'selected' : ''; ?>>Spring</option>
 					</select>
 					<select name="year_select_input">
-						<option value="2016">2016</option>
-						<option value="2015">2015</option>
+						<option value="2016" <?php echo ($year == '2016') ? 'selected' : ''; ?>>2016</option>
+						<option value="2015" <?php echo ($year == '2015') ? 'selected' : ''; ?>>2015</option>
 					</select>
 				</div>
 				<button type="submit" class="btn btn-success btn-block">Search</button>
@@ -119,11 +139,17 @@ if(!$_SESSION['computing_id'])
 
     
 <?php if (isset($_SESSION["EXCEPTION"])) { ?>
-  	<p style = "color: red; font-size: 20px;">
+	<?php
+		$exception = $_SESSION["EXCEPTION"];
+		if (strpos($exception, "Error") != false or strpos($exception, "Waitlisted" != false)) { ?>
+  			<div style = "border: 1px solid black; font-size: 20px; border-radius: 5px; padding: 10px; background-color: white; color: red;">
+  		<?php } else { ?>
+  			<div style = "border: 1px solid black; font-size: 20px; border-radius: 5px; padding: 10px; background-color: white;">
+  		<?php } ?>
   		<?php echo $_SESSION["EXCEPTION"]; unset($_SESSION["EXCEPTION"]); ?>
-  	</p>
+  	</div>
 <?php } ?>
-<center><h3>Search Results</h3></center>
+
 
     
 
@@ -247,14 +273,15 @@ if(!$_SESSION['computing_id'])
 	-->
 	
 	<?php if (count($ultimate_array) == 0 || no_sections($ultimate_array)) { ?>
-  			<p style = "text-align: center; font-size: 50px; font-family: 'Comic Sans MS'; color: fuchsia;">
-  				<em>Your search returned 0 results!</em>
+  			<p style = "text-align: left; font-size: 30px;">
+  				<center><h3>Your search returned 0 results!</h3></center>
   			</p>
   		<br/>
   	<?php } else { ?>
-    
-			<?php foreach ($ultimate_array as $current_course) { ?>
+    		<center><h3>Search Results</h3></center>
+			
   			<table class="table table-striped">
+  			<?php foreach ($ultimate_array as $current_course) { ?>
   				<!--
       			<thead>
         			<tr>
@@ -268,9 +295,9 @@ if(!$_SESSION['computing_id'])
       			
       			<tbody>
   					<tr>
-    					<td><?php echo $current_course["dept_mnemonic"]." ".$current_course["course_number"];?></td>
-    					<td style = "width: 60%;"><?php echo $current_course["course_title"]; ?></td>
-    					<td style="width:15%">
+    					<td style = "width: 10em"><?php echo $current_course["dept_mnemonic"]." ".$current_course["course_number"];?></td>
+    					<td style = "width: 40em;"><?php echo $current_course["course_title"]; ?></td>
+    					<td style = "width: 5em;">
     						<!-- 
     							important buttons
     						-->
@@ -278,11 +305,14 @@ if(!$_SESSION['computing_id'])
       							data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
     					</td>
     					<td>
-      						<button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = "#17339">Add</button>
-      						<span style="margin:auto"class="modal fade" id="17339" role="dialog">
+    						<?php $disabled = (strtolower($semester) == 'fall 2016') ? "" : "disabled"; ?>
+      						<button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = <?php echo "#modal" . $index?> <?php echo $disabled ?>>Add</button>
+      						
+      						<!-- giant modal -->
+      						<span style="margin:auto"class="modal fade" id=<?php echo "modal" . $index ?> role="dialog">
                  				<div class="modla-dialog modal-lg">
                   					<div class="modal-content">
-                  						<form method = "post" action = "enroll.php" id = "enrollment-form">
+                  						<form method = "post" action = "enroll.php" id = <?php echo "enrollment-form" . $index?>>
                   						
                    						<div class="modal-header">
                     						<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -295,8 +325,8 @@ if(!$_SESSION['computing_id'])
                     							<input type = "hidden" name = "course" value =
                   									<?php echo $current_course["dept_mnemonic"]."?".$current_course["course_number"]."?".count($section_disassembly); ?>/>
                     							<?php foreach ($section_disassembly as $key => $value) { ?>
-                      								<label for="17339disc">Select a <?php echo $key ?>:</label>
-                      								<select multiple class="form-control" id="17339disc" form = "enrollment-form" name = <?php echo $key ?>>
+                      								<label for=<?php echo "#modal" . $index ?>>Select a <?php echo $key ?>:</label>
+                      								<select multiple class="form-control" form = <?php echo "enrollment-form".$index ?> name = <?php echo $key; ?> id=<?php echo "modal" . $index; ?> >
                       									<?php foreach($value as $sect) { ?>
                       										<!-- 	an option to choose one of each section of a given type
                       												i.e. you need a lab and a lecture, but only one of each
@@ -350,11 +380,7 @@ if(!$_SESSION['computing_id'])
               								<td><?php echo $section["instructor"]; ?></td>
               								<td><?php echo $section["time"]; ?></td>
               								<td><?php echo $section["building"]; ?></td>
-              								
-              								
-
         								</tr>
-        								
       								</tbody>
       <?php $index++; } ?> <!-- end foreach section -->
 
@@ -363,8 +389,9 @@ if(!$_SESSION['computing_id'])
       </td>
     </tr>
 </tbody>
-</table>
 <?php } } ?>
+</table>
+
 </div>
 </div>
 -->

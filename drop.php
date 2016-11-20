@@ -67,5 +67,4 @@
 	"AND dept_mnemonic = '$dept_mnemonic';";
 	echo $query;
 	echo $db->query($query) == false;
-	
 ?>
