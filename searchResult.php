@@ -394,6 +394,5 @@ if(!$_SESSION['computing_id'])
 
 </div>
 </div>
--->
 </body>
 </html>

@@ -2,6 +2,7 @@
 	$GLOBALS["num"] = 1;
 	$GLOBALS["letter1"] = 0x61;
 	$GLOBALS["letter2"] = 0x61;
+	$GLOBALS["section-id"] = 0;
 	function nextID() {
 		$num = $GLOBALS["num"];
 		$letter1 = $GLOBALS["letter1"];

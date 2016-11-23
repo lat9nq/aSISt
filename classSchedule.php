@@ -13,7 +13,7 @@ if(!$_SESSION['computing_id'])
 	$db = new mysqli('localhost', 'username', 'password', 'asist');
 	$query = "SELECT distinct section.course_number, section.dept_mnemonic, course.course_title," .
 	"section.room, building.building_name, timeslot.start_time, timeslot.end_time, " .
-	"instructor.first_name, instructor.last_name, section.days, section.section_id " .
+	"instructor.first_name, instructor.last_name, section.days, section.section_id, section.semester " .
 	"FROM student_section, section, instructor_section, building, instructor, course, timeslot WHERE " .
 	"student_section.section_id = section.section_id " .
 	"AND student_section.course_number = section.course_number " .
