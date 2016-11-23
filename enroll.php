@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$db = new mysqli('localhost', 'username', 'password', 'asist');
+	$db = new mysqli('localhost', 'username', 'password', 'asist2');
 	$section_numbers = array();
 	print_r($_POST);
 	foreach ($_POST as $key => $value) {
@@ -30,8 +30,8 @@
 	} else {
 		echo "<br>SUCCESS, SUFFICIENT SECTIONS CHOSEN<br>";
 	}
-	foreach ($section_numbers as $section_id) {
-		$query = "select * from student_section where section_id = $section_id and student_id = '$computing_id' and course_number = $course_number and dept_mnemonic = '$dept_mnemonic';";
+	foreach ($section_numbers as $section_key) {
+		$query = "select * from student_section where section_key = $section_key and student_id = '$computing_id';";
 		$result = $db->query($query);
 		
 		// if there is a row containing the matching information given in the request already, reject it
@@ -39,7 +39,7 @@
 			$exception = " Error. You are already signed up for this course.<br>";
 		}
 		
-		$query = "select status, total_students, capacity from section where section_id = $section_id and course_number = $course_number and dept_mnemonic = '$dept_mnemonic' and semester = 'fall 2016'";
+		$query = "select status, total_students, capacity from section where section_key = $section_key;";
 		$result = $db->query($query);
 		$status = $result->fetch_row()[0];
 		// 0 == closed, 1 == open, 2 == waitlist; yes we are very smart
@@ -57,8 +57,8 @@
 		$waitlist = strpos($exception, "Waitlisted") ? 2 : 1;
 		
 		// insert the student into each section
-		foreach ($section_numbers as $section_id) {
-			$query = "INSERT INTO student_section VALUES($section_id, '$dept_mnemonic', $course_number, '$computing_id', '" . date("Y-m-d H:i:s") . "', $waitlist, '?');";
+		foreach ($section_numbers as $section_key) {
+			$query = "INSERT INTO student_section VALUES($section_key, '$computing_id', '" . date("Y-m-d H:i:s") . "', $waitlist, '?');";
 			echo $db->query($query) == false;
 			echo "<br>waitlist: " . $waitlist . "<br>";
 			
@@ -66,15 +66,15 @@
 			// if that makes it equal to the capacity, set the section status
 			// to waitlisted (2)
 			if ($waitlist == 1) {
-				$query = "select total_students from section where section_id = $section_id and dept_mnemonic = '$dept_mnemonic' and course_number = $course_number and semester = 'fall 2016'";
+				$query = "select total_students from section where section_key = $section_key;";
 				$total_students = $db->query($query)->fetch_row()[0];
-				$query = "select capacity from section where section_id = $section_id and dept_mnemonic = '$dept_mnemonic' and course_number = $course_number and semester = 'fall 2016'";
+				$query = "select capacity from section where section_key = $section_key;";
 				$capacity = $db->query($query)->fetch_row()[0];
 				$total_students++;
-				$query = "update section set total_students = $total_students where section_id = $section_id and dept_mnemonic = '$dept_mnemonic' and course_number = $course_number and semester = 'fall 2016'";
+				$query = "update section set total_students = $total_students where section_key = $section_key;";
 				echo "increase query: " . $db->query($query) == false;
 				if ($total_students >= $capacity) {
-					$query = "update section set status = 2 where section_id = $section_id and dept_mnemonic = '$dept_mnemonic' and course_number = $course_number and semester = 'fall 2016'";
+					$query = "update section set status = 2 where section_key = $section_key;";
 					$db->query($query);
 				}
 			}

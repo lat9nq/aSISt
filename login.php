@@ -86,7 +86,7 @@ session_start();
 <?php
 
 
-$db = new mysqli('localhost', 'username', 'password', 'asist');
+$db = new mysqli('localhost', 'username', 'password', 'asist2');
 if ($db->connect_error):
  die ("Could not connect to db: " . $db->connect_error);
 endif;

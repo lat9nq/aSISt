@@ -123,7 +123,10 @@
 	}
 	
 	function writeDatabase($instructor_set, $course_set, $timeslot_set, $list, $building_set) {
-		$db = new mysqli("localhost", "username", "password", "asist");
+	
+		// connect to database
+		$db = new mysqli("localhost", "username", "password", "asist2");
+		
 		$depts = getDepartments();
 		foreach ($depts as $key => $value) {
 			$db->query("INSERT INTO department VALUES('" . $key . "', '" . $value . "');");
@@ -150,6 +153,7 @@
 		}
 		/*
 	section_id INT,
+	section_key INT,
     dept_mnemonic VARCHAR(4),
     course_number INT,
     building_id INT,
@@ -161,8 +165,8 @@
     total_students INT,
     days VARCHAR(10),
     description VARCHAR(30),
-    status TINYINT,
-    	*/
+    status TINYINT,*/
+    	
 		for ($i = 0; $i < count($list); $i++) {
 			$s = $list[$i];
 			if (property_exists($s, "status")) {
@@ -171,13 +175,13 @@
 					$building_id = $building_set[$s->building]["building_id"];
 					$status = ($s->status == "Closed") ? 0 : 1;
 					$computing_id = $instructor_set[$s->instructor_first . " " . $s->instructor_last]["computing_id"];
-					$query = "INSERT INTO section VALUES(" . $s->number . ", '" . $s->dept_mnemonic . "', " . $s->course_number . ", " . $building_id
+					$query = "INSERT INTO section VALUES(" . $s->number . ", " . $i . ", '" . $s->dept_mnemonic . "', " . $s->course_number . ", " . $building_id
 					. ", '" . $s->room_number . "', '', " . $time_id . ", '" . $s->semester . " " . $s->year . "', " . $s->capacity . ", " . $s->enrollment
 					. ", '" . $s->days . "', '" . $s->description . "', " . $status . ");";
 					$db->query($query);
 					
-					$query = "INSERT INTO instructor_section VALUES('" . $computing_id . "', '" . $s->dept_mnemonic . "', " . $s->course_number . ", " . $s->number . ");";
-					$db->query($query);
+					$query = "INSERT INTO instructor_section VALUES('" . $computing_id . "', " . $i .");";
+					echo $db->query($query) == false;
 				}
 			}
 		}
@@ -202,5 +206,6 @@
 	$instructor_set = logInstructors($list);
 	$course_set = parseCourses($list);
 	$buildings = parseBuildings($list);
-	//writeDatabase($instructor_set, $course_set, $timeslot_set, $list, $buildings);
+	//echo ($db = new mysqli("localhost", "username", "password", "asist2")) != false;
+	writeDatabase($instructor_set, $course_set, $timeslot_set, $list, $buildings);
 ?>

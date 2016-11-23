@@ -155,7 +155,7 @@ if(!$_SESSION['computing_id'])
 
 
 	<?php
-    	$db = new mysqli('localhost', 'username', 'password', 'asist');
+    	$db = new mysqli('localhost', 'username', 'password', 'asist2');
     	if ($db->connect_error):
     		die ("Could not connect to db: " . $db->connect_error);
     	endif;
@@ -219,6 +219,7 @@ if(!$_SESSION['computing_id'])
    				// including that referenced in other tables
     			while ($row = $result->fetch_array()){
       				$section = $row["section_id"];
+      				$section_key = $row["section_key"];
       				$course_component = $row["description"]." (".$credits.")";
       				$status_num = $row["status"];
         			//0 is closed, 1 is open, 2 is waitlisted
@@ -233,7 +234,7 @@ if(!$_SESSION['computing_id'])
       				$enrollment = $row["total_students"]."/".$row["capacity"];
 
 					// get the instructor id, so you can then use that to find the instructor's name
-      				$instructor_id_query = "select instructor_id from instructor_section where section_id = $section and dept_mnemonic='$dept' and course_number=$course_number";
+      				$instructor_id_query = "select instructor_id from instructor_section where section_key = $section_key;";
       				$instructor_id = $db->query($instructor_id_query)->fetch_array()["instructor_id"];
       
       				// here we find the instructor's first and last names
@@ -252,7 +253,7 @@ if(!$_SESSION['computing_id'])
       				$building_id = $row["building_id"];
       				$building_query = "select building_name from building where building_id = $building_id";
       				$building = $db->query($building_query)->fetch_array()["building_name"]." ".$row["room"];
- 					$section_array = array("section" => $section, "course_component" => $course_component, "status" => $status, "enrollment" => $enrollment, "instructor" => $instructor, "time" => $time, "building" => $building);
+ 					$section_array = array("section" => $section, "section_key" => $section_key, "course_component" => $course_component, "status" => $status, "enrollment" => $enrollment, "instructor" => $instructor, "time" => $time, "building" => $building);
       				array_push($current_course_array["sections"], $section_array);
       				//this is what used to be here, the above code is more maintainable
       				//array_push($sections, array($section, $course_component, $status, $enrollment, $instructor, $time, $building) );
@@ -332,6 +333,7 @@ if(!$_SESSION['computing_id'])
                       												i.e. you need a lab and a lecture, but only one of each
                       										-->
                        										<option>
+                       											<?php echo $sect["section_key"]; ?> |
                        											<?php echo $sect["section"]; ?> |
                        											<?php echo $sect["course_component"]; ?> |
                        											<?php echo $sect["instructor"]; ?> |

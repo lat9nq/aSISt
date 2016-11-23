@@ -10,19 +10,15 @@ if(!$_SESSION['computing_id'])
   ?>
 <?php
 	$computing_id = $_SESSION["computing_id"];
-	$db = new mysqli('localhost', 'username', 'password', 'asist');
+	$db = new mysqli('localhost', 'username', 'password', 'asist2');
 	$query = "SELECT distinct section.course_number, section.dept_mnemonic, course.course_title," .
 	"section.room, building.building_name, timeslot.start_time, timeslot.end_time, " .
-	"instructor.first_name, instructor.last_name, section.days, section.section_id, section.semester " .
+	"instructor.first_name, instructor.last_name, section.days, section.section_id, section.semester, section.section_key " .
 	"FROM student_section, section, instructor_section, building, instructor, course, timeslot WHERE " .
-	"student_section.section_id = section.section_id " .
-	"AND student_section.course_number = section.course_number " .
-	"AND student_section.dept_mnemonic = section.dept_mnemonic " .
+	"student_section.section_key = section.section_key " .
 	"AND section.semester = 'fall 2016' " .
 	"AND student_section.student_id = '$computing_id' " .
-	"AND instructor_section.dept_mnemonic = section.dept_mnemonic " .
-	"AND instructor_section.course_number = section.course_number " .
-	"AND instructor_section.section_id = section.section_id " .
+	"AND instructor_section.section_key = section.section_key " .
 	"AND instructor_section.instructor_id = instructor.computing_id " .
 	"AND building.building_id = section.building_id " .
 	"AND course.course_number = section.course_number " .
@@ -36,7 +32,7 @@ if(!$_SESSION['computing_id'])
 		$temp_array = array("course" => $res[1] . " " . $res[0], "course_title" => $res[2],
 			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . $res[5] . " - " . $res[6],
 			"instructor_name" => $res[7] . " " . $res[8], "course_number" => $res[0],
-			"dept_mnemonic" => $res[1], "section_id" => $res[10]);
+			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12] );
 		//print_r($temp_array);
 		array_push($ultimate_array, $temp_array);
 	}
