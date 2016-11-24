@@ -16,6 +16,7 @@
 	$exp = explode("?", $_POST["course"]);
 	
 	// this communicates the course data
+	$semester = 'fall 2016';
 	$dept_mnemonic = $exp[0];
 	$course_number = $exp[1];
 	$expected = explode("/", $exp[2])[0];
@@ -30,6 +31,34 @@
 	} else {
 		echo "<br>SUCCESS, SUFFICIENT SECTIONS CHOSEN<br>";
 	}
+	/*
+	$query = "SELECT prereq_dept_mnemonic, prereq_course_number, grade " .
+	"FROM prerequisites WHERE dept_mnemonic = '$dept_mnemonic' " .
+	"AND course_number = $course_number;";
+	
+	echo "<br>" . $query . "<br>";
+	
+	$result =  $db->query($query);
+	
+	while ($res = $result->fetch_row()) {
+		echo "$res[0] $res[1] $res[2]<br>";
+		$prereq_dept_mnemonic = $res[0];
+		$prereq_course_number = $res[1];
+		$grade = $res[2];
+		$query = "SELECT student_section.computing_id, student_section.grade " .
+		"FROM student_section, section WHERE " .
+		"section.dept_mnemonic = $prereq_dept_mnemonic AND " .
+		"section.course_number = $prereq_course_number AND " .
+		"section.semster <> $semester AND " .
+		"section.section_key = student_section.section_key AND " . 
+		"student_section.computing_id;";
+		
+	}
+	
+	
+	
+	die();
+	*/
 	foreach ($section_numbers as $section_key) {
 		$query = "select * from student_section where section_key = $section_key and student_id = '$computing_id';";
 		$result = $db->query($query);

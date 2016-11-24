@@ -11,6 +11,8 @@ INSERT INTO student_department VALUES('ECE', 'ah1zy', 1);
 INSERT INTO student_department VALUES('ANTH', 'ah1zx', 1);
 INSERT INTO student_department VALUES('ANTH', 'ah1zw', 1);
 INSERT INTO student_department VALUES('ASTR', 'ah1zw', 0);
+INSERT INTO prerequisites VALUES('CS', 2150, 'CS', 2110, 'C');
+INSERT INTO prerequisites VALUES('CS', 2150, 'CS', 2102, 'C-');
 INSERT INTO prerequisites VALUES('CS', 3330, 'CS', 2150, 'C-');
 INSERT INTO prerequisites VALUES('CS', 4102, 'CS', 2102, 'C-');
 INSERT INTO prerequisites VALUES('ECE', 2660, 'ECE', 2630, 'C-');
