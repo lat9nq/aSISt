@@ -1,4 +1,10 @@
 <?php
+
+	function sufficient_grade($minimum, $grade) {
+		$grades = array("A+" => -1, "A" => -1, "A-" => -1, "B+" => -1, "B" => -1, "B-" => -1, "C+" => 0, "C" => 1, "C-" => 2, "D+"  => 3, "D" => 4, "D-" => 5, "F" => 6);
+		return $grades[$minimum] >= $grades[$grade];
+	}
+
 	session_start();
 	$db = new mysqli('localhost', 'username', 'password', 'asist2');
 	$section_numbers = array();
@@ -31,8 +37,7 @@
 	} else {
 		echo "<br>SUCCESS, SUFFICIENT SECTIONS CHOSEN<br>";
 	}
-	/*
-	$query = "SELECT prereq_dept_mnemonic, prereq_course_number, grade " .
+	$query = "SELECT prereq_dept_mnemonic, prereq_course_number, minimum_grade " .
 	"FROM prerequisites WHERE dept_mnemonic = '$dept_mnemonic' " .
 	"AND course_number = $course_number;";
 	
@@ -40,25 +45,38 @@
 	
 	$result =  $db->query($query);
 	
-	while ($res = $result->fetch_row()) {
+	echo $result->num_rows;
+	
+	$all = $result->fetch_all();
+	
+	foreach ($all as $res) {
 		echo "$res[0] $res[1] $res[2]<br>";
 		$prereq_dept_mnemonic = $res[0];
 		$prereq_course_number = $res[1];
 		$grade = $res[2];
-		$query = "SELECT student_section.computing_id, student_section.grade " .
+		$query = "SELECT student_section.grade " .
 		"FROM student_section, section WHERE " .
-		"section.dept_mnemonic = $prereq_dept_mnemonic AND " .
+		"section.dept_mnemonic = '$prereq_dept_mnemonic' AND " .
 		"section.course_number = $prereq_course_number AND " .
-		"section.semster <> $semester AND " .
+		"section.semester <> '$semester' AND " .
 		"section.section_key = student_section.section_key AND " . 
-		"student_section.computing_id;";
+		"student_section.student_id = '$computing_id';";
 		
+		echo "<br>" . $query . "<br>";
+		
+		$best_grade = "F";
+		$result = $db->query($query);
+		while ($inner_res = $result->fetch_row()) {
+			$best_grade = $inner_res[0];
+		}
+		if (!sufficient_grade($grade, $best_grade)) {
+			$exception = " Error. You have not fulfilled the requirement \"$prereq_dept_mnemonic $prereq_course_number\" for $dept_mnemonic $course_number.";
+		}
 	}
 	
 	
+	echo $exception;
 	
-	die();
-	*/
 	foreach ($section_numbers as $section_key) {
 		$query = "select * from student_section where section_key = $section_key and student_id = '$computing_id';";
 		$result = $db->query($query);

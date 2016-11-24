@@ -13,9 +13,12 @@ if(!$_SESSION['computing_id'])
 	$db = new mysqli('localhost', 'username', 'password', 'asist2');
 	$query = "SELECT distinct section.course_number, section.dept_mnemonic, course.course_title," .
 	"section.room, building.building_name, timeslot.start_time, timeslot.end_time, " .
-	"instructor.first_name, instructor.last_name, section.days, section.section_id, section.semester, section.section_key " .
-	"FROM student_section, section, instructor_section, building, instructor, course, timeslot WHERE " .
-	"student_section.section_key = section.section_key " .
+	"instructor.first_name, instructor.last_name, section.days, section.section_id, " .
+	"section.semester, section.section_key, student_section.status " .
+	
+	"FROM student_section, section, instructor_section, building, instructor, course, timeslot" .
+	" WHERE student_section.section_key = section.section_key " .
+	
 	"AND section.semester = 'fall 2016' " .
 	"AND student_section.student_id = '$computing_id' " .
 	"AND instructor_section.section_key = section.section_key " .
@@ -24,15 +27,35 @@ if(!$_SESSION['computing_id'])
 	"AND course.course_number = section.course_number " .
 	"AND course.dept_mnemonic = section.dept_mnemonic " .
 	"AND timeslot.time_id = section.time_id;";
-	//echo $query;
 	$result = $db->query($query);
-	brk();
 	$ultimate_array = array();
 	while ($res = $result->fetch_row()) {
+		$query = "SELECT student_id FROM student_section " .
+		"WHERE `status` = 2 AND section_key = $res[12] " .
+		"ORDER BY waitlist_timestamp ASC;";
+		$_result = $db->query($query);
+		$waitlist_position = 0;
+		$index = 1;
+		while ($waitlist_pos = $_result->fetch_row()) {
+			if ($waitlist_pos[0] == $computing_id) {
+				$waitlist_position = $index;
+				break;
+			}
+			$index++;
+		}
+		$status = "";
+		if ($res[13] == 1) {
+			$status = "Enrolled";
+		} else if ($res[13] == 2) {
+			$status = "Waitlisted ($waitlist_position)";
+		}
+		
 		$temp_array = array("course" => $res[1] . " " . $res[0], "course_title" => $res[2],
 			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . $res[5] . " - " . $res[6],
 			"instructor_name" => $res[7] . " " . $res[8], "course_number" => $res[0],
-			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12] );
+			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12],
+			"status" => $status
+		);
 		//print_r($temp_array);
 		array_push($ultimate_array, $temp_array);
 	}
@@ -159,6 +182,7 @@ if(!$_SESSION['computing_id'])
 				<th>Instructor</th>
 				<th>Meeting Time</th>
 				<th>Location</th>
+				<th>Status</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -172,6 +196,7 @@ if(!$_SESSION['computing_id'])
 				<td><?php echo $section["instructor_name"]; ?></td>
 				<td><?php echo $section["time"] ?></td>
 				<td><?php echo $section["room"] ?></td>
+				<td><?php echo $section["status"] ?></td>
 				<td>
 					<form method = "post" action = "drop.php">
 						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>
