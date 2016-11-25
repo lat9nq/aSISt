@@ -153,7 +153,7 @@ else {
     array_push($advisees,"None");
   }
 
-  $classes_query = "select distinct dept_mnemonic, course_number from section inner join instructor_section on instructor_section.section_key=section.section_key and instructor_section.instructor_id='$session_id'";
+  $classes_query = "select distinct dept_mnemonic, course_number, semester from section inner join instructor_section on instructor_section.section_key=section.section_key and instructor_section.instructor_id='$session_id' and semester='Fall 2016'";
   $classes_result = $db->query($classes_query);
   if ($classes_result->num_rows>0){
     while ($row = $classes_result->fetch_array()){
