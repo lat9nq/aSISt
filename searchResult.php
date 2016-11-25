@@ -323,7 +323,7 @@ if(!$_SESSION['computing_id'])
                   
       						<!-- giant modal -->
       						<span style="margin:auto"class="modal fade" id=<?php echo "modal" . $index ?> role="dialog">
-                 				<div class="modla-dialog modal-lg">
+                 				<div class="modal-dialog modal-lg">
                   					<div class="modal-content">
                   						<form method = "post" action = "enroll.php" id = <?php echo "enrollment-form" . $index?>>
                   						
