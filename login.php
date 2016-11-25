@@ -106,30 +106,39 @@ if(isset($_POST['login']))
  $computing_id=$_POST['computing_id'];  
  $password=$_POST['password'];  
 
- $check_user="select * from student where computing_id='$computing_id'and password='$password'";
+ $check_student="select * from student where computing_id='$computing_id'and password='$password'";
+ $check_instructor="select * from instructor where computing_id='$computing_id'and password='$password'";
 
- $run=mysqli_query($db,$check_user);  
+ $run_student=mysqli_query($db,$check_student);
+ $run_instructor=  mysqli_query($db,$check_instructor);
 
- if(mysqli_num_rows($run))  
+ if(mysqli_num_rows($run_student) or mysqli_num_rows($run_instructor))  
  {  
   echo "<script>window.open('home.php','_self')</script>";  
   
   $_SESSION['computing_id']=$computing_id; 
+  if (mysqli_num_rows($run_instructor)){
+    $_SESSION['instructor']='yes';
+  }
   
 }  
 else  
 { 
-  $check_ID="select * from student where computing_id='$computing_id'";
-  $check_password = "select * from student where password='$password'";
-  $result_ID = $db->query($check_ID);
-  $result_password = $db->query($check_password);
-  if ($result_ID->num_rows==0)
+  $check_ID_student="select * from student where computing_id='$computing_id'";
+  $check_ID_instructor = "select * from instructor where computing_id='$computing_id'";
+  $check_password_student = "select * from student where password='$password'";
+  $check_password_instructor = "select * from instructor where password='$password'";
+  $result_ID_student = $db->query($check_ID_student);
+  $result_ID_instructor = $db->query($check_ID_instructor);
+  $result_password_student = $db->query($check_password_student);
+  $result_password_instructor = $db->query($check_password_instructor);
+  if ($result_ID_student->num_rows==0 and $result_ID_instructor->num_rows==0)
   {  
     ?>
     <script>$('#errorIDModal').modal('show');</script>
 
     <?php
-  } else{
+  } else if ($result_password_student->num_rows==0 and $result_password_instructor->num_rows==0){
     ?>
     <script>$('#errorPasswordModal').modal('show');</script>
     <?php

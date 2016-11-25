@@ -106,34 +106,43 @@ if(!$_SESSION['computing_id'])
       </div>
 
 
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="/asist/home.php" class="navbar-brand">aSISt</a>
-        </div>
+       <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/asist/home.php" class="navbar-brand">aSISt</a>
+    </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="/asist/home.php">Home </a></li>
-            <li><a href="/asist/searchResult.php">Course Search </a></li>
-            <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
-            <li><a href="/asist/personalInfo.php">Personal Information </a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
-            <li><a href="/asist/logout.php">Logout</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/asist/home.php">Home </a></li>
+        <li><a href="/asist/searchResult.php">Course Search </a></li>
+        <?php 
+        if (!isset($_SESSION['instructor'])){
+        ?>
+          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+        <?php 
+        } else { ?>
+          <li><a href="/asist/assignGrades.php">Assign Grades </a></li>
+        <?php
+        }
+        ?>
+        <li><a href="/asist/personalInfo.php">Personal Information </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
+        <li><a href="/asist/logout.php">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <!-- end nav bar -->
 
@@ -306,9 +315,12 @@ if(!$_SESSION['computing_id'])
       							data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
     					</td>
     					<td>
-    						<?php $disabled = (strtolower($semester) == 'fall 2016') ? "" : "disabled"; ?>
-      						<button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = <?php echo "#modal" . $index?> <?php echo $disabled ?>>Add</button>
+    						<?php $disabled = (strtolower($semester) == 'fall 2016') ? "" : "disabled"; 
       						
+                  if (!isset($_SESSION['instructor'])){ ?>
+                  <button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = <?php echo "#modal" . $index?> <?php echo $disabled ?>>Add</button>
+      						<?php } ?>
+                  
       						<!-- giant modal -->
       						<span style="margin:auto"class="modal fade" id=<?php echo "modal" . $index ?> role="dialog">
                  				<div class="modla-dialog modal-lg">
