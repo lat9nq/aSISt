@@ -36,3 +36,7 @@ INSERT INTO degree_requirements VALUES ('ASTR', 'ASTR', 3130);
 INSERT INTO degree_requirements VALUES ('ANTH', 'ANTH', 1010);
 INSERT INTO degree_requirements VALUES ('ANTH', 'ANTH', 3010);
 INSERT INTO degree_requirements VALUES ('ANTH', 'ANTH', 4591);
+
+INSERT INTO `student_section`(`section_key`, `student_id`, `waitlist_timestamp`, `status`, `grade`) VALUES (1,'ah1zw',NOW(),1, 'B-');
+INSERT INTO `student_section`(`section_key`, `student_id`, `waitlist_timestamp`, `status`, `grade`) VALUES (271,'ah1zw',NOW(),1, 'A');
+INSERT INTO `student_section`(`section_key`, `student_id`, `waitlist_timestamp`, `status`, `grade`) VALUES (137,'ah1zw',NOW(),0, null);
