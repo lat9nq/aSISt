@@ -284,7 +284,7 @@ if(!$_SESSION['computing_id'])
 	
 	<?php if (count($ultimate_array) == 0 || no_sections($ultimate_array)) { ?>
   			<p style = "text-align: left; font-size: 30px;">
-  				<center><h3>Your search returned 0 results!</h3></center>
+  				<center><h3>No search results.</h3></center>
   			</p>
   		<br/>
   	<?php } else { ?>
@@ -315,7 +315,7 @@ if(!$_SESSION['computing_id'])
       							data-toggle="collapse" data-target=<?php echo "#demo".$index ?> class="accordion-toggle"> Learn More</button>
     					</td>
     					<td>
-    						<?php $disabled = (strtolower($semester) == 'fall 2016') ? "" : "disabled"; 
+    						<?php $disabled = (strtolower($semester) == 'fall 2016') ? "" : "style='display:none'"; 
       						
                   if (!isset($_SESSION['instructor'])){ ?>
                   <button type="button" class="btn btn-success btn-circle.btn-lg" data-toggle = "modal" data-target = <?php echo "#modal" . $index?> <?php echo $disabled ?>>Add</button>
