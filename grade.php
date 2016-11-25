@@ -10,11 +10,18 @@
 
 	foreach($section_key_array as $section_key){
 		$grade = $grade_array[$index];
+		echo $grade;
 		
 		if ( !in_array($grade, array("A+","A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"), true ) ) {
-			$exception="Error. Invalid grade entered. Please try again.";
-			break;
-		} else{
+			if ($grade==""){
+				$exception="Congratulations. You have successfully assigned empty grades.";
+				$grade="?";
+			} else {
+				$exception="Error. Invalid grade entered. Please try again.";
+				break;
+			}
+		}
+		else {
 			$exception = "Congratulations. You have successfully assigned grades.";
 		}
 		$student = $student_array[$index];
