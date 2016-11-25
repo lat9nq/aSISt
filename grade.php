@@ -14,7 +14,7 @@
 		
 		if ( !in_array($grade, array("A+","A","A-","B+","B","B-","C+","C","C-","D+","D","D-","F"), true ) ) {
 			if ($grade==""){
-				$exception="Congratulations. You have successfully assigned empty grades.";
+				$exception="Congratulations. You have successfully assigned grades.";
 				$grade="?";
 			} else {
 				$exception="Error. Invalid grade entered. Please try again.";
