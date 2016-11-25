@@ -191,6 +191,7 @@ if(!$_SESSION['computing_id'])
 				<th>Instructor</th>
 				<th>Meeting Time</th>
 				<th>Location</th>
+				<th>Status</th>
 				<th></th>
 			</tr>
 		</thead>
@@ -204,6 +205,7 @@ if(!$_SESSION['computing_id'])
 				<td><?php echo $section["instructor_name"]; ?></td>
 				<td><?php echo $section["time"] ?></td>
 				<td><?php echo $section["room"] ?></td>
+				<td><?php echo $section["status"] ?></td>
 				<td>
 					<form method = "post" action = "drop.php">
 						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>

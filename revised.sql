@@ -106,7 +106,7 @@ CREATE TABLE student_section (
     waitlist_timestamp datetime,
     status INT NOT NULL,
     grade VARCHAR (2),
-    PRIMARY KEY (section_key),
+    PRIMARY KEY (section_key, student_id),
     FOREIGN KEY (section_key) REFERENCES section(section_key),
     FOREIGN KEY (student_id) REFERENCES student(computing_id)
 );
@@ -114,6 +114,7 @@ CREATE TABLE student_section (
 CREATE TABLE instructor_section (
     instructor_id VARCHAR(6),
 	section_key INT,
+	PRIMARY KEY (instructor_id, section_key),
     FOREIGN KEY (instructor_id) REFERENCES instructor(computing_id),
     FOREIGN KEY (section_key) REFERENCES section(section_key)
 );
