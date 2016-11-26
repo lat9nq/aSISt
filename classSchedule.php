@@ -141,7 +141,7 @@ if(!$_SESSION['computing_id'])
 		</div>
 
 
-		<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -159,7 +159,16 @@ if(!$_SESSION['computing_id'])
       <ul class="nav navbar-nav">
         <li><a href="/asist/home.php">Home </a></li>
         <li><a href="/asist/searchResult.php">Course Search </a></li>
-        <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+        <?php 
+        if (!isset($_SESSION['instructor'])){
+        ?>
+          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+        <?php 
+        } else { ?>
+          <li><a href="/asist/assignGrades.php">Assign Grades </a></li>
+        <?php
+        }
+        ?>
         <li><a href="/asist/personalInfo.php">Personal Information </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

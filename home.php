@@ -41,17 +41,6 @@ if(!$_SESSION['computing_id'])
      die ("Could not connect to db: " . $db->connect_error);
    endif;
 
-   function getStudent($db){
-    $query = "select * from student";
-    $result = $db->query($query);
-    if ($result->num_rows>0){
-      $row = $result->fetch_array();
-      // $computing_id = $row["computing_id"];
-      // echo $computing_id;
-      return $row;
-    } 
-  }
-
   ?>
 
   <nav class="navbar navbar-default">
@@ -72,7 +61,16 @@ if(!$_SESSION['computing_id'])
       <ul class="nav navbar-nav">
         <li><a href="/asist/home.php">Home </a></li>
         <li><a href="/asist/searchResult.php">Course Search </a></li>
-        <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+        <?php 
+        if (!isset($_SESSION['instructor'])){
+        ?>
+          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+        <?php 
+        } else { ?>
+          <li><a href="/asist/assignGrades.php">Assign Grades </a></li>
+        <?php
+        }
+        ?>
         <li><a href="/asist/personalInfo.php">Personal Information </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -86,7 +84,12 @@ if(!$_SESSION['computing_id'])
 
 <div id="main-buttons">
   <button id="course-search" class="big-button" onClick="window.location = '/asist/searchResult.php'">Course Search</button><br>
-  <button id="class-schedule" class="big-button"  onClick="window.location = '/asist/classSchedule.php'">Class Schedule</button><br>
+  <?php if (!isset($_SESSION['instructor'])) { ?>
+    <button id="class-schedule" class="big-button"  onClick="window.location = '/asist/classSchedule.php'">Class Schedule</button><br>
+  <?php } else {
+  ?>
+    <button id="class-schedule" class="big-button"  onClick="window.location = '/asist/assignGrades.php'">Assign Grades</button><br>
+  <?php } ?>
   <button id="personal-information" class="big-button"  onClick="window.location = '/asist/personalInfo.php'">Personal Information</button><br>
 </div>
 </div>
