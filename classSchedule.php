@@ -210,7 +210,7 @@ if(!$_SESSION['computing_id'])
 					<form method = "post" action = "drop.php">
 						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>
 						<input type = "hidden" name = "dept_mnemonic" value = <?php echo $section["dept_mnemonic"] ?>/>
-						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" data-toggle="modal" data-target="#17339" value = "Drop"/>
+						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" value = "Drop"/> <!--data-toggle="modal" data-target="#17339"--> 
 					</form>
 				</td>
 			</tr>
@@ -219,6 +219,7 @@ if(!$_SESSION['computing_id'])
 		</tbody>
 	</table>
 
+<!--
 		<div class="modal fade" id="17339" role="dialog">
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
@@ -237,6 +238,7 @@ if(!$_SESSION['computing_id'])
 				</div>
 			</div>
 		</div> 
+-->
 
 	<div id="noCourse" hidden>
 		<center><p id="msg"> You are not currently enrolled in any courses. 
