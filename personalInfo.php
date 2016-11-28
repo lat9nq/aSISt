@@ -212,9 +212,7 @@ if (!isset($_SESSION['instructor'])){
   "AND student_section.section_key = section.section_key " .
   "AND section.course_number = course.course_number AND section.dept_mnemonic = course.dept_mnemonic " .
   "ORDER BY course.dept_mnemonic, course.course_number ASC;";
-  
-  brk($query);
-  
+    
   $result = $db->query($query);
   $course_array = array();
   while ($res = $result->fetch_row()) {
@@ -226,7 +224,6 @@ if (!isset($_SESSION['instructor'])){
   		)
   	);
   }
-  print_r($course_array);
 
 //advisor
   $query = "select * from `instructor` INNER JOIN `advisor` on instructor_id = computing_id and student_id='$session_id'";
