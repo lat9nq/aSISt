@@ -60,7 +60,6 @@ if(!$_SESSION['computing_id'])
 			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12],
 			"status" => $status, "grade-disabled" => $grade_disabled
 		);
-		echo $temp_array["grade-disabled"];
 		//print_r($temp_array);
 		array_push($ultimate_array, $temp_array);
 	}
