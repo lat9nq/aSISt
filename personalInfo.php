@@ -117,6 +117,25 @@ if (!isset($_SESSION['instructor'])){
     $school_result = $db->query("select school_name from school where school_id = $school_id");
     $school_name = $school_result->fetch_array()["school_name"];
   }
+
+  //major/minor
+  $query = "select department.name, student_department.major from student_department join department where student_department.computing_id='$session_id' and student_department.dept_mnemonic=department.dept_mnemonic";
+  $result = $db->query($query);
+  if ($result->num_rows>0){
+    while ($row = $result->fetch_array()){
+      $major_num= $row["major"];
+      $minor="";
+      $dept_name = $row["name"];
+      if ($major_num==1){
+        $major=$dept_name;
+      }
+      if ($major_num==0) {
+        $minor = $dept_name;
+      }
+
+    }
+  }
+
 //advisor
   $query = "select * from `instructor` INNER JOIN `advisor` on instructor_id = computing_id and student_id='$session_id'";
   $result = $db->query($query);
@@ -210,18 +229,26 @@ if (!isset($_SESSION['instructor'])){
   <tr>
     <td><b>Permanent Address</b></td>
     <td><?php echo $permanent_address?></td>   
-    <td><b> Advisor </b></td>
-    <td> <?php echo $advisor ?></td>
-    <td></td>
-    <td></td>
+    <td><b>Major</b></td>
+    <td><?php echo $major ?></td>
   </tr>
   <tr>
     <td><b>Current Mailing Address</b></td>
     <td><?php echo $mailing_address?></td>   
+    <td><b> Minor </b></td>
+    <td> <?php 
+    if ($minor==""){
+      echo "None";
+    } else {
+      echo $minor;
+    }
+    ?> </td>
+  </tr>
+  <tr>   
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
+    <td><b> Advisor </b></td>
+    <td> <?php echo $advisor ?></td>
   </tr>
   
   <?php } else { 
@@ -238,29 +265,29 @@ if (!isset($_SESSION['instructor'])){
     </tr>
     <tr>
       <td></td>
-        <td></td>
-          <td><b>Advisees</b></td>
-          <td>
-          <?php 
-          foreach($advisees as $advisee){
-            echo $advisee;
-            echo "<br>";
-          }
-          ?>
-        </td>
+      <td></td>
+      <td><b>Advisees</b></td>
+      <td>
+        <?php 
+        foreach($advisees as $advisee){
+          echo $advisee;
+          echo "<br>";
+        }
+        ?>
+      </td>
     </tr>
     <tr>
       <td></td>
       <td></td>
       <td><b>Current Classes</b></td>
-        <td>
-          <?php
-          foreach($classes as $class){
-            echo $class;
-            echo "<br>";
-          }
-          ?>
-        </td>
+      <td>
+        <?php
+        foreach($classes as $class){
+          echo $class;
+          echo "<br>";
+        }
+        ?>
+      </td>
     </tr>
     <?php
   }
