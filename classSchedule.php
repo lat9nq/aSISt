@@ -14,7 +14,7 @@ if(!$_SESSION['computing_id'])
 	$query = "SELECT distinct section.course_number, section.dept_mnemonic, course.course_title," .
 	"section.room, building.building_name, timeslot.start_time, timeslot.end_time, " .
 	"instructor.first_name, instructor.last_name, section.days, section.section_id, " .
-	"section.semester, section.section_key, student_section.status " .
+	"section.semester, section.section_key, student_section.status, student_section.grade " .
 	
 	"FROM student_section, section, instructor_section, building, instructor, course, timeslot" .
 	" WHERE student_section.section_key = section.section_key " .
@@ -44,18 +44,23 @@ if(!$_SESSION['computing_id'])
 			$index++;
 		}
 		$status = "";
-		if ($res[13] == 1) {
+		if ($res[14] != "?") {
+			$status = $res[14];
+		} else if ($res[13] == 1) {
 			$status = "Enrolled";
 		} else if ($res[13] == 2) {
 			$status = "Waitlisted ($waitlist_position)";
 		}
 		
+		$grade_disabled = ($res[14] == "?") ? "" : "disabled";
+		
 		$temp_array = array("course" => $res[1] . " " . $res[0], "course_title" => $res[2],
 			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . $res[5] . " - " . $res[6],
 			"instructor_name" => $res[7] . " " . $res[8], "course_number" => $res[0],
 			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12],
-			"status" => $status
+			"status" => $status, "grade-disabled" => $grade_disabled
 		);
+		echo $temp_array["grade-disabled"];
 		//print_r($temp_array);
 		array_push($ultimate_array, $temp_array);
 	}
@@ -210,7 +215,8 @@ if(!$_SESSION['computing_id'])
 					<form method = "post" action = "drop.php">
 						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>
 						<input type = "hidden" name = "dept_mnemonic" value = <?php echo $section["dept_mnemonic"] ?>/>
-						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" value = "Drop"/> <!--data-toggle="modal" data-target="#17339"--> 
+						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" value = "Drop"
+							<?php echo $section["grade-disabled"]; ?>/> <!--data-toggle="modal" data-target="#17339"--> 
 					</form>
 				</td>
 			</tr>
