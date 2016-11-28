@@ -394,8 +394,10 @@ if (!isset($_SESSION['instructor'])){
   }
   ?>
   
-</table>
 
+</table>
+<?php if (!isset($_SESSION['instructor'])){
+  ?>
 <center><h4>Course History</h4></center>
 
 <center><table class="table table-bordered" style = "width: 50%;"> 
@@ -412,3 +414,4 @@ if (!isset($_SESSION['instructor'])){
 	</tr>
 <?php } ?>
 </table></center>
+<?php } ?>
