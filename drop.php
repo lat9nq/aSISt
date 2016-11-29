@@ -48,27 +48,40 @@
 	echo count($waitlist_victims);
 	foreach ($waitlist_victims as $key => $victim) {
 		if ($victim == "NO WAITLIST") {
-			$query = "SELECT total_students from section " .
+			brk("IF");
+			$query = "SELECT total_students, capacity from section " .
 			"WHERE section_key = $key;";
 			echo $query;
 			$result = $db->query($query);
-			$count = $result->fetch_row()[0];
-			echo "<br>$count<br>";
+			$res = $result->fetch_row();
+			$count = $res[0];
+			$capacity = $res[1];
+			brk($key);
+			brk($count);
+			brk($capacity);
 			$count--;
 			$query = "UPDATE section " .
 			"SET total_students = $count " .
 			"WHERE section_key = $key;";
-			$db->query($query); 
+			$db->query($query);
+			brk($count);
+			brk($capacity);
+			if ($count < $capacity) {
+				brk("INNER IF");
+				$query = "UPDATE section SET status = 1 WHERE section_key = $key;";
+				echo $db->query($query) == false;
+			}
 		} else {
+			brk("ELSE");
 			$query = "UPDATE student_section SET status = 1 " .
 			"WHERE student_id = '$victim' " .
 			"AND section_key = $key;";
-			echo "<br>";
-			echo $db->query($query) == false;
-			echo $query;
-			echo "<br>";
+			$db->query($query);
+			$query = "UPDATE section SET status = 1 WHERE section_key = $key;";
+			$db->query($query);
 		}
 	}
+	
 	echo brk(count($section_keys));
 	foreach ($section_keys as $key) {
 		$query = "DELETE FROM student_section WHERE student_id = '$computing_id' " .
