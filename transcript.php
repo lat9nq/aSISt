@@ -1,3 +1,5 @@
+<!-- This php uses a SQL function. It's called $query2 below, I don't know why but it won't run when I called it here, so just manually run it in phpmyadmin-->
+
 <?php
 session_start();
 
