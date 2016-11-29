@@ -1,3 +1,5 @@
+<!-- This also uses chronological() function from MySQL -->
+
 <?php
 session_start();
 
@@ -24,7 +26,7 @@ else {
     $query = "SELECT * FROM (student_section INNER JOIN (section INNER JOIN course ON section.course_number = course.course_number AND section.dept_mnemonic = course.dept_mnemonic) " . 
         "ON student_section.section_key = section.section_key) " . 
         "WHERE student_id = '"  . $computing_id . "' " .  
-        " ORDER BY waitlist_timestamp ASC; ";
+        " ORDER BY chronological(semester) ASC; ";
         // Returns a query containing the following data, where in [index range]
         // [0-4] section_key, student_id, waitlist, completion_status, grade, 
         // [5-9] section_id, section_key, dept_mnemonic, course_number, building_id,
@@ -47,10 +49,10 @@ else {
         $course_title = $row[21];
         $credits = $row[23];
 
-        if ($grade == null) {
+
+        if ($grade == '?') {
           $grade = "N/A";
-        } else {
-          $status = 1;
+          $status = 0;
         }
 
 
@@ -70,8 +72,8 @@ else {
         echo '<td>' . status_to_gliph($status) . '</td>';
         echo '</tr>';
 
-        $prev_sem = $semester; 
       } // end foreach
+
     }// endif
   }
 
@@ -94,6 +96,11 @@ else {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $['.tbody']
+    });
+  </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
   integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -101,8 +108,6 @@ else {
 </head>
 <body>
 <?php require ('header.php'); ?>
-
-  	<br/>
 	<center><h3>Course History</h3></center><br/>
 
   <!-- Hover over to see status symbol key -->
@@ -124,12 +129,12 @@ else {
   <table class="table table-sm table-hover">
   	<thead>
   		<tr>
-	  		<td> Course <span class="caret"></span></td>
+	  		<td> Course </span></td>
 	  		<td> Description </td>
-	  		<td> Term <span class="caret"></span></td>
+	  		<td> Term </span></td>
 	  		<td> Grade </td>
 	  		<td> Credits </td>
-	  		<td> Status <span class="caret"></span></td>
+	  		<td> Status </span></td>
   		</tr>
   	</thead>
   	<tbody>

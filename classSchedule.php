@@ -55,7 +55,7 @@ if(!$_SESSION['computing_id'])
 		$grade_disabled = ($res[14] == "?") ? "" : "disabled";
 		
 		$temp_array = array("course" => $res[1] . " " . $res[0], "course_title" => $res[2],
-			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . $res[5] . " - " . $res[6],
+			"room" => $res[4] . " " . $res[3], "time" => $res[9] . " " . convert_ugly_time($res[5]) . " - " . convert_ugly_time($res[6]),
 			"instructor_name" => $res[7] . " " . $res[8], "course_number" => $res[0],
 			"dept_mnemonic" => $res[1], "section_id" => $res[10], "section_key" => $res[12],
 			"status" => $status, "grade-disabled" => $grade_disabled
@@ -63,6 +63,16 @@ if(!$_SESSION['computing_id'])
 		//print_r($temp_array);
 		array_push($ultimate_array, $temp_array);
 	}
+
+	function convert_ugly_time($time) {
+		$newTime = substr($time, 0, 5); //truncate seconds place in 00:00:00
+		$hours = substr($newTime, 0, 2);
+		if ($hours < 10) { //chop off extra zero if you need to
+			$newTime = substr($newTime, 1);
+		}
+		return $newTime;
+	}
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -81,6 +91,8 @@ if(!$_SESSION['computing_id'])
 		// Modal with confirmation for course drop
 		// Dynamically fetches course mnemonic and title for modal display
 		$(document).on('click', '#tryDrop', function(event) {
+
+			event.prevent
 
 			// Selects the mnemonic from the same row the button was clicked
 			var mnem = $($(this).parent().parent().children()[0]);
@@ -102,16 +114,9 @@ if(!$_SESSION['computing_id'])
 		$(document).ready(function(){
 			// Drops course from table
 			$(document).on('click', '#drop', function(event) {
-				// var dropping = confirm("Are you sure you want to drop course " + mnem.html() + "?");
-				//console.log(mnem);
-
-				// if (dropping == true) {
-				currCourse.remove();
-				// }
-				noSched(); //show no schedule message if no courses enrolled
+				$('#drop-class').submit();
 			});
 		});
-
 
 		// Hide table if no courses
 		function noSched() {
@@ -133,59 +138,10 @@ if(!$_SESSION['computing_id'])
 	<link rel="Stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container" id="page-wrap">
-
-		<div class="header">
-			<div style="float:left">
-				<img id="logo" src="logo.png" width="100" height="100">
-			</div>
-			<div style="float:clear; display:inline-block; margin:1%;">
-				<h3><i> aSISt </i></h3>
-			</div>
-		</div>
-
-
-	<nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/asist/home.php" class="navbar-brand">aSISt</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/asist/home.php">Home </a></li>
-        <li><a href="/asist/searchResult.php">Course Search </a></li>
-        <?php 
-        if (!isset($_SESSION['instructor'])){
-        ?>
-          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
-        <?php 
-        } else { ?>
-          <li><a href="/asist/assignGrades.php">Assign Grades </a></li>
-        <?php
-        }
-        ?>
-        <li><a href="/asist/personalInfo.php">Personal Information </a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
-        <li><a href="/asist/logout.php">Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<?php require ('header.php'); ?>
 
 	<br/>
 	<center><h3>Class Schedule</h3></center><br/>
-
 
 	<table class="table table-striped" id="table">
 		<thead>
@@ -211,11 +167,11 @@ if(!$_SESSION['computing_id'])
 				<td><?php echo $section["room"] ?></td>
 				<td><?php echo $section["status"] ?></td>
 				<td>
-					<form method = "post" action = "drop.php">
+					<button type="button" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" value = "Drop"
+							<?php echo $section["grade-disabled"]; ?> data-toggle="modal" data-target="#17339">Drop</button> 
+					<form id="drop-class" method = "post" action = "drop.php">
 						<input type = "hidden" name = "course_number" value = <?php echo $section["course_number"] ?>/>
 						<input type = "hidden" name = "dept_mnemonic" value = <?php echo $section["dept_mnemonic"] ?>/>
-						<input type="submit" class="btn btn-danger btn-circle.btn-lg" id="tryDrop" value = "Drop"
-							<?php echo $section["grade-disabled"]; ?>/> <!--data-toggle="modal" data-target="#17339"--> 
 					</form>
 				</td>
 			</tr>
@@ -224,7 +180,6 @@ if(!$_SESSION['computing_id'])
 		</tbody>
 	</table>
 
-<!--
 		<div class="modal fade" id="17339" role="dialog">
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
@@ -243,7 +198,7 @@ if(!$_SESSION['computing_id'])
 				</div>
 			</div>
 		</div> 
--->
+
 
 	<div id="noCourse" hidden>
 		<center><p id="msg"> You are not currently enrolled in any courses. 

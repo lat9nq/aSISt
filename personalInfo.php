@@ -13,17 +13,6 @@ function grade_translator($grade, $units) {
 	return $grade_map[$grade] * $units;
 }
 
-function nicify($semester) {
-	if ($semester == 'fall 2016') {
-		return "Fall 2016";
-	} else if ($semester == 'fall 2015') {
-		return "Fall 2015";
-	} else if ($semester == 'spring 2015') {
-		return "Spring 2015";
-	} else if ($semester == 'spring 2016') {
-		return "Spring 2016";
-	}
-}
 
 session_start();
 if(!$_SESSION['computing_id'])  
@@ -67,55 +56,7 @@ if(!$_SESSION['computing_id'])
     </style>
   </head>
   <body>
-   <div class="container" id="page-wrap">
-
-    <div class="header">
-     <div style="float:left">
-      <img id="logo" src="logo.png" width="100" height="100">
-    </div>
-    <div style="float:clear; display:inline-block; margin:1%;">
-      <h3><i> aSISt </i></h3>
-    </div>
-  </div>
-
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/asist/home.php" class="navbar-brand">aSISt</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="/asist/home.php">Home </a></li>
-        <li><a href="/asist/searchResult.php">Course Search </a></li>
-        <?php 
-        if (!isset($_SESSION['instructor'])){
-          ?>
-          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
-          <?php 
-        } else { ?>
-        <li><a href="/asist/assignGrades.php">Assign Grades </a></li>
-        <?php
-      }
-      ?>
-      <li><a href="/asist/personalInfo.php">Personal Information </a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="/asist/home.php">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
-      <li><a href="/asist/logout.php">Logout</a></li>
-    </ul>
-  </div>
-</div>
-</nav>
+   <?php require('header.php'); ?>
 
 <?php
 $db = new mysqli('localhost', 'username', 'password', 'asist2');
@@ -220,7 +161,7 @@ if (!isset($_SESSION['instructor'])){
   		$course_array, array(
   			"grade" => ($res[0] == "?") ? "Pending" : $res[0], "dept_mnemonic" => $res[1],
   			"course_number" => $res[2], "description" => $res[3],
-  			"semester" => nicify($res[4])
+  			"semester" => ucfirst($res[4])
   		)
   	);
   }
@@ -279,10 +220,8 @@ else {
 
 <table class="table table-bordered"> 
   <thead>
-    <th><center>Contact</center></th>
-    <th></th>
-    <th><center>Academic</center></th>
-    <th></th>
+    <th colspan='2' width="50%"><center>Contact</center></th>
+    <th colspan='2'><center>Academic</center></th>
   </thead>
 </tr>
 

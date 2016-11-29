@@ -4,11 +4,14 @@ if(!$_SESSION['computing_id'])
     header("Location: login.php");//redirect to login page to secure the welcome page without login access.  
   }  
 
+$logout = "/asist/logout.php";
 $home = "/asist/";
 $search = "/asist/searchResult.php";
 $schedule = "/asist/classSchedule.php";
 $history = "/asist/courseHistory.php";
 $transcript = "/asist/transcript.php";
+$personal = "/asist/personalInfo.php";
+$assignGrade = "/asist/assignGrades.php";
 
 ?>
 
@@ -47,6 +50,10 @@ $transcript = "/asist/transcript.php";
         <ul class="nav navbar-nav">
           <li><a href="<?php echo $home; ?>">Home </a></li>
           <li><a href="<?php echo $search; ?>">Course Search </a></li>
+        <?php 
+        if (!isset($_SESSION['instructor'])){
+        ?>
+
           <li class="dropdown">
             <a href="<?php echo $schedule; ?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
               My Courses <span class="caret"></span>
@@ -58,11 +65,17 @@ $transcript = "/asist/transcript.php";
               <li><a href="<?php echo $transcript; ?>">Transcript Summary</a></li>
             </ul>
           </li>
-          <li><a href="/asist/personalInfo.html">My Info</a></li>
+           <?php } else { ?>
+          <li><a href="<?php echo $assignGrade; ?>">Assign Grades </a></li>
+        <?php
+        }
+        ?>
+          </li>
+          <li><a href="<?php echo $personal; ?>">Personal Information</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/asist">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
-          <li><a href="/asist/login.html">Logout</a></li>
+          <li><a href="<?php echo $personal; ?>">Signed in as <?php echo $_SESSION['computing_id'];?></a></li>
+          <li><a href="<?php echo $logout; ?>">Logout</a></li>
         </ul>
       </div>
     </div>

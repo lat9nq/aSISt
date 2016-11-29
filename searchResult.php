@@ -127,7 +127,18 @@ if(!$_SESSION['computing_id'])
         <?php 
         if (!isset($_SESSION['instructor'])){
         ?>
-          <li><a href="/asist/classSchedule.php">Class Schedule </a></li>
+
+          <li class="dropdown">
+          <a href="/asist/classSchedule.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
+              My Courses <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/asist/classSchedule.php">Current Semester</a></li>
+              <li><a href="/asist/courseHistory.php">Course History</a></li>
+              <li class="divider"></li>
+              <li><a href="/asist/transcript.php">Transcript Summary</a></li>
+            </ul>
+          </li>
         <?php 
         } else { ?>
           <li><a href="/asist/assignGrades.php">Assign Grades </a></li>

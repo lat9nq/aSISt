@@ -79,7 +79,7 @@ if(!$_SESSION['computing_id'])
 		}
 		if ($currSem != $row['semester']) {
 
-			echo "<tr><td> Current Credits </td><td> " . number_format((float)$curCred, 1, '.','')
+			echo "<tr><td> Term Credits </td><td> " . number_format((float)$curCred, 1, '.','')
 			. "</td><td> Grade Points</td><td> " . $curGrd 
 			. "</td><td> GPA </td><td>" . ($curGrd/$curCred);
 
@@ -212,7 +212,7 @@ function fetchMajorMinor($computing_id, $major) {
 </head>
 <body>
 <?php require ('header.php'); ?>
-	<center><h3>Sample Transcript Report</h3></center><br/>
+
 <!-- Hover over to see explanation -->
   <div style="text-align: right;">
     <a href="#" data-toggle="tooltip" data-placement="top" data-html="true" 
@@ -225,11 +225,14 @@ function fetchMajorMinor($computing_id, $major) {
     });
     </script>
    </div>
+
+	<center><h3>Sample Transcript Report</h3></center><br/>
+
    <!-- Build Transcript page -->
-   <div id="transcript" style="width:80%; margin: 0 auto; display: block; padding: 60px;">
+   <div id="transcript" style="width:80%; margin: 0 auto; display: block; padding: 50px; padding-top: 20px;">
    	<style>
-   		#transcript {font-family: Georgia, serif; padding: 20px;}
-   		#transcript:hover {background-color: white;}
+   		#transcript {font-family: Georgia, serif; padding: 20px; transition: .6s ease-in-out;}
+   		#transcript:hover {background-color: white; transition: .6s ease-in-out;}
    	</style>
    	<center>
    		<?php transcriptHeader($computing_id); 
